@@ -1,0 +1,44 @@
+{
+  "anchor_ratio": {
+    "denominator_digits": 178153,
+    "numerator_digits": 178153,
+    "sha256": "090b62aa96f88070dd05c2f77581ef9a9a8909adcf24bccbd9fa0f5d23efcaef"
+  },
+  "anchor_width": {
+    "denominator_digits": 78,
+    "numerator_digits": 5,
+    "sha256": "af77cd1e9cec7b7b112194f1798f31bd23cd3720a05d407b37f0451693cab55e"
+  },
+  "certificate_polynomial": {
+    "coefficient_count": 71,
+    "degree": 70,
+    "sha256": "0b1b006cc9b50065b77f8a718c55ca9a072950f0d76cb79088671e7c0d80cde8"
+  },
+  "claim": "rho(r,8)>=1 for every integer r>=20000",
+  "configuration": {
+    "anchor_m0": 19999,
+    "controls": false,
+    "interval_bits": 256,
+    "t": 8,
+    "workers": 1
+  },
+  "gates": {
+    "P and Q upper": true,
+    "anchor factor": true,
+    "anchor width": true,
+    "certificate": true,
+    "certificate strict": true,
+    "continuum lower": true,
+    "index polynomial": true,
+    "interval_ladder": true,
+    "numerator lower": true,
+    "optional_controls": true,
+    "pi bracket": true,
+    "predecessor lower": true
+  },
+  "passed": true,
+  "schema": "square-tail-fixed-column-v1",
+  "status": "PASS",
+  "tail_log_moment_max_degree": 17,
+  "version": 1
+}

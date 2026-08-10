@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite the paper when this verification suite supports your work."
+title: "odd-cycles-square-tail-replay: Exact verification of the square-tail inequality"
+type: software
+authors:
+  - family-names: Councilman
+    given-names: J.
+    orcid: "https://orcid.org/0009-0003-6265-5168"
+version: "0.1.0"
+license: MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21853982
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Councilman
+      given-names: J.
+      orcid: "https://orcid.org/0009-0003-6265-5168"
+  title: "Odd cycles, sech spectra, and a square-tail inequality"
+  year: 2026

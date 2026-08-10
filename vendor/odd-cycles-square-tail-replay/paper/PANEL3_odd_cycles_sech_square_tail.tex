@@ -1,0 +1,1876 @@
+% Odd cycles, sech spectra, and a square-tail inequality.
+% Author: J. Councilman
+% Compile with: latexmk -pdf PANEL3_odd_cycles_sech_square_tail.tex
+%
+% Panel three of three. Panel one (delannoy-multiplication-tp2,
+% doi:10.5281/zenodo.21778524) proves the external order phenomenon; panel two
+% (green-path-dpp, doi:10.5281/zenodo.21778518) exposes the determinant and
+% sampling mechanism. This panel is the internal curvature law joining them.
+
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+\hypersetup{
+  pdftitle={Odd cycles, sech spectra, and a square-tail inequality},
+  pdfauthor={J. Councilman},
+  pdfsubject={A cross-row Turan inequality for the odd-cycle generating
+              polynomials of the symmetric group},
+  pdfkeywords={odd cycles; Meixner polynomials of the second kind; sech
+               measure; Jacobi matrix; determinantal point process;
+               Turan inequality; total positivity; exact certificates}
+}
+\usepackage[expansion=false]{microtype}
+\setlength{\emergencystretch}{2em}
+\widowpenalty=10000
+\clubpenalty=10000
+\displaywidowpenalty=10000
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\one}{\mathbf{1}}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\artanh}{artanh}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\spec}{spec}
+% cell-local scalars are sans-serif throughout (see the symbol table, §4.4)
+\newcommand{\ls}{\mathsf{s}}
+\newcommand{\lv}{\mathsf{v}}
+\newcommand{\la}{\mathsf{a}}
+\newcommand{\ld}{\mathsf{d}}
+
+\title{\textbf{Odd cycles, sech spectra, and a\\ square-tail inequality}}
+\author{J. Councilman\\
+\small\href{https://orcid.org/0009-0003-6265-5168}{ORCID 0009-0003-6265-5168}}
+\date{Draft --- 7 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Let $\pi$ be a uniform permutation of $\{1,\dots,2r-1\}$, let $o(\pi)$ be its
+number of odd cycles, and put $K_r=(o(\pi)-1)/2$ and $\Pi_r(u)=\E[u^{K_r}]$. The
+polynomial $\Pi_r$ has three exact descriptions: the normalized Gram determinant
+$\det(uI+G_r)/(2r-1)!$, a product of Bernoulli factors read
+off the positive spectrum of the consecutive-integer Jacobi matrix, and the
+cardinality generating function of a determinantal point process with an
+explicit integer configuration law. Between them they account for
+the one-row facts used here: real-rootedness, coefficient log-concavity and the
+Poisson--binomial law.
+
+This paper proves a quantitative comparison of adjacent rows. Writing
+$L(f)_t=f_t^2-f_{t-1}f_{t+1}$ for the coefficientwise Tur\'an operator,
+$S_{r,t}=L((1+u)\Pi_r)_t$, $V_{r,t}=L(\Pi_r)_{t-1}$ and
+$d_{r,t}=S_{r,t}-\bigl(\tfrac{2r-1}{2r}\bigr)^2S_{r-1,t}$, the main theorem is
+the \emph{square-tail inequality}
+\[
+  d_{r,t}^{\,2}\;\ge\;\frac{2}{r^2}\,S_{r,t}V_{r,t},
+  \qquad r\ge2,\quad 2\le t\le r .
+\]
+The same machinery also orients the decrement, $d_{r,t}>0$; the content of the
+square-tail theorem is the factor $2$, which Newton's inequalities do not pay.
+That factor is the structural constant, not the extremal one. A second theorem
+identifies the optimal uniform constant as
+$C_\star=2\rho(129,2)=2.029152329129741\ldots$, an explicit rational whose
+reduced numerator and denominator have $1{,}233$ digits each, attained at the
+single cell $(129,2)$ and at no other.
+The proof establishes monotonicity and discrete convexity for factorially
+scaled coefficient ratios, proves a uniform decrement bound, and shows that a
+linear lowering profile is extremal. Seven complete fixed columns and a
+$500$-row exact core leave two unbounded symbolic regions. The two upper cells
+collapse to elementary coefficient identities,
+while the adjacent lower stripe $t=1$ contains exact counterexamples. Thus
+$2\le t\le r$ is the exact uniform nontrivial range, not a proof margin. As an
+application the inequality settles a boundary problem for the shift-wall rows.
+The sech/odd-cycle/Meixner bridge underlying the setup is classical, and
+\S\ref{sec:classical} says exactly where it comes from; what is new is the
+coefficient-index layer that the inequalities live on.
+\end{abstract}
+
+\section{Odd cycles and the cross-row question}\label{sec:intro}
+
+Odd-cycle polynomials sit at once in permutation enumeration,
+orthogonal-polynomial theory and determinantal probability. For a uniform
+$\pi\in S_{2r-1}$ the number of odd cycles $o(\pi)$ has the parity of $2r-1$ and
+is therefore odd, so
+\[
+  K_r=\frac{o(\pi)-1}{2}
+\]
+is an integer in $\{0,\dots,r-1\}$, and we set $\Pi_r(u)=\E[u^{K_r}]$. We use
+$\Pi_1(u)=1$, the row of the unique permutation in $S_1$, when a predecessor is
+needed at $r=2$. The first two nontrivial rows are
+\[
+  \Pi_2(u)=\frac{5+u}{6},\qquad
+  \Pi_3(u)=\frac{89+30u+u^2}{120}.
+\]
+These are not isolated combinatorial data. Section~\ref{sec:faces} proves that
+$F_r=(2r-1)!\,\Pi_r$ satisfies
+\[
+  F_r(u)=\det(uI+G_r)=\prod_{j=1}^{r-1}\bigl(u+\xi_{r,j}^2\bigr),
+\]
+where $G_r$ is an integer Gram matrix and the $\xi_{r,j}$ are the positive
+eigenvalues of the Jacobi matrix with off-diagonal entries $1,2,\dots,2r-2$;
+equivalently, $K_r$ has the cardinality law of a determinantal point process
+with kernel $(I+G_r)^{-1}$, and \S\ref{sec:coupling} realizes that law by an
+explicit map. Section~\ref{sec:classical} traces the classical sech/Jacobi and
+odd-cycle components in the literature.
+
+Each of those descriptions concerns one row at a time. The question here is what
+happens to coefficient curvature when the row is lowered by one. For a
+polynomial $f(u)=\sum_kf_ku^k$ write
+\begin{equation}\label{eq:Lop}
+  L(f)_t=f_t^2-f_{t-1}f_{t+1},
+\end{equation}
+with coefficients outside the row understood to be zero, and put
+\begin{equation}\label{eq:SVd}
+  S_{r,t}=L\bigl((1+u)\Pi_r\bigr)_t,\qquad
+  V_{r,t}=L(\Pi_r)_{t-1},\qquad
+  d_{r,t}=S_{r,t}-\Bigl(\frac{2r-1}{2r}\Bigr)^{2}S_{r-1,t}.
+\end{equation}
+Strict degree-aware Newton inequalities give $S_{r,t},V_{r,t}>0$ on the range
+below. The adjacent-row decrement is positive on the interior, while the two
+upper cells are explicit. Neither fact determines the \emph{size} of the
+decrement. The main theorem does.
+
+\begin{theorem}[square-tail inequality]\label{thm:sq}
+For every pair of integers $r\ge2$ and $2\le t\le r$,
+\[
+  d_{r,t}^{\,2}\;\ge\;\frac{2}{r^2}\,S_{r,t}\,V_{r,t}.
+\]
+\end{theorem}
+
+Equivalently, with
+\begin{equation}\label{eq:rho}
+  \rho(r,t)=\frac{r^2 d_{r,t}^{\,2}}{2\,S_{r,t}V_{r,t}},
+\end{equation}
+Theorem~\ref{thm:sq} is exactly $\rho\ge1$ on that domain.
+
+The factor $2$ is clean and structural, and it is what the proof below pays for
+directly. It is not extremal. The extremal constant is identified separately.
+
+\begin{theorem}[optimal uniform constant]\label{thm:sharp}
+Put $C_\star=2\rho(129,2)$. For every pair of integers $r\ge2$ and
+$2\le t\le r$,
+\[
+  d_{r,t}^{\,2}\;\ge\;\frac{C_\star}{r^2}\,S_{r,t}\,V_{r,t},
+\]
+with equality if and only if $(r,t)=(129,2)$. Equivalently
+$\min\rho=\rho(129,2)$, attained at exactly one cell, and no constant larger
+than $C_\star$ is admissible.
+\end{theorem}
+
+Theorem~\ref{thm:sharp} implies Theorem~\ref{thm:sq}, since
+$C_\star>2$. The two are proved by separate certificate chains and are
+replayed independently; Theorem~\ref{thm:sq} is retained because its proof is
+the structural one, and because the slack it leaves is uniform and explicit:
+$\rho\ge1$ has strict margin $1.4576\%$ everywhere except at $(129,2)$, where
+it is attained.
+
+\subsection{What the factor \texorpdfstring{$2$}{2} costs}
+
+Three exact computations fix how much the classical structure can pay, and where
+the domain hypotheses come from.
+
+\begin{enumerate}[label=\textup{(\alph*)},leftmargin=2.2em]
+\item \emph{Newton is not enough.} Newton's inequalities applied to the two rows
+  give $S_{r,t}\ge V_{r,t}$, strictly off $t=r$, which is the right direction
+  and the wrong size. As a
+  route to Theorem~\ref{thm:sq} it is refuted on the actual cell $(r,t)=(4,2)$,
+  where $S_{4,2}-2V_{4,2}=-1931/26460$.
+\item \emph{Root data alone is not enough.} Interlacing, positivity of all power
+  sums, the factorial normalization and $d_{r,t}>0$ together do not imply the
+  statement. Take the strictly alternating Bernoulli parameters
+  \[
+    \theta_4=\left(\frac{13}{30},\frac9{70},\frac5{1404}\right),\qquad
+    \theta_3=\left(\frac{77}{180},\frac3{154}\right),
+  \]
+  ordered $\theta_{4,1}>\theta_{3,1}>\theta_{4,2}>
+  \theta_{3,2}>\theta_{4,3}$, and set
+  $\widetilde\Pi_j(u)=\prod_i(1-\theta_{j,i}+\theta_{j,i}u)$. The parameter
+  products are $1/7!$ and $1/5!$, so the leading coefficients have the required
+  normalization. Direct substitution gives
+  $d_{4,2}=526797418380619/8414884558080000>0$ and the exact ratio
+  \[
+    \frac{277515520012484937028354823161}
+         {315577547434843909307279254848}<1.
+  \]
+  Any proof must therefore use structure beyond those root data.
+\item \emph{The lower boundary is genuine.} The cell
+  $(r,t)=(2,1)$ fails, with exact deficit
+  \[
+    d_{2,1}^{\,2}-\tfrac12 S_{2,1}V_{2,1}=-\frac{4351}{20736},
+    \qquad\text{from } S_{2,1}=\tfrac{31}{36},\ V_{2,1}=\tfrac{25}{36},\
+    d_{2,1}=\tfrac{43}{144},
+  \]
+  and the corresponding $t=1$ stripe in the shift-wall application fails on a
+  contiguous window of rows exhibited in \S\ref{sec:bridge}. Thus the lower
+  bound $t\ge2$ cannot be weakened in a uniform theorem. For $r\ge3$ the two
+  cells at the other end, $t=r-1,r$, are both true by
+  Proposition~\ref{prop:upperedge}.
+\end{enumerate}
+
+The exact cell $(r,t)=(129,2)$ gives the witness
+\[
+  \rho(129,2)=1.014576164564870742\ldots,
+\]
+so no constant larger than $2\rho(129,2)=2.029152\ldots$ can replace $2$.
+This witness is the global minimizer, and it is the only one: see
+Theorem~\ref{thm:sharp}. The runner-up is the neighbouring cell $(128,2)$, at
+$\rho(128,2)=1.014577752404662\ldots$, so the minimum is separated from the
+rest of the array by $1.5878\times10^{-6}$.
+
+\subsection{The proof in four moves}
+
+\begin{enumerate}[label=\textup{(\arabic*)},leftmargin=2.2em]
+\item After the factorial scaling $b_{r,k}=(2k+1)![u^k]F_r$,
+  $X_{r,k}=b_{r,k}/b_{r,k-1}$, the ratios $X_{r,k}$ decrease in $k$ and are
+  discretely convex. Every decrement is therefore controlled by the first, and
+  $0\le X_{r,k-1}-X_{r,k}<5$ throughout (\S\ref{sec:analytic}).
+\item The preceding row is a coefficientwise lowering of the current one. Among
+  all lowering profiles the curvature constraints allow, the linear comparator
+  with the same first lowering maximizes the predecessor Tur\'an determinant
+  (\S\ref{sec:lin}).
+\item Linear extremality reduces Theorem~\ref{thm:sq} to a correlated scalar
+  inequality in four cell-local quantities. One estimate closes the top of every
+  row; a second closes the joint window in which level and coefficient index
+  grow together (\S\S\ref{sec:lin}--\ref{sec:coverage}).
+\item Seven fixed columns leave only $t\ge9$. Outside the top region one then
+  has $a_r>(t-2)^2>5t$, so the joint-window theorem applies; an exact full-row
+  core through $r=503$ completes the interior. The two upper cells are then
+  closed by one wall-coefficient calculation (\S\ref{sec:coverage}).
+\end{enumerate}
+
+Moves (1)--(3) are exact analytic inequalities, coefficient signs and two Sturm
+checks, and they close both unbounded interior regions outright. Move (4) uses exact
+rational arithmetic only on the bounded residue: $125{,}250$ full-row cells on
+$4\le r\le503$ and the remaining fixed-column prefixes.
+Appendix~\ref{sec:repro} maps the computational record.
+
+\section{Odd cycles, Jacobi matrices, and the determinantal point
+process}\label{sec:faces}
+
+\subsection{The parity split}\label{sec:parity}
+
+For $n\ge1$ let $J_n$ be the \emph{sech Jacobi matrix}: the real symmetric
+tridiagonal matrix on the basis $e_0,\dots,e_{n-1}$ with zero diagonal and
+\[
+  (J_n)_{k-1,k}=(J_n)_{k,k-1}=k,\qquad 1\le k\le n-1 .
+\]
+Fix $r\ge2$ and put $n=2r-1$. Ordering the even-indexed sites
+$e_0,e_2,\dots,e_{2r-2}$ before the odd-indexed sites
+$e_1,e_3,\dots,e_{2r-3}$ puts $J_{2r-1}$ in the block form
+\begin{equation}\label{eq:block}
+  J_{2r-1}\;\cong\;
+  \begin{pmatrix} 0 & D_r\\ D_r^{\!\top} & 0\end{pmatrix},
+\end{equation}
+where $D_r\in\R^{r\times(r-1)}$ is the bidiagonal incidence matrix of the parity
+split,
+\begin{equation}\label{eq:Dr}
+  (D_r)_{a,b}=(2b-1)\,\one_{a=b}+2b\,\one_{a=b+1},
+  \qquad 1\le a\le r,\quad 1\le b\le r-1 .
+\end{equation}
+Write $G_r=D_r^{\!\top}D_r$, an $(r-1)\times(r-1)$ symmetric tridiagonal integer
+matrix with
+\begin{equation}\label{eq:Gr}
+  (G_r)_{b,b}=(2b-1)^2+(2b)^2,\qquad (G_r)_{b,b+1}=2b(2b+1).
+\end{equation}
+Equations~\eqref{eq:Dr}--\eqref{eq:Gr} use one-based matrix indices. In the DPP
+formulas below we relabel $G_r$ by the sites $0,\dots,r-2$: site $j$ corresponds
+to column $j+1$ of $D_r$.
+
+\begin{example}[$r=2$ and $r=3$]\label{ex:small}
+For $r=2$,
+\[
+  D_2=\begin{pmatrix}1\\2\end{pmatrix},\qquad G_2=(5),\qquad
+  F_2(u)=\det(uI+G_2)=u+5,\qquad F_2(1)=6=3!,
+\]
+and $\Pi_2(u)=(5+u)/6$. Correspondingly
+$\spec(J_3)=\{0,\pm\sqrt5\}$, so the single positive eigenvalue is
+$\xi_{2,1}=\sqrt5$ and $\theta_{2,1}=1/(1+5)=1/6$, matching the linear
+coefficient of $\Pi_2$. For $r=3$,
+\[
+  D_3=\begin{pmatrix}1&0\\2&3\\0&4\end{pmatrix},\qquad
+  G_3=\begin{pmatrix}5&6\\6&25\end{pmatrix},\qquad
+  F_3(u)=u^2+30u+89,\qquad F_3(1)=120=5! .
+\]
+The three coefficients $89,30,1$ count the permutations of $\{1,\dots,5\}$ with
+$1$, $3$ and $5$ odd cycles respectively.
+\end{example}
+
+\subsection{Three exact representations}
+
+Let $M_n(z)$ be the \emph{wall rows}
+\begin{equation}\label{eq:wall}
+  M_0=1,\qquad M_1=1+z,\qquad M_n=M_{n-1}+n^2zM_{n-2},
+  \qquad \deg M_n=\lceil n/2\rceil,
+\end{equation}
+and put
+\begin{equation}\label{eq:Fr}
+  F_r(u)=u^{\,r-1}M_{2r-2}(1/u)=(2r-1)!\,\Pi_r(u),
+\end{equation}
+so that $F_r$ is monic of degree $r-1$ with $F_r(1)=(2r-1)!$. Let
+$B_n=(I+J_n^2)^{-1}$.
+
+We shall use the first two wall coefficients twice. The recurrence
+\eqref{eq:wall} gives them without a generating function.
+
+\begin{lemma}[terminal wall coefficients]\label{lem:wall12}
+For every $n\ge0$,
+\[
+  [z]M_n=\frac{n(n+1)(2n+1)}6,
+  \qquad
+  [z^2]M_n=
+  \frac{n(n-2)(n-1)(n+1)(20n^2-8n-21)}{360}.
+\]
+\end{lemma}
+
+\begin{proof}
+Write $w_n=[z]M_n$ and $v_n=[z^2]M_n$. Since $[z^0]M_n=1$,
+\eqref{eq:wall} gives
+\[
+  w_n=w_{n-1}+n^2,\qquad v_n=v_{n-1}+n^2w_{n-2}.
+\]
+The displayed polynomials satisfy these recurrences and the initial values
+$w_0=0,w_1=1,v_0=v_1=0$.
+\end{proof}
+
+\begin{theorem}[three faces of $\Pi_r$]\label{thm:three}
+For every $r\ge2$:
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=2.2em]
+\item \emph{combinatorial} ---
+  $\displaystyle F_r(u)=\det(uI+G_r)=\sum_{\pi\in S_{2r-1}}u^{K_r(\pi)}$;
+\item \emph{spectral} --- let $\pm\xi_{r,1},\dots,\pm\xi_{r,r-1}$ together with
+  $0$ be the eigenvalues of $J_{2r-1}$, so that the $\xi_{r,j}>0$ are the
+  $r-1$ positive eigenvalues of $J_{2r-1}$, equivalently the positive zeros of
+  its degree-$(2r-1)$ characteristic polynomial, and equivalently the positive
+  square roots of the eigenvalues of $G_r$. Then, with
+  $\theta_{r,j}=1/(1+\xi_{r,j}^2)$,
+  \[
+    \Pi_r(u)=\prod_{j=1}^{r-1}\bigl((1-\theta_{r,j})+\theta_{r,j}u\bigr);
+  \]
+\item \emph{determinantal} ---
+  $\det\bigl(I+(u-1)B_{2r-1}\bigr)=u\,\Pi_r(u)^2$, while the smaller parity
+  block
+  \[
+    \mathcal K_r=(I+G_r)^{-1}
+  \]
+  satisfies $\det\bigl(I+(u-1)\mathcal K_r\bigr)=\Pi_r(u)$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+The odd-cycle enumerator $A_n(y)=\sum_{\pi\in S_n}y^{o(\pi)}$ has exponential
+generating function $\exp(y\artanh x)/\sqrt{1-x^2}$; differentiating gives
+$(1-x^2)\partial_xA=(y+x)A$ and hence
+\begin{equation}\label{eq:oddrec}
+  A_0=1,\quad A_1=y,\qquad A_{n+1}(y)=y\,A_n(y)+n^2A_{n-1}(y),
+\end{equation}
+which is exactly the continuant recurrence of the consecutive-integer Jacobi
+matrix. Comparing \eqref{eq:oddrec} with \eqref{eq:wall} gives
+$A_n(y)=y^nM_{n-1}(y^{-2})$, so for $n=2r-1$ we get $A_{2r-1}(y)=y\,F_r(y^2)$
+and therefore $F_r(u)=\sum_\pi u^{K_r(\pi)}$, which is the second equality in
+(i). On the spectral side the characteristic polynomial $p_n(X)=\det(XI-J_n)$
+obeys $p_{n+1}=Xp_n-n^2p_{n-1}$, so $p_n(X)=X^nM_{n-1}(-1/X^2)$; in particular
+$p_{2r-1}$ is odd, its zero set is $\{0,\pm\xi_{r,1},\dots,\pm\xi_{r,r-1}\}$,
+and by \eqref{eq:block} the matrix $J_{2r-1}^2$ has parity blocks $D_rD_r^\top$
+and $D_r^\top D_r=G_r$, whose common nonzero spectrum is
+$\{\xi_{r,j}^2\}$. Hence $F_r(u)=\prod_j(u+\xi_{r,j}^2)=\det(uI+G_r)$, which is
+the first equality in (i). Dividing by $F_r(1)=(2r-1)!$ and writing
+$\theta_{r,j}=1/(1+\xi_{r,j}^2)$ gives (ii).
+
+For (iii), $\det(I+(u-1)\mathcal K_r)=\det(uI+G_r)/\det(I+G_r)=\Pi_r(u)$
+directly. The full resolvent splits orthogonally as
+$B_{2r-1}\cong(I+D_rD_r^\top)^{-1}\oplus(I+D_r^\top D_r)^{-1}$; the first block
+has spectrum $\{1,\theta_{r,1},\dots,\theta_{r,r-1}\}$ and the second
+$\{\theta_{r,1},\dots,\theta_{r,r-1}\}$, so
+$\det(I+(u-1)B_{2r-1})=u\Pi_r(u)^2$.
+\end{proof}
+
+Everything in Theorem~\ref{thm:three} follows from \eqref{eq:oddrec} and the
+parity split, and holds for every $r$, not on a checked range.
+
+\subsection{The configuration law}\label{sec:config}
+
+Part (iii) says $K_r$ is equidistributed with the cardinality of the
+determinantal point process on $r-1$ sites with correlation kernel
+$\mathcal K_r$. That process has an exact integer configuration law, which is
+sharper than the cardinality statement and is what makes the determinantal face
+checkable by hand.
+
+\begin{corollary}\label{cor:config}
+Let $X$ be the determinantal point process on $\{0,\dots,r-2\}$ with correlation
+kernel $\mathcal K_r=(I+G_r)^{-1}$, equivalently with $L$-ensemble kernel
+$G_r^{-1}$. Then for every $S\subseteq\{0,\dots,r-2\}$,
+\begin{equation}\label{eq:configlaw}
+  \Pr(X=S)=\frac{\det\bigl((G_r)_{S^c,S^c}\bigr)}{(2r-1)!},
+\end{equation}
+with $\det(\emptyset)=1$, and consequently
+\begin{equation}\label{eq:refine}
+  \#\{\pi\in S_{2r-1}:K_r(\pi)=k\}=\sum_{|S|=k}\det\bigl((G_r)_{S^c,S^c}\bigr).
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+The $L$-ensemble with kernel $L=G_r^{-1}$ has correlation kernel
+$L(I+L)^{-1}=(I+G_r)^{-1}=\mathcal K_r$ and
+$\Pr(X=S)=\det(L_{S,S})/\det(I+L)$. Jacobi's complementary-minor identity gives
+$\det(L_{S,S})=\det((G_r^{-1})_{S,S})=\det((G_r)_{S^c,S^c})/\det G_r$, and
+$\det(I+L)=\det(I+G_r)/\det G_r$, so the two determinants of $G_r$ cancel and
+$\det(I+G_r)=F_r(1)=(2r-1)!$ supplies the stated normalization. Summing
+\eqref{eq:configlaw} over $|S|=k$ and using
+Theorem~\ref{thm:three}(i) gives \eqref{eq:refine}.
+\end{proof}
+
+\begin{example}[$r=3$, by hand]
+With $G_3$ as in Example~\ref{ex:small} and sites $\{0,1\}$, the four
+complementary minors are
+\[
+  \det(G_3)=89,\quad (G_3)_{1,1}=25,\quad (G_3)_{0,0}=5,\quad \det(\emptyset)=1,
+\]
+attached to $S=\emptyset,\{0\},\{1\},\{0,1\}$ respectively. They sum to
+$120=5!$, and aggregating by $|S|$ returns $89,\,30,\,1$, which are the
+coefficients of $F_3$ as they must be by \eqref{eq:refine}.
+\end{example}
+
+\subsection{The coupling}\label{sec:coupling}
+
+Corollary~\ref{cor:config} is an equidistribution statement. It is realized by an
+explicit map, which we now give: the determinantal configuration is a
+\emph{matching statistic} of the permutation.
+
+Let $\mathsf{Path}_n$ be the path on vertices $1,\dots,n$ and give edge
+$\{j,j+1\}$ a set of $j^2$ colours. By a \emph{coloured matching} of
+$\mathsf{Path}_n$ we mean a matching together
+with a colour for each of its edges; the unmatched vertices are its
+\emph{monomers}.
+
+\begin{theorem}[peeling bijection]\label{thm:peel}
+There is a bijection between $S_n$ and the coloured matchings of
+$\mathsf{Path}_n$ under
+which the number of monomers equals $o(\pi)$.
+\end{theorem}
+
+\begin{proof}
+Peel the maximum. If $\pi(n)=n$, delete $n$ and leave path vertex $n$ a monomer.
+Otherwise put $a=\pi^{-1}(n)$ and $b=\pi(n)$; delete the two letters $a$ and $n$,
+bypassing them in their cycle so that $\pi^{-1}(a)\mapsto b$, standardize the
+result to a permutation of $[n-2]$, and place a dimer on the terminal edge
+$\{n-1,n\}$ coloured by the pair $(a,b)\in[n-1]^2$. This is the combinatorial
+reading of
+\[
+  A_n(y)=y\,A_{n-1}(y)+(n-1)^2A_{n-2}(y),
+\]
+and it is reversible as follows. Given the smaller permutation $\sigma$, let
+$E=[n]\setminus\{a,n\}$, let $\phi:E\to[n-2]$ be the increasing bijection, and
+unstandardize to $\tau=\phi^{-1}\sigma\phi$ on $E$. If $b=a$, adjoin the
+transposition $a\leftrightarrow n$. If $b\ne a$, then $b\in E$; with
+$c=\tau^{-1}(b)$, replace the arrow $c\mapsto b$ by
+$c\mapsto a\mapsto n\mapsto b$. These two cases uniquely recover the original
+permutation and are visibly inverse to the deletion. Deleting a fixed point
+removes one odd cycle; deleting the two-letter segment $(a,n)$ from its cycle
+drops the length by $2$ and so preserves its parity. Hence each monomer accounts
+for exactly one odd cycle.
+\end{proof}
+
+Now take $n=2r-1$, so $\mathsf{Path}_n$ has $r$ odd and $r-1$ even vertices,
+and set
+\begin{equation}\label{eq:coupling}
+  S(\pi)=\bigl\{\,b\in\{0,\dots,r-2\}\;:\;2b+2\text{ is an unmatched even
+  vertex}\,\bigr\}.
+\end{equation}
+
+\begin{theorem}[the configuration is a matching statistic]\label{thm:coupling}
+For every $r\ge2$ and every $S\subseteq\{0,\dots,r-2\}$,
+\[
+  \bigl|S(\pi)\bigr|=K_r(\pi)
+  \qquad\text{and}\qquad
+  \#\{\pi\in S_{2r-1}:S(\pi)=S\}=\det\bigl((G_r)_{S^c,S^c}\bigr).
+\]
+Consequently $\Pr(S(\pi)=S)$ is the law of Corollary~\ref{cor:config}, and
+\eqref{eq:coupling} couples the uniform permutation to the determinantal
+configuration on one probability space.
+\end{theorem}
+
+\begin{proof}
+Every edge of $\mathsf{Path}_n$ joins an odd vertex to an even one, so each dimer covers one
+of each. Writing $o=o(\pi)$ for the number of monomers, the monomers at positions
+$p_1<\dots<p_o$ must leave gaps of even length, so $p_1-1$, $p_{i+1}-p_i-1$ and
+$n-p_o$ are all even; hence $p_1$ is odd, the parities alternate, and $p_o$ is
+odd. Therefore $o$ is odd and exactly $(o-1)/2$ of the monomers sit at even
+vertices, which is the first claim.
+
+For the second, fix $S$ and let $T=S^c$, so the matched even vertices are exactly
+those indexed by $T$. For each odd row set $R$ with $|R|=|T|$, the bipartite
+graph underlying $D_{R,T}$ is a disjoint union of paths. It has at most one
+perfect matching, since an endpoint forces its incident edge and induction
+continues down each component. Thus $\det(D_{R,T})$ is either zero or, up to
+sign, the product of the weights of the corresponding path matching. Its square
+is exactly the number of colour choices, because an edge $\{j,j+1\}$ has $j^2$
+colours. Summing over $R$ therefore counts precisely the coloured matchings with
+trace $T$, and Cauchy--Binet gives
+\[
+  \#\{\pi:S(\pi)=S\}=\sum_R\det\bigl(D_{R,T}\bigr)^2
+  =\det\bigl((D_r^{\!\top}D_r)_{T,T}\bigr)=\det\bigl((G_r)_{T,T}\bigr).
+\qedhere
+\]
+\end{proof}
+
+\begin{remark}
+Because $D_r$ is bidiagonal, the minors $\det(D_{R,T})$ appearing above are
+indexed by a single switch point on each maximal run of $T$, which makes
+Theorem~\ref{thm:coupling} checkable by hand on small rows. The weighted-matching
+reading of these continuants is classical Cayley-continuant
+territory~\cite{chenWang2024}; the step taken here is the projection onto unmatched
+\emph{even} vertices, which is what turns it into the determinantal coupling.
+\end{remark}
+
+\begin{remark}
+The inequalities of this paper still see only the cardinality of $X$ and never
+its correlations; Theorem~\ref{thm:coupling} is not used in the proof of
+Theorem~\ref{thm:sq}.
+\end{remark}
+
+\subsection{Normalization, parity, and conjugation}
+
+Four nearby objects must be kept distinct.
+
+\begin{remark}[monic versus normalized]
+$F_r$ is monic; $\Pi_r$ is not. $\Pi_r$ is normalized by $\Pi_r(1)=1$ and has
+leading coefficient $1/(2r-1)!$. Monicity of $F_r$ is structural, since
+$\det(uI+G_r)$ is monic by construction. Note also that $\det(uI+G_r)$ is not
+the characteristic polynomial $\chi_{G_r}$ of $G_r$ but that polynomial
+evaluated at $-u$, up to sign: $\det(uI+G_r)=(-1)^{r-1}\chi_{G_r}(-u)$.
+Similarly, the object in Theorem~\ref{thm:three}(iii) is a
+cardinality-generating determinant $\det(I+(u-1)\,\cdot\,)$, not
+$\det(uI-\,\cdot\,)$.
+\end{remark}
+
+\begin{remark}[the parity blocks carry different laws]
+The odd-index block, of size $r-1$, has generating function $\Pi_r$ and law
+$K_r$. The even-index block, of size $r$, has generating function $u\Pi_r$ and
+law $1+K_r$. That extra factor $u$ is a Bernoulli factor with parameter $1$,
+that is, a point present with probability one. It exists because $J_{2r-1}$ has
+odd size, which forces $\dim\ker J_{2r-1}=1$; and it belongs to the even block
+rather than the odd one because the corresponding null vector is supported
+entirely on the even-index coordinates. The full $(2r-1)$-point kernel has
+generating function $u\Pi_r^2$ and law $1+K_r(\pi)+K_r(\sigma)$ for two
+\emph{independent} uniform permutations. The blocks are therefore not
+interchangeable, and it is the smaller block $\mathcal K_r$ whose cardinality is
+$K_r$.
+\end{remark}
+
+\begin{remark}[equality in distribution]
+The Bernoulli decomposition in Theorem~\ref{thm:three}(ii) is an equality
+\emph{in distribution}, on a separate probability space. It is not a pointwise
+decomposition of $K_r$ into independent functions of one permutation.
+\end{remark}
+
+\begin{remark}[the deposited kernel is a conjugate]\label{rem:conj}
+The kernel released in panel two~\cite{greenpathdpp} is not $B_n$ but its
+signature conjugate
+\[
+  \widetilde B_n=DB_nD=(I-\Omega_n^2)^{-1},
+  \qquad D=\operatorname{diag}\bigl((-1)^{\lfloor i/2\rfloor}\bigr),
+  \quad D^2=I,
+\]
+where $\Omega_n$ is the \emph{antisymmetric} tridiagonal matrix carrying the
+same off-diagonal entries $1,\dots,n-1$ that $J_n$ carries symmetrically, so
+that $\Omega_n^2=-DJ_n^2D$. Cardinality statements and principal-minor
+statements --- hence all of Theorem~\ref{thm:three}(iii) and
+Corollary~\ref{cor:config} --- are invariant under that conjugation, since
+$\det((DAD)_S)=\det(D_S)^2\det(A_S)$. \emph{Total nonnegativity is not}: it is
+$\widetilde B_n$ that is the totally nonnegative min-kernel the deposited
+sampling algorithms exploit, while $B_n=(I+J_n^2)^{-1}$ carries alternating
+signs and is not. Accordingly, the released sampler is linked through
+$\widetilde B_n=DB_nD$, not through $B_n$ itself.
+\end{remark}
+
+\section{Classical structure and the new comparison}\label{sec:classical}
+
+The polynomial family is classical; the new result begins with the adjacent-row
+coefficient comparison in \S\ref{sec:intro}. Reversed, the
+wall rows \eqref{eq:wall} are the rows of the triangle counting permutations by
+number of odd cycles: writing $T(n,k)$ for the number of permutations of
+$\{1,\dots,n\}$ with exactly $k$ odd cycles, one has $[z^j]M_{n-1}(z)=T(n,n-2j)$.
+This is OEIS \textbf{A060524}~\cite{oeisA060524}, contributed in 2001, whose
+recorded row recurrence $t(n,x)=x\,t(n-1,x)+(n-1)^2t(n-2,x)$ is \eqref{eq:wall}
+after reversal, and which the entry itself identifies as the Sheffer triangle
+for $(1/\cosh t,\tanh t)$.
+
+Every link in the chain is in the literature. The combinatorial model for the
+coefficients is Viennot's~\cite{viennot1983}, from Example~21 of chapter~II of
+his 1983 lecture notes, by specializing the bijection between \emph{histoires de
+Laguerre} and permutations. Hetyei~\cite{hetyei2010} states it in the form used
+here: the monic Meixner polynomials of the second kind $\mathsf{M}_n(x;\delta,\eta)$
+(sans-serif, not the wall rows $M_n(z)$ of \eqref{eq:wall})
+satisfy $b_n=(2n+\eta)\delta$ and $\lambda_n=(\delta^2+1)n(n+\eta-1)$, so
+$(\delta,\eta)=(0,1)$ gives precisely $b_n=0$, $\lambda_n=n^2$, and ``up to
+sign, the coefficient of $x^j$ in $\mathsf{M}_n(x;0,1)$ is the number of permutations of
+$\{1,2,\dots,n\}$ having $j$ odd cycles''; his Lemma~1.3 identifies the moments
+of that family as the secant numbers $E_{2n}$. Mwafise and
+Barry~\cite{mwafiseBarry2021} name the array on the generating-function side:
+the inverse of the exponential Riordan array $[\operatorname{sech}x,\tanh x]$ is
+an orthogonal-polynomial coefficient array, they identify it as A060524 and as
+the odd-cycle count, and they print both $P_{n+1}(x)=xP_n(x)+n^2P_{n-1}(x)$ and
+its imaginary-argument twin $Q_{n+1}(x)=xQ_n(x)-n^2Q_{n-1}(x)$ obtained by
+$Q_n(x)=P_n(ix)/i^n$. The rotation is not cosmetic: $P_2(t)=t^2+1$ has nonreal
+zeros, so $P_n$ itself is not an orthogonal polynomial sequence for a positive
+measure on the line; it is $Q_n$ that is. Barry's earlier
+treatment~\cite{barry2010} supplies the general mechanism by which a permutation
+statistic becomes an orthogonal-polynomial coefficient array with an
+LDU-factorized Hankel matrix of moments.
+
+The measure and the continued fraction are older still. The secant numbers are
+the even moments of a sech density,
+$E_{2n}=\int_0^\infty y^{2n}\operatorname{sech}(\pi y/2)\,dy$, and their
+generating function is the J-fraction with coefficients $\alpha_n=n^2$; as
+Sokal~\cite{sokal2020} records, these formulae were found by Stieltjes in 1889
+and by Rogers in 1907, and given combinatorial proofs by
+Flajolet~\cite{flajolet1980} in 1980. Deb and Sokal~\cite{debSokal2024} reprint
+the same fraction with the same attribution. On the determinantal side, the
+cardinality theorem for a determinantal point process with Hermitian
+contraction kernel --- that $|X|$ is a sum of independent Bernoulli variables
+with the eigenvalues as parameters --- is textbook; see for instance
+Kulesza and Taskar~\cite{kuleszaTaskar2012}.
+
+Together these results give the one-row facts used here: real-rootedness, the
+Poisson--binomial law and Newton log-concavity. They do not control adjacent-row
+curvature in the coefficient index: root-variable orthogonality supplies
+interlacing, not signs of coefficient differences. Section~\ref{sec:analytic}
+supplies that missing structure.
+
+\subsection{Neighbouring results}\label{sec:priorart}
+
+The nearest Tur\'an inequalities are close in vocabulary and different in
+index. Krasikov~\cite{krasikov2011} compares consecutive polynomial degrees
+pointwise in the root variable. Riordan-array log-concavity and the
+coefficientwise Hankel-total-positivity results of Zhu~\cite{zhu2021,zhu2022,zhu2026}
+concern one row or Hankel minors formed across rows. The S-fractions of Deb and
+Sokal~\cite{debSokal2024} concern the continued-fraction side. None of these is
+a fixed-coefficient comparison of two adjacent rows through a Tur\'an
+decrement.
+
+The determinantal cardinality theorem itself is classical~\cite{kuleszaTaskar2012}.
+Here it identifies the Bernoulli parameters with the spectrum of the integer
+Jacobi section; Theorem~\ref{thm:coupling} adds the explicit configuration map.
+
+\section{The algebraic reduction}\label{sec:reduction}
+
+\subsection{Rows, ratios, and the level parameter}
+
+Throughout, $F_r$ is the monic row \eqref{eq:Fr} of degree $r-1$ and
+$\Pi_r=F_r/(2r-1)!$. Define the \emph{factorially scaled row}
+\begin{equation}\label{eq:brk}
+  b_{r,k}=(2k+1)!\,[u^k]F_r(u),\qquad 0\le k\le r-1,
+\end{equation}
+which is a positive integer, and the \emph{scaled row ratios}
+\begin{equation}\label{eq:Xrk}
+  X_{r,k}=\frac{b_{r,k}}{b_{r,k-1}},\qquad 1\le k\le r-1 .
+\end{equation}
+Finally put
+\begin{equation}\label{eq:ar}
+  a_r=X_{r,1},
+\end{equation}
+the \emph{level parameter} of the row.
+
+The scaling is characterized by the shape row
+\begin{equation}\label{eq:shape}
+  c_k(a)=\frac{a^k}{(2k+1)!},
+\end{equation}
+for which every scaled ratio $X_k$ is exactly $a$.
+
+It is convenient to record how $a_r$ is computed. Write
+$A_k(n)=[z^{\lceil n/2\rceil-k}]M_n$ for the top reverse diagonals of the wall
+rows, so that $a_r=6A_1(2r-2)/A_0(2r-2)$ by \eqref{eq:brk}--\eqref{eq:ar}. These
+satisfy a closed triangular recurrence with strictly positive coefficients,
+\begin{equation}\label{eq:revdiag}
+  A_k(2m)=A_k(2m-1)+(2m)^2A_k(2m-2),
+  \qquad
+  A_k(2m+1)=A_{k-1}(2m)+(2m+1)^2A_k(2m-1),
+\end{equation}
+in which $A_0$ decouples, with $A_0(2m+1)=((2m+1)!!)^2$.
+
+\subsection{Cell-local variables}
+
+Fix a cell $(r,t)$ and let $F=(F_0,\dots,F_{r-1})$ be the row $F_r$ normalized
+so that $F_{t-1}=1$. Sans-serif letters denote quantities local to that cell.
+Put
+\begin{equation}\label{eq:xyz}
+  x=\frac{F_t}{F_{t-1}},\qquad
+  y=\frac{F_{t-2}}{F_{t-1}},\qquad
+  z=\frac{F_{t+1}}{F_t},\qquad
+  U=xy=\frac{F_tF_{t-2}}{F_{t-1}^2},\qquad
+  W=\frac{z}{x}=\frac{F_{t+1}F_{t-1}}{F_t^2},
+\end{equation}
+so $U$ and $W$ are the two adjacent Newton ratios at the cell, and by
+\eqref{eq:Xrk},
+\begin{equation}\label{eq:xX}
+  x=\frac{X_{r,t}}{2t(2t+1)},\qquad
+  U=\frac{(t-1)(2t-1)}{t(2t+1)}\cdot\frac{X_{r,t}}{X_{r,t-1}},\qquad
+  W=\frac{t(2t+1)}{(t+1)(2t+3)}\cdot\frac{X_{r,t+1}}{X_{r,t}} .
+\end{equation}
+The derived cell scalars are
+\begin{equation}\label{eq:cellscalars}
+\begin{aligned}
+  \ls&=(1-U)+x(1-UW)+x^2(1-W), &\qquad \lv&=1-U,\\
+  \la&=x(1-UW)+2x^2(1-W),      &\qquad \ld&=x^2+U+2UWx,\\
+  C_1&=2\ls(t-1)+\la,          &\qquad C_2&=\ls(t-1)^2+\la(t-1)+\ld .
+\end{aligned}
+\end{equation}
+Equivalently $\ls=1+x+x^2-xy-xz-xyz$ and $\lv=1-xy$.
+
+\subsection{Lowering profiles}
+
+Let $m=r-1$ and compare the row $F_r$ with its predecessor through the
+\emph{lowering profile}
+\begin{equation}\label{eq:profile}
+  \mu_k=\frac{F^-_k}{F_k}=1-\frac{L_k}{r},\qquad \ell=L_1,
+  \qquad \mu^0_k=1-\frac{k\ell}{r},
+\end{equation}
+where the predecessor is scaled so that $F^-_0=F_0$, and $\mu^0$ is the
+\emph{linear profile} with the same first lowering. Here and below,
+$(\mu\odot F)_k=\mu_kF_k$ denotes pointwise multiplication, while
+$\Delta f_k=f_{k+1}-f_k$ is the forward difference in the coefficient index.
+The admissible profiles are constrained by
+\begin{equation}\label{eq:L3}
+  L_0=0,\qquad L_m=r,\qquad
+  q_k=\Delta^2L_k\ge0\ (0\le k\le m-2),\qquad
+  q_{k+1}\le q_k\ (0\le k\le m-3),
+\end{equation}
+that is, $L$ is convex with decreasing curvature and pinned at both ends.
+Theorem~\ref{thm:lin} also assumes the natural orientation $\ell=L_1\ge0$;
+Lemma~\ref{lem:firstlower} proves it strictly for the adjacent-row profile. The
+point of the next lemma is that this profile really has the curvature
+hypotheses.
+
+\begin{lemma}[curvature of the adjacent-row profile]\label{lem:profilecurv}
+The lowering profile defined by \eqref{eq:profile} satisfies \eqref{eq:L3}.
+\end{lemma}
+
+\begin{proof}
+Put $p_{m,k}=[u^k]\Pi_{m+1}(u)$, $s_m=p_{m,0}$ and
+$\eta_k=p_{m-1,k}/p_{m,k}$, where $m=r-1$. The chosen normalization gives the
+exact relation
+\[
+  \frac{L_k}{r}=1-\frac{s_m}{s_{m-1}}\eta_k.
+\]
+The odd coefficient triangle is totally nonnegative by the planar-network
+argument of Lemma~\ref{lem:tpcoeff}. Its monic rows
+$P_m=F_{m+1}$ also satisfy the positive same-column lowering
+\[
+  (m-u\partial_u)P_m(u)=\sum_{j=0}^{m-1}a_{m,j}P_j(u),
+  \qquad
+  a_{m,j}=\frac{(2m+1)!(2m+2j+3)}
+  {2(2j+1)!(2m-2j-1)(2m-2j+1)}>0.
+\]
+Write $\vartheta=u\partial_u$ and restrict coefficient-row determinants to the
+displayed consecutive columns. After positive column factors are removed,
+\[
+ \det(P_m,\vartheta P_m,P_{m-1})_{k:k+2}
+   =c_{m,k}\Delta^2\eta_k,
+ \qquad
+ \det(P_m,\vartheta P_m,\vartheta^2P_m,P_{m-1})_{k:k+3}
+   =2d_{m,k}\Delta^3\eta_k,
+\]
+with $c_{m,k},d_{m,k}>0$. Substituting the lowering identity in the first
+determinant turns it into the negative of a positive combination of minors of
+the coefficient triangle, and gives $\Delta^2\eta_k\le0$. In the four-column
+expansion, paired terms carry an adjacent difference of connection ratios.
+Clearing its positive denominator leaves $36$ strictly positive integer
+coefficients, so $\Delta^3\eta_k\ge0$.
+
+The displayed relation makes $L_k/r$ a decreasing affine function of $\eta_k$.
+Therefore $\Delta^2L_k\ge0$ and
+$\Delta^3L_k\le0$, the latter being exactly $q_{k+1}\le q_k$. The endpoint
+coefficients give $L_0=0$ and $L_m=r$.
+\end{proof}
+
+\begin{lemma}[first lowering]\label{lem:firstlower}
+With the convention $a_1=0$, every $r\ge2$ satisfies
+\[
+  \ell=\frac{r(a_r-a_{r-1})}{a_r},
+  \qquad
+  \bigl[r(a_r-a_{r-1})\bigr]^2-a_r>\frac{57}{20}.
+\]
+Consequently
+\begin{equation}\label{eq:ellbounds}
+  \frac{\sqrt{a_r+57/20}}{a_r}<\ell\le\frac{r}{r-1}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Since $a_r=6F_{r,1}/F_{r,0}$ and the predecessor is normalized to have the
+same constant coefficient, the formula for $\ell=L_1$ is immediate from
+\eqref{eq:profile}. For the strict estimate put $m=r-1$,
+$E_m=a_r/6$, $c_m=E_m-E_{m-1}$, $b_m=(m+1)c_m$ and
+$H_m=6b_m^2-E_m$. Then the displayed defect is $6H_m$.
+
+For the tail, put
+\[
+ h_n=\left(\frac{(2n)!!}{(2n-1)!!}\right)^2,
+ \quad T_n=1+\sum_{j=1}^n h_j^{-1},
+ \quad R_n=h_nT_n,
+\]
+and
+\[
+ w_n=\frac{h_nT_n^2}{(2n+1)^2},\quad
+ \mathcal P_n=\sum_{i=0}^nw_i,\quad g_n=\frac{h_n}{2n+1},\quad
+ \mathcal F_n=g_n^2T_n^3,\quad \mathcal C_n=\mathcal P_n-\mathcal F_n/3.
+\]
+Writing $\theta=(T_n-T_{n-1})/T_{n-1}\le1/(4n)$, direct cancellation gives
+\[
+ \frac{\mathcal F_n-\mathcal F_{n-1}-3w_n}
+      {g_n^2T_{n-1}^3}
+ =\frac{8n^2-1}{16n^4}-\theta^2(3+2\theta)
+ \ge\frac{10n^2-n-2}{32n^4}>0.
+\]
+Thus $\mathcal C_n$ decreases. The exact seed
+$\mathcal C_{1000}<-1/5$ implies, for $m\ge1001$,
+\[
+ 0\le b_m\le B_m=\frac{m+1}{R_m}\left[
+ \frac{(2m-1)^2(R_m-1)^2}{48m^4}
+ -\frac{h_m}{5(R_m-1)}\right].
+\]
+The elementary bounds $R_m\ge4m+1$, $3m<h_m<4m$ and
+$R_m\le2m^{5/4}$ give $B_m\ge3/16$. With
+\[
+ \mathcal D=(2m+1)^2+4(m+1)^2R_m,\qquad
+ \alpha=\frac{(m+2)(R_m-1)(2m+1)^2}{(m+1)\mathcal D},\qquad
+ \beta=\frac{(m+2)R_m}{\mathcal D},
+\]
+the recurrence is $b_{m+1}=\alpha b_m+\beta$, with $0<\alpha<1$. If
+$d=\beta-(1-\alpha)B_m$, clearing denominators reduces
+$d\ge1/(12m)$ to a quartic, which the bounds above put above
+$32m^5(6m^3-5)>0$.
+Since $b_1=2/5$ and $\alpha,\beta>0$, the recurrence also gives $b_m>0$ on
+every row. Thus $c_m>0$, so $a_r>a_{r-1}$ and $\ell>0$; this orients the
+square root in \eqref{eq:ellbounds}.
+
+Finally
+\[
+ H_{m+1}-H_m
+ =6\bigl[(\alpha b_m+\beta)^2-b_m^2\bigr]
+  -\frac{\alpha b_m+\beta}{m+2}.
+\]
+As a function of $b_m$, the right-hand side is concave on $[0,B_m]$; it is
+positive at $0$, and at $B_m$ it is at
+least $[48mB_m+2-m]/[24m^2(m+2)]>0$. Hence $H_m$ increases for
+$m\ge1001$. Exact rational arithmetic verifies $H_m>19/40$ for
+$1\le m\le1001$ (the minimum is at $m=143$), proving the strict estimate on
+every row. Finally, convexity of $L$, together with $L_0=0$ and
+$L_{r-1}=r$, puts its first slope below the average slope and gives
+$\ell\le r/(r-1)$.
+\end{proof}
+
+\subsection{A cross-row consequence of the profile curvature}
+
+The curvature statements just proved say more about the array than the
+square-tail argument consumes. The following is immediate from them and is
+recorded because it is the clean cross-row comparison in the coefficient index.
+
+\begin{corollary}[cross-row ratio]\label{cor:crossrow}
+Let $\mu_k=1-L_k/r$ be the lowering profile \eqref{eq:profile}. For
+$1\le k\le r-2$,
+\[
+  \frac{X_{r-1,k}}{X_{r,k}}=\frac{\mu_k}{\mu_{k-1}},
+\]
+the array is strictly increasing across rows, $X_{r,k}>X_{r-1,k}$, and
+$k\mapsto X_{r,k}/X_{r-1,k}$ is strictly increasing. Equivalently, the
+adjacent row-index minors of the $X$-array have a strict sign.
+\end{corollary}
+
+\begin{proof}
+By Lemma~\ref{lem:profilecurv} and Lemma~\ref{lem:firstlower}, $L_0=0$,
+$L_1=\ell>0$ and $\Delta^2L_k\ge0$, so $L$ is strictly increasing and $\mu$ is
+strictly decreasing and positive on the stated range; the displayed identity is
+\eqref{eq:profile} read as a quotient, and $X_{r,k}>X_{r-1,k}$ follows. For the
+monotone quotient write $M=\mu_{k-1}$, let $p=(L_k-L_{k-1})/r>0$ be the current
+increment and $p+q$ with $q\ge0$ the next, so that $\mu_k=M-p$ and
+$\mu_{k+1}=M-2p-q$. Then
+\[
+  \mu_k^2-\mu_{k-1}\mu_{k+1}=p^2+Mq>0,
+\]
+so $\mu$ is strictly log-concave and $\mu_{k-1}/\mu_k$ strictly increases.
+\end{proof}
+
+The hypothesis is the proved curvature of the lowering profile, not a total
+positivity assertion about the connection kernels of the derivative and
+lowering identities: those kernels are \emph{not} totally positive, and their
+exact $2\times2$ minors occur with both signs. The usable positivity lives in
+the coefficient triangle and in the profile curvature it induces.
+
+\subsection{Symbol table}\label{sec:symbols}
+
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\toprule
+symbol & meaning\\
+\midrule
+$K_r,\ o(\pi)$ & odd-cycle statistic $(o(\pi)-1)/2$; number of odd cycles\\
+$M_n(z)$ & wall rows \eqref{eq:wall}\\
+$F_r,\ \Pi_r$ & monic row \eqref{eq:Fr}; its normalization $F_r/(2r-1)!$\\
+$J_n,\ \Omega_n$ & symmetric sech Jacobi matrix; its antisymmetric twin\\
+$D_r,\ G_r$ & parity incidence matrix \eqref{eq:Dr}; Gram matrix $D_r^\top D_r$\\
+$\xi_{r,j},\ \theta_{r,j}$ & positive eigenvalues of $J_{2r-1}$; $1/(1+\xi_{r,j}^2)$\\
+$B_n,\ \widetilde B_n,\ \mathcal K_r$ & $(I+J_n^2)^{-1}$; its conjugate $DB_nD$;
+   parity kernel $(I+G_r)^{-1}$\\
+$L(f)_t$ & coefficientwise Tur\'an operator \eqref{eq:Lop}\\
+$S_{r,t},V_{r,t},d_{r,t},\rho$ & the derived quantities \eqref{eq:SVd},
+   \eqref{eq:rho}\\
+$b_{r,k},\ X_{r,k},\ a_r$ & scaled row \eqref{eq:brk}; ratios \eqref{eq:Xrk};
+   level parameter $X_{r,1}$\\
+$\Delta_r$ & first decrement $X_{r,1}-X_{r,2}$\\
+$x,y,z,U,W$ & cell-local ratios \eqref{eq:xyz}\\
+$\ls,\lv,\la,\ld,C_1,C_2$ & cell-local scalars \eqref{eq:cellscalars}\\
+$L_k,\ \mu_k,\ \ell$ & lowering profile \eqref{eq:profile}\\
+$\sigma,\ \sigma_{\mathrm{lin}}$ & predecessor-row analogue of $\ls$; its linear-profile value\\
+$A_k(n),\ R_m$ & top reverse diagonals \eqref{eq:revdiag}; normalizer ladder \eqref{eq:Rlad}\\
+$\varepsilon,\ \psi$ & normalizer scalar; normalized cross-row surplus \eqref{eq:psi}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Three symbols in \S\ref{sec:classical} belong to the cited sources and are used
+nowhere else: $P_n,Q_n$ for the Mwafise--Barry pair, $E_{2n}$ for the secant
+numbers, and $\mathsf{M}_n(x;\delta,\eta)$ for the monic Meixner polynomials of
+the second kind. That last one is written with a sans-serif $\mathsf{M}$
+throughout precisely because it is \emph{not} the wall row $M_n(z)$ of
+\eqref{eq:wall}; the two carry the same letter in their respective literatures
+and are different objects.
+
+\section{Analytic inequalities on the ratio layer}\label{sec:analytic}
+
+\subsection{Monotonicity and convexity of the scaled ratios}
+
+\begin{lemma}[total positivity in the coefficient index]\label{lem:tpcoeff}
+The triangular array $\bigl([u^k]F_r\bigr)_{r\ge1,\,k\ge0}$ is totally
+nonnegative, and so is the column-scaled array $B=(b_{r,k})$ of \eqref{eq:brk}.
+\end{lemma}
+
+\begin{proof}
+The odd-cycle array is the odd parity block of the exponential Riordan array
+$[(1-x^2)^{-1/2},\artanh x]$. Its inverse, after the checkerboard signs are
+removed, is the odd block of $[\sec x,\tan x]$, which is the path matrix of an
+acyclic planar network in which up-steps carry weight $1$ and a down-step from
+height $h$ carries weight $h^2$. By the Lindstr\"om lemma that inverse block is
+totally nonnegative, and Jacobi's complementary-minor identity together with the
+two checkerboard sign matrices makes every minor of the original odd block
+nonnegative. Multiplying column $k$ by $(2k+1)!>0$ preserves the sign of every
+minor.
+\end{proof}
+
+\begin{theorem}[ratio signs]\label{thm:ratiosign}
+For every $r\ge3$,
+\[
+  X_{r,k-1}\ge X_{r,k}\quad(2\le k\le r-1),
+  \qquad
+  X_{r,k-1}-2X_{r,k}+X_{r,k+1}\ge0\quad(2\le k\le r-2).
+\]
+\end{theorem}
+
+\begin{proof}
+Two ingredients. The first is Lemma~\ref{lem:tpcoeff}: the array $B=(b_{r,k})$
+is totally nonnegative.
+
+Second, two exact lowering identities connect a row to the rows strictly below
+it. Twice differentiating the bivariate generating function of $A_n(y)$
+multiplies it by $\artanh(x)^2$; writing $H^{\mathrm o}_d=\sum_{i=0}^{d-1}
+1/(2i+1)$ and using $[x^{2d}]\artanh(x)^2=H^{\mathrm o}_d/d$, coefficient
+extraction gives the \emph{positive lowering}
+\begin{equation}\label{eq:DER}
+  b_{r,k+1}=\sum_{j=1}^{r-1}\delta_{r,j}\,b_{j,k},
+  \qquad
+  \delta_{r,j}=\frac{(2r-1)!}{(2j-1)!}\cdot\frac{H^{\mathrm o}_{r-j}}{r-j},
+\end{equation}
+and the second lowering, unchanged by the column scaling, is
+\begin{equation}\label{eq:LOW}
+  (r-1-k)\,b_{r,k}=\sum_{j=1}^{r-1}\ell_{r,j}\,b_{j,k},
+  \qquad
+  \ell_{r,j}=\frac{(2r-1)!\,(2r+2j-1)}
+                  {2\,(2j-1)!\,(2r-2j-1)(2r-2j+1)} .
+\end{equation}
+Both connection sequences are strictly positive.
+
+Let $Sb_r$ denote the shifted row $(Sb_r)_k=b_{r,k+1}$. By \eqref{eq:DER} it is
+a positive combination of rows strictly below $r$, so total nonnegativity forces,
+for $0\le k\le r-3$, the $2\times2$ minor
+$\det\binom{b_{r,k}\ \ b_{r,k+1}}{(Sb_r)_k\ (Sb_r)_{k+1}}\le0$.
+Dividing by $b_{r,k}b_{r,k+1}>0$ and reindexing gives the first sign.
+
+For convexity, let $Kb_{r,k}=k\,b_{r,k}$. On three consecutive columns, for
+$0\le k\le r-4$,
+\[
+  \det(b_r,Kb_r,Sb_r)
+   =b_{r,k}b_{r,k+1}b_{r,k+2}\bigl[X_{r,k+3}-2X_{r,k+2}+X_{r,k+1}\bigr].
+\]
+Let $(Lb_r)_k=\sum_{j<r}\ell_{r,j}b_{j,k}$, so \eqref{eq:LOW} gives
+$Kb_r=(r-1)b_r-Lb_r$; the repeated row drops out,
+and expanding $-\det(b_r,Lb_r,Sb_r)$ and pairing indices $i<j$ leaves a sum of
+terms $[\ell_{r,j}\delta_{r,i}-\ell_{r,i}\delta_{r,j}]\det(b_i,b_j,b_r)$. Each
+minor is nonnegative by total nonnegativity, so it suffices to sign the bracket,
+that is, to show $\delta_{r,j}/\ell_{r,j}$ is decreasing in $j$ at fixed $r$.
+Direct cancellation in \eqref{eq:DER}--\eqref{eq:LOW} gives, with $d=r-j$,
+\begin{equation}\label{eq:R}
+  \frac{\delta_{r,j}}{\ell_{r,j}}
+   =\frac{2\,(4d^2-1)\,H^{\mathrm o}_d}{d\,(4r-2d-1)} .
+\end{equation}
+Writing $H=H^{\mathrm o}_d$ and $s=j-1\ge0$, so that $r=d+s+1$, and using
+$H^{\mathrm o}_{d+1}=H^{\mathrm o}_d+1/(2d+1)$, the increment of \eqref{eq:R} in
+$d$ is
+\[
+  \frac{2\bigl[N_1+N_2\bigr]}{d(d+1)(2d+4s+1)(2d+4s+3)},
+\]
+where
+\[
+  N_1=H\bigl(16d^3+16d^2s+28d^2+16ds+12d+4s+1\bigr),
+  \qquad
+  N_2=4d^3+8d^2s+12d^2+12ds+9d,
+\]
+whose twelve numerator coefficients are all strictly positive. So \eqref{eq:R}
+increases with $d$ and hence decreases with $j$, every bracket is nonnegative,
+and the $3\times3$ determinant is nonnegative. Reindexing $k+2$ as $k$ gives
+the second assertion.
+\end{proof}
+
+\begin{corollary}[corridor]\label{cor:corridor}
+Put $\Delta_r=X_{r,1}-X_{r,2}$. For every $r\ge3$,
+\[
+  0\le X_{r,k-1}-X_{r,k}\le\Delta_r\quad(2\le k\le r-1),
+  \qquad
+  a_r-(k-1)\Delta_r\le X_{r,k}\le a_r\quad(1\le k\le r-1).
+\]
+\end{corollary}
+
+\begin{proof}
+Convexity makes the first differences $X_{r,k-1}-X_{r,k}$ nonincreasing in $k$
+and monotonicity makes them nonnegative, so each is bounded by the first one,
+$\Delta_r$. Summing gives the second display.
+\end{proof}
+
+Corollary~\ref{cor:corridor} reduces every decrement on a row to the single
+level-2 quantity $\Delta_r$. That is what the next theorem bounds.
+
+\subsection{The global decrement bound}\label{sec:corridor}
+
+\begin{theorem}[decrement bound]\label{thm:corridor}
+For every $r\ge3$, $\;0\le\Delta_r<5$. Consequently, throughout every row,
+\begin{equation}\label{eq:five}
+  0\le X_{r,k-1}-X_{r,k}<5,
+  \qquad
+  a_r-5(k-1)<X_{r,k}\le a_r .
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The lower sign is Theorem~\ref{thm:ratiosign}. For the upper sign put $m=r-1$
+and retain $h_j,T_j$ from Lemma~\ref{lem:firstlower}. Define the triangular
+Wallis ladder by
+\[
+\begin{aligned}
+B_0(j)&=T_j,& C_0(j)&=1,\\
+B_k(j)&=B_k(j-1)+h_j^{-1}C_k(j-1),&
+C_k(j)&=C_k(j-1)+\frac{h_j}{(2j+1)^2}B_{k-1}(j),
+\end{aligned}
+\]
+for $j,k\ge1$, with $B_k(0)=0$ for $k\ge1$, $C_1(0)=1$ and $C_k(0)=0$
+for $k\ge2$. Exact reversal of \eqref{eq:revdiag} gives
+\[
+ E_k:=\frac{B_k(m)}{T_m}
+ =\frac{[u^k]\Pi_r}{[u^0]\Pi_r},\qquad
+ \Delta_r=6E_1-20\frac{E_2}{E_1}.
+\]
+Thus, with $\beta_k=(\pi/2)B_k(m)$, multiplying $5-\Delta_r$ by the
+positive $\beta_0\beta_1$ clears denominators to
+\begin{equation}\label{eq:H5}
+  H=5\beta_0\beta_1-6\beta_1^2+20\beta_0\beta_2,
+\end{equation}
+so $H>0$ is equivalent to $\Delta_r<5$. The finite leg reads the first three
+integer coefficients off the row recurrence
+\begin{equation}\label{eq:rowrec}
+  F_{r+1}=\bigl(u+8r^2-4r+1\bigr)F_r-\bigl[2(r-1)(2r-1)\bigr]^2F_{r-1},
+\end{equation}
+and, writing $p_i=[u^i]F_r$, checks the cleared numerator
+$5p_0p_1-6p_1^2+20p_0p_2>0$ exactly at every row through $r=1001$. The infinite
+leg uses rational polynomial envelopes
+$\beta_k^{\mathrm{lo}}\le\beta_k\le\beta_k^{\mathrm{hi}}$ in the nonnegative
+shift $s=\tau_m-\tau_{1000}^{\mathrm{lo}}$ of the Wallis clock
+$\tau_m=\beta_0=(\pi/2)T_m$, anchored at $r=1001$. Since every lower-envelope
+coefficient is nonnegative, a valid lower bound for $H$ is
+$H_{\mathrm{lo}}=5\beta_0\beta_1^{\mathrm{lo}}-6(\beta_1^{\mathrm{hi}})^2
++20\beta_0\beta_2^{\mathrm{lo}}$, which after exact collection has degree six
+with every rational coefficient nonnegative and strictly positive constant
+term. Hence $H>0$ for all $r\ge1001$. The two legs overlap at $r=1001$, so
+their union is gap-free.
+\end{proof}
+
+\subsection{Linear extremality and the scalar reduction}\label{sec:lin}
+
+\begin{theorem}[linear profiles are extremal]\label{thm:lin}
+Let $F$ be the current row and let $\mu$ be any lowering profile satisfying
+\eqref{eq:L3} and $\ell=L_1\ge0$, with $\mu^0$ the linear profile carrying that
+same first lowering. Then for $3\le t\le m-1$,
+\[
+  L_t\bigl((1+u)(\mu\odot F)\bigr)\;\le\;L_t\bigl((1+u)(\mu^0\odot F)\bigr).
+\]
+That is, the predecessor Tur\'an determinant is maximized by the linear profile.
+\end{theorem}
+
+\begin{proof}
+Put $H_k=L_k-k\ell$ and $p_k=\Delta H_k$, so $H_0=H_1=p_0=0$, $\Delta p_k=q_k$,
+and $p$ is increasing and concave. For $k\ge2$,
+$H_k^2-H_{k-1}H_{k+1}=p_{k-1}^2-H_{k-1}q_{k-1}$, and because $q$ is decreasing,
+$p_{k-1}\ge(k-1)q_{k-1}$ and $H_{k-1}\le(k-2)p_{k-1}$, making the right side
+nonnegative. So the pure defect $H$ is log-concave; $F$ is log-concave; the
+pointwise product $H\odot F$ is log-concave; and convolution with $(1,1)$
+preserves the three-term inequality, giving
+$L_t((1+u)(H\odot F))\ge0$.
+
+For the mixed term, set $k=t-2$, $n=m-k$, $d_k=\Delta L_k$ and normalize by
+$M=\mu_k>0$. Put
+\[
+ a=\frac{\ell}{rM},\quad p=\frac{d_k-\ell}{rM},\quad
+ h=\frac{H_k}{rM},\quad q=\frac{q_k}{rM},\quad
+ v=\frac{q_{k+1}}{rM},
+\]
+and define
+\[
+ G=(1+u)\bigl((\mu/M)\odot F\bigr),\qquad
+ J=\frac{1}{rM}(1+u)(H\odot F).
+\]
+Since $\mu^0=\mu+H/r$, we have
+$G+J=(1+u)((\mu^0/M)\odot F)$. If $p=0$, the local defect variables vanish
+and the comparison is immediate. For $p>0$, the constraints \eqref{eq:L3}
+together with the endpoint budget cut out an exact five-dimensional polytope
+in $(a,p,h,q,v)$. With $d=a+p$, its inequalities are
+\[
+ 0\le p\le d,\quad 0\le q\le\frac pk,\quad 0\le v\le q,
+ \quad \frac{k-1}{2}p\le h\le(k-1)p,
+ \quad nd+(n-1)q+(n-2)v\le1.
+\]
+After substituting the degree-aware Newton bounds
+\eqref{eq:newtonlocal} in the safe direction, the mixed polarization
+$C=2G_tJ_t-G_{t-1}J_{t+1}-J_{t-1}G_{t+1}$ becomes
+$C=\Gamma_0+\Gamma_1x+\Gamma_2x^2$ with each $\Gamma_i/p$ having positive
+denominator. After that denominator is cleared, its numerator has a
+tensor-product Bernstein expansion on the unit cube, all of whose coefficients
+are nonzero polynomials in $(k,n)$ with nonnegative integer coefficients. The polarization identity
+$L_t(G+J)-L_t(G)=C+L_t(J)$ then gives the theorem.
+\end{proof}
+
+Theorem~\ref{thm:lin} converts the row comparison into a scalar one. Three
+further cell quantities are needed, and we define them before use.
+
+First, on the current normalization $F_{t-1}=1$, put
+\[
+ \sigma=L_t\bigl((1+u)(\mu\odot F)\bigr),\qquad
+ \sigma_{\mathrm{lin}}=L_t\bigl((1+u)(\mu^0\odot F)\bigr).
+\]
+No second normalization is applied to the lowered rows. Thus
+Theorem~\ref{thm:lin} is exactly
+$\sigma\le\sigma_{\mathrm{lin}}$.
+
+Second, the normalizer ladder used in the proof of
+Lemma~\ref{lem:firstlower} is exactly the top reverse-diagonal ratio
+$R_m=A_0(2m)/A_0(2m-1)=h_mT_m$. By \eqref{eq:revdiag} it satisfies
+\begin{equation}\label{eq:Rlad}
+  R_1=5,\qquad R_m=1+\Bigl(\frac{2m}{2m-1}\Bigr)^{2}R_{m-1},
+  \qquad 4m+1\le R_m<4m(m+1)+1 .
+\end{equation}
+Both bounds follow by induction; after inserting the upper bound at $m-1$ and
+clearing $(2m-1)^2$, the unused margin in the upper step is exactly $4m$.
+The \emph{normalizer scalar} of the cell is
+$\varepsilon=\beta_r(2-\beta_r)$ with $\beta_r=b(1+A)-A$, $A=1/[4r(r-1)]$ and
+$b=1/R_{r-1}$. Equation~\eqref{eq:Rlad} gives
+\[
+ \frac{1}{4r(r-1)+1}<b\le\frac{1}{4r-3}<1,
+\]
+so $0<\beta_r<b<1$. Consequently
+\begin{equation}\label{eq:EPS}
+  0<\varepsilon<\frac{2}{4r-3}.
+\end{equation}
+
+Third, put
+\begin{equation}\label{eq:psi}
+  \psi=\varepsilon+(1-\varepsilon)\,\frac{\ls-\sigma}{\ls},
+\end{equation}
+the normalized cross-row surplus of the cell. Here is the exact bridge back to
+the original ratio. Let $c=[u^{t-1}]\Pi_r>0$, so that $\Pi_r=cF$ on the current
+normalization. Then $S_{r,t}=c^2\ls$ and $V_{r,t}=c^2\lv$. The normalizers
+match exactly through
+\[
+ 1-\varepsilon=(1-\beta_r)^2
+ =\left[\frac{2r-1}{2r}\frac{\Pi_{r-1}(0)}{\Pi_r(0)}\right]^2,
+ \qquad
+ c^2\sigma=\left[\frac{\Pi_r(0)}{\Pi_{r-1}(0)}\right]^2S_{r-1,t}.
+\]
+Thus the weighted predecessor term in $d_{r,t}$ is
+$c^2(1-\varepsilon)\sigma$. Hence
+\begin{equation}\label{eq:rholocal}
+  d_{r,t}=c^2\bigl[\ls-(1-\varepsilon)\sigma\bigr]=c^2\ls\psi,
+  \qquad
+  \rho(r,t)=\frac{(r\psi)^2\ls}{2\lv}.
+\end{equation}
+Thus Theorem~\ref{thm:sq} at the cell follows if
+$r\psi\ge\sqrt{2\lv/\ls}$. (After Lemma~\ref{lem:dpositive}, the condition is
+also necessary.) With $n=r-t+1$, the degree-aware Newton bounds are
+\begin{equation}\label{eq:newtonlocal}
+ U\le\frac{(t-1)(n-1)}{tn},\qquad
+ W\le\frac{t(n-2)}{(t+1)(n-1)}.
+\end{equation}
+In particular $U,W\le1$, so
+$\ls-\lv=x(1-UW)+x^2(1-W)\ge0$ and therefore $\lv\le\ls$; hence
+\begin{equation}\label{eq:sufficient}
+  r\psi\ge\sqrt2\ \Longrightarrow\ \text{Theorem~\ref{thm:sq} at }(r,t),
+\end{equation}
+a sufficient condition uniform in the cell.
+
+Now direct expansion for the linear profile gives
+$\ls-\sigma_{\mathrm{lin}}=C_1\ell/r-C_2\ell^2/r^2$ with $C_1,C_2$ as in
+\eqref{eq:cellscalars} --- note that the linear and quadratic pieces never
+separate into independent margins. The substitution from Lemma~\ref{lem:firstlower}
+is safe for a concrete reason. On the interior range used below,
+$t,n\ge3$, and the degree-aware Newton bounds reduce
+$mC_1-2C_2\ge0$ to the following three positive coefficients of
+$1,x,x^2$:
+\[
+ \frac{2(n-1)(t-1)(n+t-2)}{nt},\qquad
+ \frac{2(n+t-2)(2nt-n-3t+3)}{n(t+1)},\qquad
+ \frac{2t(n-2)(n+t-2)}{(n-1)(t+1)}.
+\]
+Therefore $C_1\ell-C_2\ell^2/r$ is increasing for
+$0\le\ell\le r/m$. Writing
+$L_1^{\mathrm{lo}}=\sqrt{a_r+57/20}/a_r<\ell$, the obligation $\rho\ge1$ is
+implied by
+\begin{equation}\label{eq:LSC}
+  r\varepsilon\ls+(1-\varepsilon)
+   \Bigl[C_1L_1^{\mathrm{lo}}-C_2\bigl(L_1^{\mathrm{lo}}\bigr)^2/r\Bigr]
+  \;\ge\;\sqrt{2\ls\lv}\,,
+\end{equation}
+which is \eqref{eq:psi} cleared of its denominator. Whenever \eqref{eq:LSC}
+holds at a cell, so does Theorem~\ref{thm:sq} there.
+
+The same algebra supplies a row-independent upper comparison. With $k=t-2$,
+degree-aware Newton gives
+\begin{equation}\label{eq:topcomp}
+  \sigma\le\sigma_{\mathrm{lin}}\le[1-k\ell/r]^2\ls .
+\end{equation}
+Monotonicity on
+$0\le\ell/r\le1/m$ reduces to three positive Newton coefficients. Substituting
+into \eqref{eq:psi} yields
+\begin{equation}\label{eq:TOP}
+  r\psi\;\ge\;r\varepsilon+(1-\varepsilon)\Bigl[2q-\frac{q^2}{r}\Bigr],
+  \qquad q=(t-2)\,\frac{\sqrt{a_r+57/20}}{a_r},
+\end{equation}
+so by \eqref{eq:sufficient} every cell whose right-hand side reaches $\sqrt2$
+satisfies Theorem~\ref{thm:sq}.
+
+\section{Covering the domain}\label{sec:coverage}
+
+Four regions cover the interior $r\ge4$, $2\le t\le r-2$. Two terminal
+coefficient identities then complete the natural domain of
+Theorem~\ref{thm:sq}.
+
+\subsection{Fixed columns}
+
+\begin{proposition}[seven complete columns]\label{prop:fixedcol}
+For each $t\in\{2,3,4,5,6,7,8\}$ there is an explicit threshold $R_0(t)$ with
+$\rho(r,t)\ge1$ for every $r\ge R_0(t)$, namely
+\[
+\begin{gathered}
+  R_0(2)=313,\quad R_0(3)=116,\quad R_0(4)=250,\quad R_0(5)=700,\\
+  R_0(6)=2004,\quad R_0(7)=6200,\quad R_0(8)=20000.
+\end{gathered}
+\]
+The finite core through $r=503$ reaches the tails for $t=2,3,4$. One
+exact-integer stream up to the displayed anchors supplies the remaining gaps
+for $t=5,6,7,8$. Hence $\rho(r,t)\ge1$ at
+every interior cell of columns $t=2,\dots,8$; their two terminal cells are
+handled separately in Proposition~\ref{prop:upperedge}.
+\end{proposition}
+
+These thresholds are certificate anchors, not claimed minima. Fixed-column
+tails cannot cover $t$ growing with $r$; that is the role of the joint window.
+The seven tail polynomials and the $26{,}888$ prefix cells are in the replay
+packet.
+
+\subsection{The joint window}
+
+\begin{theorem}[uniform bound on the joint window]\label{thm:joint}
+Suppose $2\le t\le r-2$ and
+\begin{equation}\label{eq:JOINT}
+  r\ge504,\qquad t\ge6,\qquad a_r\ge5t,\qquad t<\sqrt{a_r}+2 .
+\end{equation}
+Then \eqref{eq:LSC} holds, and hence so does Theorem~\ref{thm:sq}.
+\end{theorem}
+
+\begin{proof}
+The proof uses Theorems~\ref{thm:ratiosign} and~\ref{thm:corridor} only through
+the corridor \eqref{eq:five}, and no lower bound on any adjacent-difference
+margin. Write $Y=X_{r,t-1}$, $B=X_{r,t}$, $C=X_{r,t+1}$ and
+$\alpha=(t-1)(2t-1)/[t(2t+1)]$, $\beta=t(2t+1)/[(t+1)(2t+3)]$, so that
+\eqref{eq:xX} reads $x=B/[2t(2t+1)]$, $U=\alpha B/Y$, $W=\beta C/B$. The
+corridor and $a_r\ge5t$ give $Y\ge a_r-5(t-2)\ge10$, $B\ge Y-5$, $C\le B$ and
+$a_r\le Y+5(t-2)$, hence
+$x\ge x_0=(Y-5)/[2t(2t+1)]$, $U\ge u_0=\alpha(1-5/Y)$ and $W\le\beta$. With
+$R=\ls/\lv$ the identity $R=1+x+(xU+x^2)(1-W)/(1-U)$ gives
+$R\ge R_{\min}:=1+x_0+(x_0u_0+x_0^2)(1-\beta)/(1-u_0)$. The three positive summands
+of $\ls$ carry weights $2(t-1)$, $2t-1$ and $2t$ in $C_1$, so
+$C_1\ge\lv[(2t-1)R-1]$ and $C_1^2/(2a_r\ls\lv)\ge[(2t-1)R-1]^2/(2a_rR)$, an
+expression increasing in $R\ge1$ and decreasing in $a_r$. Substituting the two
+extremes yields the core inequality
+\begin{equation}\label{eq:CORE}
+  C_1^2\;\ge\;\tfrac{101}{100}\cdot2a_r\ls\lv
+  \qquad(t\ge6,\ Y\ge10).
+\end{equation}
+After clearing the positive denominator, the difference in \eqref{eq:CORE} is a
+polynomial of bidegree $(6,14)$ in $(Q,T)$ where $Y=Q+10$ and $t=T+6$.
+For $t\ge8$ set $T=S+2$; all $74$ monomial coefficients in $(Q,S)$ are strictly
+positive. At $t=6,7$, namely $T=0,1$, two exact degree-six Sturm sequences have
+equal sign-variation counts at $0$ and $+\infty$ with positive value at zero,
+so neither has a nonnegative root.
+
+The quadratic term stays correlated: $(t-1)C_1-C_2=\ls(t-1)^2-\ld$, and the
+degree-aware Newton bounds $U\le(t-1)/t$, $W\le t/(t+1)$, $UW\le(t-1)/(t+1)$
+make the three coefficients in powers of $x$ equal to $(t-1)(t-2)/t$,
+$2(t-1)(t-2)/(t+1)$ and $t(t-3)/(t+1)$, all nonnegative for $t\ge3$; hence
+$C_2\le(t-1)C_1$ and
+$C_1L_1^{\mathrm{lo}}-C_2(L_1^{\mathrm{lo}})^2/r\ge
+(C_1/\sqrt{a_r})[1-(t-1)/(r\sqrt{a_r})]$. On the window \eqref{eq:JOINT} we have
+$a_r\ge5t\ge30$ and $t<\sqrt{a_r}+2$, so $1-(t-1)/(r\sqrt{a_r})>1-2/r$.
+Dropping the positive $r\varepsilon\ls$ term in \eqref{eq:LSC} and combining
+\eqref{eq:CORE}, the last display and \eqref{eq:EPS}, it remains to check
+$\tfrac{101}{100}[1-2/(4r-3)]^2[1-2/r]^2\ge1$. Both factors increase with $r$;
+at $r=504$ the unsquared product is $504761/507276$ and the exact squared
+surplus is $256361621/25732894017600>0$.
+\end{proof}
+
+\subsection{The top region}
+
+\begin{theorem}[top region]\label{thm:top}
+Every interior cell with
+\begin{equation}\label{eq:TOPREG}
+  r\ge4,\qquad 2\le t\le r-2,\qquad t\ge\sqrt{a_r}+2
+\end{equation}
+satisfies Theorem~\ref{thm:sq}.
+\end{theorem}
+
+\begin{proof}
+The threshold gives $q\ge1$ in \eqref{eq:TOP}; also
+$L_1^{\mathrm{lo}}<\ell\le r/(r-1)$ and $t\le r-2$, so $q<r$. The quadratic
+$2q-q^2/r$ is concave, so on $[1,r]$ it attains its minimum at an endpoint and
+is therefore at least $2-1/r$. With \eqref{eq:EPS},
+\[
+  r\psi>\Bigl[1-\frac{2}{4r-3}\Bigr]\Bigl(2-\frac1r\Bigr),
+\]
+and both factors increase with $r$. At $r=4$ the right side equals $77/52$, and
+$(77/52)^2-2=521/2704>0$, so $r\psi>\sqrt2$, which is the threshold in
+\eqref{eq:TOP}.
+\end{proof}
+
+\subsection{The finite core}\label{sec:finitecore}
+
+An exact definition-level witness checks every interior cell on
+\begin{equation}\label{eq:finitecore}
+  4\le r\le503,\qquad 2\le t\le r-2,
+\end{equation}
+which contains
+$\sum_{r=4}^{503}(r-3)=125{,}250$ cells. The cancelled integer expression for
+$\rho$ is the following. Write $\widehat S_{r,t}=L((1+u)F_r)_t$ and
+$\widehat V_{r,t}=L(F_r)_{t-1}$ for the Tur\'an forms of the reversed integer
+rows $F_r(u)=u^{\,r-1}M_{2r-2}(1/u)=(2r-1)!\,\Pi_r(u)$, with
+$\widehat S_{r-1,t}$ built from $F_{r-1}$ in the same way, and
+\begin{equation}\label{eq:cancelled}
+  \mathcal N_{r,t}=r^2\widehat S_{r,t}-(2r-1)^4(r-1)^2\widehat S_{r-1,t},
+  \qquad
+  \rho(r,t)=\frac{\mathcal N_{r,t}^{\,2}}{2r^2\,\widehat S_{r,t}\widehat V_{r,t}} .
+\end{equation}
+All three are integers, and \eqref{eq:cancelled} clears the factorials that
+\eqref{eq:SVd} carries; $\mathcal N_{r,t}$ is not $d_{r,t}$, and
+$\widehat S,\widehat V$ are not $S,V$. The identity \eqref{eq:cancelled} is
+checked against the uncancelled definition \eqref{eq:SVd} on every cell through
+$r=18$; every one of the $125{,}250$ comparisons is then strictly positive.
+
+\subsection{The two terminal cells}
+
+\begin{proposition}[upper edge]\label{prop:upperedge}
+For every integer $r\ge2$,
+\[
+  \rho(r,r)=\frac{r^2}{2}.
+\]
+For every integer $r\ge3$,
+\[
+  \rho(r,r-1)>\frac{2r^2}{9}\ge2.
+\]
+\end{proposition}
+
+\begin{proof}
+Put $n=2r-2$, $a=[z]M_n$, $b=[z^2]M_n$ and
+$c=1/(2r-1)!$. By \eqref{eq:Fr}, the top three coefficients of $\Pi_r$ are
+$c,ac,bc$. At $t=r-1$, direct substitution into \eqref{eq:SVd} gives
+\[
+  S_{r,r-1}=c^2D,\qquad V_{r,r-1}=c^2E,\qquad
+  d_{r,r-1}=c^2(D-K),
+\]
+where
+\[
+  D=a^2+a+1-b,\qquad E=a^2-b,\qquad
+  K=\frac{(2r-1)^4(2r-2)^2}{4r^2}.
+\]
+Strict Newton gives $E>0$, and $D=E+a+1>E$. Using the two formulas of
+Lemma~\ref{lem:wall12} and writing $X=r-3$, exact collection gives
+\[
+  D-3K=\frac{R(X)}{90r^2},
+\]
+with
+\[
+\begin{aligned}
+R(X)={}&320X^8+7104X^7+62924X^6+295836X^5+808325X^4\\
+     &{}+1294641X^3+1133721X^2+425439X+7020.
+\end{aligned}
+\]
+Every coefficient is positive. Thus $D-K>2D/3$, and
+\[
+  \rho(r,r-1)=\frac{r^2(D-K)^2}{2DE}
+  >\frac{2r^2D}{9E}>\frac{2r^2}{9}\ge2.
+\]
+
+At $t=r$, the top coefficient gives
+$S_{r,r}=V_{r,r}=c^2$, while $S_{r-1,r}=0$. Hence $d_{r,r}=c^2$ and
+$\rho(r,r)=r^2/2$.
+\end{proof}
+
+\subsection{The optimal uniform constant}\label{sec:sharp}
+
+Theorem~\ref{thm:sharp} is proved by partitioning the domain into a region where
+$\rho$ is bounded below by the rational barrier $203/200$ and the finite core,
+which is the only region that can approach the minimum. The barrier is chosen
+because $\rho(129,2)<203/200$ strictly, with surplus
+$203/200-\rho(129,2)=4.2383\ldots\times10^{-4}$.
+
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=2.4em]
+\item \emph{Terminal columns.} $\rho(r,r)=r^2/2$ and $\rho(r,r-1)>2r^2/9$ are
+  Proposition~\ref{prop:upperedge}; both exceed $2$ for $r\ge2$, $r\ge3$.
+\item \emph{Fixed columns $t=2,3,4,5$.} The tail certificates are retargeted
+  from $\rho\ge1$ to $\rho\ge203/200$, re-anchoring the four columns at
+  $m_0=503,503,503,1000$. For $t=2$ and $t=5$ the move is forced: the old
+  anchors $312$ and $699$ lack coefficient capacity for the larger constant.
+\item \emph{Columns $t=6,7,8$.} The monotone level parameter $a_r$ crosses
+  $25,30,35,36,40$ first at rows $1468,3634,8414,9884,18457$. Those crossings
+  send the unbounded parts of these columns into the top region
+  (Theorem~\ref{thm:top}, floor $5929/5408$) or the joint window. On the
+  joint window the core inequality \eqref{eq:CORE} holds with $513/500$ in
+  place of $101/100$ on the same domain — certified by the same Sturm
+  construction in the packet's reduction component, and close to sharp, since
+  $103/100$ already fails — so the row-corrected floor at the worst row
+  $r=504$ is
+  $(513/500)(504761/507276)^2=4840889675299/4765350744000>203/200$, leaving three
+  bounded windows $504\le r\le3633$, $1468\le r\le8413$ and
+  $9884\le r\le18456$, of $3130+6946+8573$ cells; with the $497$ residual $t=5$
+  cells this is a finite stream of $19{,}146$ exact comparisons.
+\item \emph{Columns $t\ge9$.} If a cell is not in the top region then
+  $a_r>(t-2)^2>5t$, by $(t-2)^2-5t=(t-9)^2+9(t-9)+4>0$, so it lies in the joint
+  window. The dichotomy is exhaustive.
+\item \emph{The finite core.} On $4\le r\le503$, $2\le t\le r-2$ every one of
+  the $125{,}250$ cells is compared with $\rho(129,2)$ by exact
+  cross-multiplication of \eqref{eq:cancelled}. Exactly one cell lies at or
+  below it, namely $(129,2)$ itself, where equality holds.
+\end{enumerate}
+
+Steps (i)--(iv) give $\rho>203/200>\rho(129,2)$ off the core, and step (v) gives
+$\rho>\rho(129,2)$ on the core away from $(129,2)$. Hence the minimum is
+$\rho(129,2)$, attained only there, which is Theorem~\ref{thm:sharp}.
+
+Two diagnostics accompanied step (v), used nowhere in the proof: the
+$500$ column minima of the core increase strictly in $t$, and the $t=2$
+column is unimodal on the core, decreasing for $5\le r\le129$ and increasing
+for $130\le r\le503$. Both are statements about the core only. Only $32$ of the
+$125{,}250$ core cells lie below $203/200$, all of them in column $t=2$ with
+$115\le r\le146$; this is why the core is not retargeted with the rest.
+
+\subsection{The four regions cover the domain}
+
+\begin{proposition}[the four regions cover the domain]\label{prop:coverage}
+Every integer cell with $r\ge4$ and $2\le t\le r-2$ lies in at least one of:
+the finite core \eqref{eq:finitecore}; the columns $t\in\{2,\dots,8\}$ of
+Proposition~\ref{prop:fixedcol}; the top region \eqref{eq:TOPREG}; or the joint
+window \eqref{eq:JOINT}.
+\end{proposition}
+
+\begin{proof}
+For $4\le r\le503$ use the finite core. Suppose $r\ge504$. The columns
+$2\le t\le8$ are closed by Proposition~\ref{prop:fixedcol}, so it remains to
+consider $t\ge9$. If $t\ge\sqrt{a_r}+2$, the cell lies in the top region.
+Otherwise $t<\sqrt{a_r}+2$, and hence
+\[
+ a_r>(t-2)^2>5t,
+ \qquad
+ (t-2)^2-5t=(t-9)^2+9(t-9)+4>0.
+\]
+Thus $r\ge504$, $t\ge9\ge6$, $a_r\ge5t$ and
+$t<\sqrt{a_r}+2$: all four hypotheses of \eqref{eq:JOINT} hold, so the cell is
+in the joint window. The split uses $\ge$ for the top region and $<$ for its
+complement, so no equality cell is omitted. The boundary calculation is
+genuine: at $t=8$ the same polynomial equals $-4$, which is why the seventh
+fixed column is needed.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:sq}]
+Let $r\ge2$ and $2\le t\le r$. If $t=r$ or $t=r-1$, use
+Proposition~\ref{prop:upperedge}; the second case can occur only for $r\ge3$.
+Otherwise $2\le t\le r-2$, which forces $r\ge4$, and
+Proposition~\ref{prop:coverage} places the cell in one of the four interior
+regions. On the finite core it is the exact certificate of
+\S\ref{sec:finitecore}, used only on its literal integer box. On the columns
+$t\in\{2,\dots,8\}$ it is Proposition~\ref{prop:fixedcol}. On the top region it
+is Theorem~\ref{thm:top}. On the joint window it is
+Theorem~\ref{thm:joint} together with the implication
+\eqref{eq:LSC}$\Rightarrow\rho(r,t)\ge1$ of \S\ref{sec:lin}.
+\end{proof}
+
+\begin{lemma}[orientation of the decrement]\label{lem:dpositive}
+For every $r\ge2$ and $2\le t\le r$, one has $d_{r,t}>0$.
+\end{lemma}
+
+\begin{proof}
+For $t=r-1,r$ this is explicit in Proposition~\ref{prop:upperedge}. Suppose
+$3\le t\le r-2$. Then $k=t-2$ satisfies
+\[
+  0<\frac{k\ell}{r}\le\frac{t-2}{r-1}<1
+\]
+by Lemma~\ref{lem:firstlower}. Equation~\eqref{eq:topcomp} therefore gives
+$\sigma<\ls$. Since $0<\varepsilon<1$, equations \eqref{eq:psi} and
+\eqref{eq:rholocal} give $\psi>0$ and hence $d_{r,t}>0$.
+
+It remains only to orient the column $t=2$, because the square-tail ratio itself
+forgets the sign. The fixed-column tail construction supplies a
+positive-coefficient lower polynomial for the unsquared decrement on
+$r\ge313$. The finite gap $4\le r\le312$ is rebuilt from \eqref{eq:SVd}:
+after the factorials are cleared, all $309$ integer numerators are positive,
+the first being $15{,}995{,}366$ at $r=4$. The two earlier cells
+$(2,2),(3,2)$ are terminal cases already covered above.
+\end{proof}
+
+\section{The shift-wall application}\label{sec:bridge}
+
+The square-tail inequality also settles a boundary estimate for the companion
+shift-wall rows. We state it without that program's internal vocabulary.
+
+\subsection{The bridge theorem}
+
+Write
+\[
+  G=(1+z)M_{2r-2},\qquad C=M_{2r-1},
+\]
+for the wall rows \eqref{eq:wall}, and consider the inequality
+\begin{equation}\label{eq:bw}
+  (2r)^2\,L(G)_q\;\ge\;2\,L(C)_q .
+\end{equation}
+
+\begin{theorem}\label{thm:bw}
+Inequality \eqref{eq:bw} holds for every integer $r\ge2$ and every
+integer $0\le q\le r-2$.
+\end{theorem}
+
+\begin{proof}
+For $0\le t\le r$ put
+\[
+ O_{r,t}=[z^{r-t}]M_{2r-1},\qquad
+ E_{r,t}=[z^{r-t}]M_{2r},
+\]
+with out-of-range coefficients equal to zero, and normalize
+\[
+ \mathsf P_r(u)=\sum_t\frac{O_{r,t}}{O_{r,0}}u^t,\qquad
+ \mathsf Q_r(u)=\sum_t\frac{E_{r,t}}{E_{r,0}}u^t,\qquad
+ x_r=\frac{E_{r-1,0}}{O_{r,0}}>0.
+\]
+The wall recurrence gives
+\begin{equation}\label{eq:PQrec}
+  \mathsf P_r=\mathsf P_{r-1}+u x_r\mathsf Q_{r-1}.
+\end{equation}
+
+We first record the only inequality used to iterate \eqref{eq:PQrec}. If two
+real-rooted polynomials $f,g$ are in proper position, then every pencil
+$f+vg$ is real-rooted. Newton's inequality makes
+$L(f+vg)_t\ge0$ for every real $v$. Its discriminant therefore gives
+\[
+  B(f,g)_t^2\le L(f)_tL(g)_t,
+  \qquad
+  B(f,g)_t=f_tg_t-\frac{f_{t-1}g_{t+1}+g_{t-1}f_{t+1}}2,
+\]
+and polarization yields the Tur\'an triangle
+\begin{equation}\label{eq:turantriangle}
+  \sqrt{L(f+g)_t}\le\sqrt{L(f)_t}+\sqrt{L(g)_t}.
+\end{equation}
+The polynomials $\mathsf P_{r-1}$ and $u\mathsf Q_{r-1}$ are positive
+rescalings and reversals of two consecutive wall rows. To make the interlacing
+explicit, let $0<\lambda_1<\cdots<\lambda_{r-1}$ and
+$0<\nu_1<\cdots<\nu_{r-1}$ be the positive spectra of
+$J_{2r-2}$ and $J_{2r-1}$. Strict Cauchy interlacing and spectral symmetry give
+\[
+ 0<\lambda_1<\nu_1<\cdots<\lambda_{r-1}<\nu_{r-1}.
+\]
+The characteristic-polynomial identity in the proof of
+Theorem~\ref{thm:three} makes the zeros of $\mathsf P_{r-1}$ equal to
+$-\lambda_j^2$, while those of $u\mathsf Q_{r-1}$ are the $-\nu_j^2$ together
+with $0$. They strictly interlace, so the two polynomials are in proper
+position. Thus \eqref{eq:PQrec} and \eqref{eq:turantriangle} give
+\begin{equation}\label{eq:PQtriangle}
+ \sqrt{L(\mathsf P_r)_t}\le
+ \sqrt{L(\mathsf P_{r-1})_t}+x_r\sqrt{L(\mathsf Q_{r-1})_{t-1}}.
+\end{equation}
+
+Set
+\[
+ \mathcal S_{r,t}=L((1+u)\mathsf Q_{r-1})_t,\qquad
+ \mathcal V_{r,t}=L(\mathsf Q_{r-1})_{t-1},
+\]
+and
+\[
+ \mathcal A_{r,t}=r^2x_r^2\mathcal S_{r,t},\qquad
+ \mathcal B_{r,t}=x_r^2\mathcal V_{r,t},\qquad
+ \Delta_{r,t}=\mathcal A_{r,t}-\mathcal A_{r-1,t}.
+\]
+This is exactly the normalization of Theorem~\ref{thm:sq}. Indeed, if
+$c_r=\Pi_r(0)$ and $\alpha_r=(2r-2)!!/(2r-1)!!$, then
+\[
+ \mathsf Q_{r-1}=\Pi_r/c_r,
+ \qquad \frac{x_r}{c_r}
+   =\frac{(2r-1)!}{((2r-1)!!)^2}=\alpha_r,
+\]
+and
+\[
+ \frac{(r-1)\alpha_{r-1}}{r\alpha_r}=\frac{2r-1}{2r},
+ \qquad
+ \Delta_{r,t}=r^2\alpha_r^2d_{r,t},
+ \qquad
+ \frac{\Delta_{r,t}^2}{2\mathcal A_{r,t}\mathcal B_{r,t}}
+   =\frac{r^2d_{r,t}^2}{2S_{r,t}V_{r,t}}.
+\]
+Lemma~\ref{lem:dpositive} supplies $\Delta_{r,t}>0$. Hence the square-tail
+inequality, written as
+$\Delta_{r,t}^2\ge2\mathcal A_{r,t}\mathcal B_{r,t}$, implies
+\begin{equation}\label{eq:QDG}
+ r x_r\sqrt{\mathcal S_{r,t}}
+ \ge (r-1)x_{r-1}\sqrt{\mathcal S_{r-1,t}}
+    +\frac{x_r}{\sqrt2}\sqrt{\mathcal V_{r,t}}.
+\end{equation}
+To see this, call the first two terms $a,b$ and the last term $c$.
+Then $a^2-b^2\ge2ac$ and $a>b$, so
+$a-b=(a^2-b^2)/(a+b)\ge c$.
+
+Fix $t\ge2$. At $r=t$, the polynomial $\mathsf P_{t-1}$ has degree $t-1$, so
+$L(\mathsf P_{t-1})_t=0$. Combining \eqref{eq:PQtriangle} and
+\eqref{eq:QDG} first at
+$r=t$ and then inductively gives
+\begin{equation}\label{eq:BWreverse}
+  \sqrt{L(\mathsf P_r)_t}\le\sqrt2\,r x_r\sqrt{\mathcal S_{r,t}}
+  \qquad(r\ge t).
+\end{equation}
+Finally set $q=r-t$. Reversal of coefficients and the identity
+$x_r=E_{r-1,0}/O_{r,0}$ give
+\[
+ L(\mathsf P_r)_t=\frac{L(C)_q}{O_{r,0}^2},\qquad
+ x_r^2\mathcal S_{r,t}=\frac{L(G)_q}{O_{r,0}^2}.
+\]
+Squaring \eqref{eq:BWreverse} is exactly \eqref{eq:bw}. Since $t\ge2$ is
+equivalent to $q\le r-2$, this proves the stated domain, including $q=0,1$.
+\end{proof}
+
+Theorem~\ref{thm:bw} closes one leaf of the reduction in the companion
+spread-at-fixed-product problem~\cite{panel1}; it does not settle that larger
+problem.
+
+\subsection{The lower boundary is exact}
+
+On the adjacent stripe $q=r-1$, that is $t=1$, an exact streaming sweep over
+$r=4,\dots,3000$ characterizes the stripe completely on that range: the
+failure set is exactly the contiguous window $r\in[6,41]$, with minimum
+ratio
+\[
+  0.939129\ldots \quad\text{at } r=13,
+\]
+and the ratio is strictly increasing on $42\le r\le3000$, so the recovery is
+monotone. At reverse index $1$ the two Tur\'an forms consume only the top
+four coefficients of each Wall row, which carries the exact sweep far past
+the full-row range; the streamed values are cross-checked against the
+full-row computation on $4\le r\le69$.
+
+For the square-tail inequality itself, the exact deficit at $(r,t)=(2,1)$
+recorded in \S\ref{sec:intro} already prevents a uniform extension to $t=1$.
+By contrast, Proposition~\ref{prop:upperedge} settles $t=r-1,r$, both with
+ratio at least $2$. Thus $2\le t\le r$ is the natural coefficient range, and
+its lower endpoint is a boundary of truth.
+
+\section{Conclusion}\label{sec:concl}
+
+The classical Jacobi/sech and determinantal machinery controls each row of
+$\Pi_r$: real-rootedness, the Poisson--binomial law and the determinant
+representation. It does not compare adjacent rows.
+
+The cross-row comparison needs three further ingredients: total positivity in
+the coefficient index, curvature of the lowering profile, and a scalar estimate
+that keeps its linear and quadratic terms coupled. Together they supply the
+factor $2$ that one-row Newton inequalities miss.
+
+The exact witness $\rho(129,2)=1.014576164564870742\ldots$ leaves exactly
+$1.4576\%$ room in the uniform factor: nothing above $2.029152\ldots$ is
+admissible. It is the minimum of the certified $500$-row core, and by
+Theorem~\ref{thm:sharp} it is the global minimum of $\rho$ on the whole
+domain, attained there and nowhere else. The coefficient
+domain itself is sharp at the lower end: $(2,1)$ fails by the exact deficit
+$-4351/20736$, while the two terminal cells have ratio at least $2$.
+
+Finally, symbolic certificates close the apparent large-row strip. Seven fixed
+columns leave $t\ge9$, where the elementary identity
+$(t-2)^2-5t=(t-9)^2+9(t-9)+4$ sends every remaining cell to the top or joint
+theorem. Exhaustive exact checking is confined to the $500$-row core and finite
+fixed-column prefixes; the terminal cells are symbolic as well.
+
+\appendix
+
+\section{The computational record}\label{sec:repro}
+
+The proof uses exact computation in two ways. Symbolic certificates ---
+integer or rational identities, coefficient signs and exact Sturm signs ---
+establish the connection-ratio signs of Theorem~\ref{thm:ratiosign}, the
+decrement bound of Theorem~\ref{thm:corridor}, the Bernstein positivity
+behind Theorem~\ref{thm:lin}, and the coefficient and Sturm certificates of
+the joint window. Finite exact certificates --- integer comparisons, cell by
+cell --- cover the interior core $4\le r\le503$, the fixed-column prefixes
+and tails, the terminal replays, and the retargeted chain behind
+Theorem~\ref{thm:sharp}. No floating-point value decides anything; reporting
+decimals are derived after the exact comparisons. Theorem~\ref{thm:three},
+Corollary~\ref{cor:config} and Lemma~\ref{lem:tpcoeff} are proved in the
+text, and their code is transcription replay only.
+
+The companion replay packet documents all of it: every verification script,
+the exact certificates with their negative controls, the per-result notes,
+and a single driver, \texttt{verify\_all.py}, that rebuilds each certificate
+from an empty directory and compares it with the released record.
+
+\section*{Acknowledgments}
+
+This work was carried out independently, without institutional affiliation or
+funding.
+
+Large language models were used as mathematical interlocutors: to propose
+routes, carry out derivations and turn informal intuition into exact statements.
+Every new mathematical claim was then established by direct proof or an exact
+certificate; responsibility is mine. The accompanying packet contains the
+certificates, their verification scripts and the per-result notes.
+
+\begin{thebibliography}{99}
+
+\bibitem{chenWang2024}
+W.~Y.~C. Chen and E.~L. Wang,
+\emph{The wide band Cayley continuants},
+arXiv:2407.21304, 2024.
+
+\bibitem{barry2010}
+P.~Barry,
+\emph{Exponential Riordan arrays and permutation enumeration},
+J. Integer Seq. \textbf{13} (2010), Article 10.9.1.
+
+\bibitem{panel1}
+J.~Councilman,
+\emph{Strict total positivity of a real Delannoy multiplication table: the sharp
+half-line threshold}, v2.0, Zenodo, 2026;
+\href{https://doi.org/10.5281/zenodo.21778524}{doi:10.5281/zenodo.21778524}.
+
+\bibitem{greenpathdpp}
+J.~Councilman,
+\emph{green-path-dpp: exact rational determinantal algorithms for grounded
+paths}, v0.1.0, Zenodo, 2026;
+\href{https://doi.org/10.5281/zenodo.21778518}{doi:10.5281/zenodo.21778518}.
+
+\bibitem{debSokal2024}
+B.~Deb and A.~D.~Sokal,
+\emph{Continued fractions for cycle-alternating permutations},
+Ramanujan J. \textbf{65} (2024), 1013--1060; arXiv:2304.06545.
+
+\bibitem{flajolet1980}
+P.~Flajolet,
+\emph{Combinatorial aspects of continued fractions},
+Discrete Math. \textbf{32} (1980), 125--161.
+
+\bibitem{hetyei2010}
+G.~Hetyei,
+\emph{Meixner polynomials of the second kind and quantum algebras representing
+$\mathfrak{su}(1,1)$},
+Proc. R. Soc. Lond. Ser. A \textbf{466} (2010), no. 2117, 1409--1428;
+arXiv:0909.4352.
+
+\bibitem{krasikov2011}
+I.~Krasikov,
+\emph{Tur\'an inequalities for three term recurrences with monotonic
+coefficients},
+arXiv:1101.3204.
+
+\bibitem{kuleszaTaskar2012}
+A.~Kulesza and B.~Taskar,
+\emph{Determinantal point processes for machine learning},
+Found. Trends Mach. Learn. \textbf{5} (2012), no. 2--3, 123--286;
+\href{https://doi.org/10.1561/2200000044}{doi:10.1561/2200000044}.
+
+\bibitem{mwafiseBarry2021}
+A.~M.~Mwafise and P.~Barry,
+\emph{Exponential Riordan arrays and Jacobi elliptic functions},
+Linear Multilinear Algebra \textbf{70} (2022), no. 20, 5770--5789;
+\href{https://doi.org/10.1080/03081087.2021.1930989}{doi:10.1080/03081087.2021.1930989};
+arXiv:1704.07695v2.
+
+\bibitem{oeisA060524}
+OEIS Foundation Inc.,
+\emph{A060524: Triangle read by rows: $T(n,k)$ = number of degree-$n$
+permutations with $k$ odd cycles},
+The On-Line Encyclopedia of Integer Sequences,
+\url{https://oeis.org/A060524}.
+
+\bibitem{sokal2020}
+A.~D.~Sokal,
+\emph{The Euler and Springer numbers as moment sequences},
+Expo. Math. \textbf{38} (2020), 1--26; arXiv:1804.04498.
+
+\bibitem{viennot1983}
+X.~G.~Viennot,
+\emph{Une th\'eorie combinatoire des polyn\^omes orthogonaux g\'en\'eraux},
+Lecture Notes, LACIM, UQAM, Montr\'eal, 1983.
+
+\bibitem{zhu2021}
+B.-X.~Zhu,
+\emph{Total positivity from the exponential Riordan arrays},
+SIAM J. Discrete Math. \textbf{35} (2021), no. 4, 2971--3003;
+\href{https://doi.org/10.1137/20M1379952}{doi:10.1137/20M1379952};
+arXiv:2006.14485.
+
+\bibitem{zhu2022}
+B.-X.~Zhu,
+\emph{Coefficientwise Hankel-total positivity of the row-generating polynomials
+for the output matrices of certain production matrices},
+arXiv:2202.03793.
+
+\bibitem{zhu2026}
+B.-X.~Zhu,
+\emph{Coefficientwise total positivity and Stieltjes moment properties from
+Riordan arrays},
+J. Lond. Math. Soc. \textbf{113} (2026), no. 2;
+\href{https://doi.org/10.1112/jlms.70450}{doi:10.1112/jlms.70450}.
+
+\end{thebibliography}
+
+\end{document}

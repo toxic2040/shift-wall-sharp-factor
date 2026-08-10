@@ -1,0 +1,90 @@
+{
+  "cell_count": 4001,
+  "chunks": [
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 1310,
+      "r_lo": 6
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 1713,
+      "r_lo": 1310
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 2004,
+      "r_lo": 1713
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 3253,
+      "r_lo": 2004
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 4007,
+      "r_lo": 3253
+    }
+  ],
+  "claim": "rho(r,6)>4/3 for every integer r in [6,4006]",
+  "comparison_sha256": "388553ff930f4312241a6e9baf4c8217355200501e8fc5c3ced2cf6f02b2c427",
+  "comparison_stream_encoding": "ASCII r:<|=|> followed by newline",
+  "decrement_signs": {
+    "negative": 0,
+    "positive": 4006,
+    "zero": 0
+  },
+  "definition_crosscheck": {
+    "cells": 55,
+    "engine": "vendor/odd-cycles-square-tail-replay/verification/engine.py",
+    "failures": [],
+    "range": [
+      6,
+      60
+    ]
+  },
+  "finite_minimum": {
+    "decimal_truncated_50": "3.39937092777142378297499286015169043060990136432514",
+    "denominator_digits": 53155,
+    "margin_over_four_thirds_24": "2.066037594438090449641659",
+    "numerator_digits": 53156,
+    "sha256": "b85d38a259dd7bd6c1b91f4c10d694c8aa2de2c253b59ddacaa05c6c9c0b4069"
+  },
+  "finite_minimum_r": 4006,
+  "m0": 4006,
+  "minimum_at_right_endpoint": true,
+  "overlap_row": {
+    "comparison": ">",
+    "decimal_truncated_50": "3.39922549829740965560471863540715012895339115873135",
+    "denominator_digits": 53148,
+    "margin_over_four_thirds_24": "2.065892164964076322271385",
+    "numerator_digits": 53149,
+    "r": 4007,
+    "raw_sha256": "0767363abdf096d81f784c53a798d3aa67bb42a1daa43575913c1b8e3177fc1d",
+    "sha256": "4b09b0e9b6b6fa390e59964e7a978a33055eddcb17c7d0d6ed6e0e11c59e207c"
+  },
+  "passed": true,
+  "problems": [],
+  "range": [
+    6,
+    4006
+  ],
+  "raw_row_fingerprint_encoding": "ASCII lowercase-hex numerator/denominator",
+  "schema": "h2-fixed-column-four-thirds-prefix-v1",
+  "status": "PASS",
+  "strict_failures": [],
+  "t": 6,
+  "terminal_rows": [
+    {
+      "equals_half_r_squared": true,
+      "r": 6,
+      "value_decimal_6": "18.000000"
+    },
+    {
+      "r": 7,
+      "value_decimal_6": "21.146345"
+    }
+  ],
+  "workers_note": "one outer ProcessPoolExecutor over r-range chunks; no nested pools"
+}

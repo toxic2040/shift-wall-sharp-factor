@@ -1,0 +1,116 @@
+{
+  "a1_pi_interval_repair": {
+    "corrected_reference_tripwire_passed": true,
+    "corrected_width_ulps": 1,
+    "defective_reference_tripwire_rejected": true,
+    "defective_width_ulps": 0,
+    "downstream_actual_delta": "0/1",
+    "half_pi_exactly_invariant": true
+  },
+  "algorithm": "exact-rho-prefix-plus-corrected-independent-tail-v1",
+  "barrier": "4/3",
+  "c_star": {
+    "decimal_truncated": "1.327509156956680599863203087838",
+    "denominator_digits": 6732,
+    "numerator_digits": 6733,
+    "sha256": "2fc6689fd42dd6eaa29088aeb0077e1120878fd2f6b54cf2e8dbd50e823a5691"
+  },
+  "claim": "rho(r,4)>4/3 for every integer r>=4; consequently Omega_4(r)>4/3>Omega_2(1350) for every integer r>=4",
+  "claim_boundary": "This certificate closes only the fixed t=4 SQ and bridge stripes. It does not prove a fixed-column profile for t>=5 or an all-t theorem.",
+  "common_verifier_sha256": "341caf50c74058246dbe22c3b35fb09cea7367df4d8d5173f15fef97b04bb65d",
+  "execution": {
+    "arithmetic": "exact integers, rational intervals, and fractions",
+    "parallelism": "one process, no pool",
+    "prefix_resume": "not applicable; 997 cells"
+  },
+  "gates": {
+    "c_star_strictly_below_four_thirds": true,
+    "corrected_pi_tripwire_passed": true,
+    "definition_and_prefix_passed": true,
+    "independent_source_pinned": true,
+    "negative_control_passed": true,
+    "source_hashes_pinned": true,
+    "tail_strictly_above_four_thirds": true
+  },
+  "passed": true,
+  "producer_sha256": "683ddcc17dc597c0c9c75bcbb1abf93ac6402fcca9d149dcfe4827a47219a3c3",
+  "schema": "sq-t4-four-thirds-bridge-transfer-v1",
+  "source_hashes": {
+    "OPEN.md": "e4537f1fa12de71931e66929ad0eef8e138e42941c83ccf6e0b4496e9030b6da",
+    "paper/PANEL3_odd_cycles_sech_square_tail.tex": "e60836828ba688bc8601837d829c1e7becd0454209f2200524d12622f25c49bc",
+    "verification/A1_verify_tail.py": "7cc90454d04a71b2eecc6123eee98c82896f2809ff1514d0262125732bb50958",
+    "verification/A1_verify_tail_independent.py": "ad7afc6ac798c7c2db565b2358325fcf9a68de3926b1596d24a16f358a1a6ec6",
+    "verification/A36_bw_bridge.py": "2bf61ca5f20f47b91d9a0ab94804ac64cc81ea158447a08faade940ae7de2581",
+    "verification/A38_targeted_core.py": "4655e738438b9c9671eeefb8f0d4275e628fb3d86de615e405ec4d8b1acd6cef",
+    "verification/engine.py": "7f90e47d835d0737819a8631781a502dc8e70d9af95e12aab5774cef45783825"
+  },
+  "source_repo": "vendor/odd-cycles-square-tail-replay",
+  "sq_prefix": {
+    "cell_count": 997,
+    "comparison_sha256": "6b7fae02acecf8e08aa78d7aa333f902aaacd2def400fe1681efee88ad3f7532",
+    "comparison_stream_encoding": "ASCII r:<|=|> followed by newline",
+    "definition_crosscheck_cells": 57,
+    "definition_crosscheck_range": [
+      4,
+      60
+    ],
+    "finite_minimum": {
+      "decimal_truncated": "2.052281801010934324458247",
+      "denominator_digits": 11895,
+      "numerator_digits": 11895,
+      "sha256": "7e04dcafe265b3e6f748c056e4fd60b9a97156d6be50f74e95f2ec28625600a0"
+    },
+    "finite_minimum_r": 1000,
+    "minimum_margin_over_four_thirds_decimal_truncated": "0.718948467677600991124914",
+    "non_strict_rows": [],
+    "positive_decrement_count": 997,
+    "positive_denominator_count": 997,
+    "range": [
+      4,
+      1000
+    ]
+  },
+  "sq_tail": {
+    "anchor_m0": 1000,
+    "capacity_limiting_indices": [
+      16
+    ],
+    "claim_start_r": 1001,
+    "coefficient_capacity": {
+      "denominator_digits": 29241,
+      "numerator_digits": 29241,
+      "sha256": "9e6251e289e49198d0b2697037520af45c6aea0b3db3f083816dd1897cf3f5c0"
+    },
+    "coefficient_capacity_decimal_truncated": "1.341734973093177990548543",
+    "coefficient_fingerprint_encoding": "ASCII index:numerator/denominator followed by newline",
+    "comparison_denominator_nonnegative": true,
+    "retargeted_degree": 38,
+    "retargeted_positive_coefficients": 39,
+    "retargeted_sha256": "a11810ccd429452dd13e90a969dc76fee7be5060c7e006a65fce525ecc2ed34a",
+    "source_certificate_passed": true,
+    "source_interval_ladder_crosscheck": true,
+    "target_one_reconstruction_exact": true,
+    "three_halves_mutation_negative_indices": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ]
+  },
+  "status": "PASS",
+  "transfer": {
+    "conclusion": "Omega_4(r)>4/3 for every integer r>=4",
+    "input": "rho(j,4)>4/3 for every integer j>=4",
+    "theorem": "Omega_t(r) >= (sum_{j=t}^r lambda_(j,t)/sqrt(rho(j,t)))^-2 >= min_{t<=j<=r} rho(j,t)",
+    "weights": "lambda_(j,t)=(a_j-a_(j-1))/a_r >0 and sum lambda=1"
+  }
+}

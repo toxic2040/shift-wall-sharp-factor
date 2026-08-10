@@ -1,0 +1,1004 @@
+% The sharp constant in the shift-wall bridge for odd-cycle polynomials.
+% Author: J. Councilman
+% Compile with: latexmk -pdf shift_wall_sharp_factor.tex
+
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{array,booktabs,tabularx}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+\hypersetup{
+  pdftitle={The sharp constant in the shift-wall bridge for odd-cycle polynomials},
+  pdfauthor={J. Councilman},
+  pdfsubject={The exact extremal constant in a Turan bridge between consecutive wall rows},
+  pdfkeywords={odd cycles; Wall recurrence; Turan inequality; shift wall;
+               exact certificates; sharp constant}
+}
+\usepackage[expansion=false]{microtype}
+\setlength{\emergencystretch}{2em}
+\widowpenalty=10000
+\clubpenalty=10000
+\displaywidowpenalty=10000
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Omw}{\omega_{\mathrm{wall}}}
+\newcommand{\Kw}{K_{\mathrm{wall}}}
+\newcommand{\level}{\mathfrak a}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\title{\textbf{The sharp constant in the shift-wall bridge\\
+for odd-cycle polynomials}}
+\author{J. Councilman\\
+\small\href{https://orcid.org/0009-0003-6265-5168}{ORCID 0009-0003-6265-5168}}
+\date{9 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Let
+\[
+ M_0=1,\qquad M_1=1+z,\qquad
+ M_n=M_{n-1}+n^2zM_{n-2},
+\]
+and write $L(f)_q=f_q^2-f_{q-1}f_{q+1}$ for the coefficientwise
+Tur\'an operator.  A previous square-tail theorem implies
+\[
+ (2r)^2L\bigl((1+z)M_{2r-2}\bigr)_q\ge 2L(M_{2r-1})_q,
+ \qquad 0\le q\le r-2.
+\]
+We determine the best possible replacement for the factor $2$.  Put
+\[
+ \Omega_t(r)=
+ \frac{(2r)^2L((1+z)M_{2r-2})_{r-t}}
+      {2L(M_{2r-1})_{r-t}},\qquad r\ge t\ge2.
+\]
+Then
+\[
+ \Omega_t(r)\ge \Omega_2(1350)
+ =1.327509156956680599863203087838\ldots,
+\]
+with equality only at $(r,t)=(1350,2)$.  Consequently the sharp constant in
+the unnormalized bridge is
+\[
+ 2\Omega_2(1350)
+ =2.655018313913361199726406175676\ldots.
+\]
+The proof has one exceptional stripe and one uniform barrier.  The $t=2$
+minimum is certified by an exact prefix and a positive-coefficient half-line
+certificate.  A lossless telescoping transfer sends every fixed-column lower
+bound for the square-tail quotient $\rho$ to the corresponding bridge stripe.
+The stripe $t=3$ is treated directly, while $\rho>4/3$ closes every stripe
+$t\ge4$.  For $t\ge5$ this barrier is assembled from terminal identities, a
+$123{,}753$-cell exact core, six fixed-column tail certificates, a re-anchored
+top estimate, and an all-parameter joint certificate; on that region it is
+also a uniform improvement, by a factor $1.314\ldots$, on the sharp
+square-tail constant of the earlier paper.  A byproduct localizes the whole
+question: every cell below $4/3$ lies on the stripe $t=2$ with $r\le3000$.
+Every decision gate is an integer or rational comparison; decimal values are
+reported only for orientation.  The stripes $t=9$ and $t=10$ each carry a
+second, separately gated proof chain, one of which rests on an exact two-leg
+certificate for a quantitative decrement shell.
+\end{abstract}
+
+\section{The extremal question}\label{sec:intro}
+
+For a polynomial $f(z)=\sum_k f_kz^k$, put
+\begin{equation}\label{eq:L}
+ L(f)_q=f_q^2-f_{q-1}f_{q+1},
+\end{equation}
+where coefficients outside the row are zero.  The wall recurrence
+\begin{equation}\label{eq:wall}
+ M_0=1,\qquad M_1=1+z,\qquad
+ M_n=M_{n-1}+n^2zM_{n-2}
+\end{equation}
+is the even-variable form of the odd-cycle continuant.  The rows are
+real-rooted with positive coefficients, so the Tur\'an forms used below are
+positive on their natural range; the determinant, spectral, and permutation
+interpretations are developed in~\cite{squaretail}.
+
+For $r\ge2$ and $0\le q\le r-2$, define the raw bridge ratio
+\[
+ \mathcal B(r,q)=
+ \frac{(2r)^2L((1+z)M_{2r-2})_q}{L(M_{2r-1})_q}.
+\]
+Writing $t=r-q$ reverses the coefficient index and gives
+\begin{equation}\label{eq:Omega}
+ \Omega_t(r)=\frac{\mathcal B(r,r-t)}2
+ =\frac{(2r)^2L((1+z)M_{2r-2})_{r-t}}
+        {2L(M_{2r-1})_{r-t}},
+ \qquad r\ge t\ge2.
+\end{equation}
+The bridge theorem in~\cite{squaretail} is $\Omega_t(r)\ge1$.  Its constant
+$2$ is structural: it is the amount paid by the square-tail inequality and
+the Tur\'an triangle.  The present question is extremal: what is
+$\inf_{r\ge t\ge2}\Omega_t(r)$?
+
+Set
+\begin{equation}\label{eq:constants}
+ \Omw=\Omega_2(1350),\qquad \Kw=2\Omw.
+\end{equation}
+
+\begin{theorem}[sharp shift-wall constant]\label{thm:main}
+For all integers $r\ge t\ge2$,
+\begin{equation}\label{eq:main}
+ \Omega_t(r)\ge\Omw
+ =1.327509156956680599863203087838\ldots,
+\end{equation}
+with equality if and only if $(r,t)=(1350,2)$.  Equivalently,
+\begin{equation}\label{eq:rawsharp}
+ (2r)^2L\bigl((1+z)M_{2r-2}\bigr)_q
+ \ge \Kw L(M_{2r-1})_q,
+ \qquad 0\le q\le r-2,
+\end{equation}
+where
+\[
+ \Kw=2.655018313913361199726406175676\ldots.
+\]
+The constant is best possible, and equality in \eqref{eq:rawsharp} occurs
+only at $(r,q)=(1350,1348)$.
+\end{theorem}
+
+The exact value in \eqref{eq:main} is a reduced rational.  Its numerator has
+$6{,}733$ decimal digits, its denominator $6{,}732$, and the SHA-256 digest of
+the canonical ASCII string \texttt{numerator/denominator} is
+\begin{center}
+\texttt{2fc6689fd42dd6eaa29088aeb0077e1120878fd2f6b54cf2e8dbd50e823a5691}.
+\end{center}
+The decimal is not used as a proof target.
+
+The proof is organized around the rational separator
+\begin{equation}\label{eq:separator}
+ \Omw<\frac43,
+ \qquad
+ \frac43-\Omw
+ =0.005824176376652733470130\ldots.
+\end{equation}
+The exceptional stripe $t=2$ supplies the sharp value.  Every stripe $t\ge3$
+is strictly above $4/3$.  The main work is therefore not a decimal comparison
+with \eqref{eq:main}, but the uniform exact theorem $\rho>4/3$ proved in
+Section~\ref{sec:bulk}.
+
+\subsection{Place in the four-paper program}
+
+The logical input is the square-tail theorem of~\cite{squaretail}.  That paper
+builds the odd-cycle, Jacobi, and coefficient-curvature machinery and proves
+the bridge with the structural factor $2$; this paper determines the exact
+constant left open there.  It also left a prediction: its own sharp
+square-tail constant $C_\star=2\rho(129,2)=2.0291523\ldots$ propagates
+through the bridge, but is not sharp there, and the bridge's extremal cell is
+\emph{not} the image of $(129,2)$.  Theorem~\ref{thm:main} confirms both.  The
+extremal cell is $(1350,2)$, and $\Kw$ exceeds $C_\star$ by $30.8\%$ and the
+structural factor $2$ by $32.8\%$.  The sharp multiplicative Delannoy theorem
+in~\cite{delannoy} is the external application that first produced the bridge
+question.  The grounded-path algorithms of~\cite{greenpath} expose a related
+determinantal mechanism, but are a conceptual sibling rather than a premise of
+Theorem~\ref{thm:main}.
+
+\section{The square-tail quotient and the wall level}\label{sec:objects}
+
+Reverse and normalize the even wall row by
+\begin{equation}\label{eq:Pi}
+ \Pi_r(u)=\frac{u^{r-1}M_{2r-2}(1/u)}{(2r-1)!}.
+\end{equation}
+For $r\ge2$ and $2\le t\le r$, define
+\begin{align}
+ S_{r,t}&=L\bigl((1+u)\Pi_r\bigr)_t,&
+ V_{r,t}&=L(\Pi_r)_{t-1},\label{eq:SV}\\
+ d_{r,t}&=S_{r,t}-\left(\frac{2r-1}{2r}\right)^2S_{r-1,t},&
+ \rho(r,t)&=\frac{r^2d_{r,t}^2}{2S_{r,t}V_{r,t}}.\label{eq:drho}
+\end{align}
+The results of~\cite{squaretail} give $S_{r,t},V_{r,t},d_{r,t}>0$ and
+$\rho(r,t)\ge1$ on this domain.  The quotient $\rho$ measures the exact
+surplus in the cross-row square-tail inequality.  It is not the bridge ratio
+$\Omega$: the next section records the one-way transfer between them.
+
+The unbounded part of the $\rho$-array is organized by one increasing scalar.
+Let
+\[
+ \widehat\Pi_r(u)=\frac{\Pi_r(u)}{\Pi_r(0)},
+ \qquad
+ \level_r=6[u]\widehat\Pi_r(u).
+\]
+The cancellation-free Wallis ladder in~\cite{squaretail} proves that
+$\level_r$ is strictly increasing.  Its role is geometric.  For fixed $t$,
+the inequality
+\begin{equation}\label{eq:topcondition}
+ \level_r\le(t-2)^2
+\end{equation}
+defines the top region; its complement is the joint region.  The proof never
+uses a floating approximation to decide which side of
+\eqref{eq:topcondition} contains a cell.  The few crossings needed below are
+certified by outward rational intervals.
+
+\section{A lossless fixed-column transfer}\label{sec:transfer}
+
+The bridge in~\cite{squaretail} was obtained by inserting the square-tail
+constant $1$ at every row.  Keeping the local quotient $\rho(j,t)$ instead
+produces a sharper inequality with no additional loss.
+
+For $0\le t\le r$, put
+\[
+ O_{r,t}=[z^{r-t}]M_{2r-1},\qquad
+ E_{r,t}=[z^{r-t}]M_{2r},
+\]
+and normalize
+\[
+ \mathsf P_r(u)=\sum_t\frac{O_{r,t}}{O_{r,0}}u^t,
+ \qquad
+ \mathsf Q_r(u)=\sum_t\frac{E_{r,t}}{E_{r,0}}u^t,
+ \qquad
+ x_r=\frac{E_{r-1,0}}{O_{r,0}}.
+\]
+The wall recurrence gives
+\begin{equation}\label{eq:PQrec}
+ \mathsf P_r=\mathsf P_{r-1}+ux_r\mathsf Q_{r-1}.
+\end{equation}
+For a fixed $t\ge2$, set
+\begin{align*}
+ p_j&=\sqrt{L(\mathsf P_j)_t},\\
+ A_j&=jx_j\sqrt{L((1+u)\mathsf Q_{j-1})_t},\\
+ v_j&=x_j\sqrt{L(\mathsf Q_{j-1})_{t-1}}.
+\end{align*}
+All three depend on $t$, which is suppressed from the notation.
+
+\begin{lemma}[lossless transfer]\label{lem:transfer}
+For every pair of integers $r\ge t\ge2$, there are positive weights
+\[
+ \lambda_{j,t}=\frac{A_j-A_{j-1}}{A_r},
+ \qquad t\le j\le r,
+ \qquad \sum_{j=t}^r\lambda_{j,t}=1,
+\]
+such that
+\begin{equation}\label{eq:transfer}
+ \Omega_t(r)\ge
+ \left(\sum_{j=t}^r
+ \frac{\lambda_{j,t}}{\sqrt{\rho(j,t)}}\right)^{-2}
+ \ge \min_{t\le j\le r}\rho(j,t).
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Two facts from~\cite{squaretail} carry the argument.  First, if $f$ and $g$
+are real-rooted with nonnegative coefficients and lie in \emph{proper
+position}, then polarizing the Newton inequality for the pencil $f+vg$ gives
+the Tur\'an triangle
+\begin{equation}\label{eq:turan}
+ \sqrt{L(f+g)_t}\le\sqrt{L(f)_t}+\sqrt{L(g)_t}.
+\end{equation}
+The position hypothesis is not removable, and the minimal witness is
+integral: $f=(1,2,1)$ and $g=(1,3,1)$ are both real-rooted with positive
+coefficients, yet at $t=1$ they give $\sqrt{21}>\sqrt3+\sqrt8$, which on
+squaring twice is the integer statement $100>96$.  What fails is position
+alone --- the double root of $f$ at $-1$ lies strictly between the two roots
+of $g$.  Second, the two rows appearing in
+\eqref{eq:PQrec} do lie in proper position.  The zeros of $\mathsf P_{j-1}$
+are $-\lambda_i^2$ and those of $u\mathsf Q_{j-1}$ are the $-\nu_i^2$
+together with $0$, where $\lambda_i$ and $\nu_i$ run over the positive
+spectra of the two consecutive Jacobi matrices of~\cite{squaretail}; strict
+Cauchy interlacing and spectral symmetry give
+\[
+ 0<\lambda_1<\nu_1<\cdots<\lambda_{j-1}<\nu_{j-1},
+\]
+so the zeros strictly interlace.  Applying \eqref{eq:turan} to
+\eqref{eq:PQrec} therefore gives the Tur\'an triangle
+\begin{equation}\label{eq:triangle}
+ p_j\le p_{j-1}+v_j.
+\end{equation}
+In the same normalization, $A_j^2-A_{j-1}^2$ is the oriented decrement and
+\[
+ \rho(j,t)=\frac{(A_j^2-A_{j-1}^2)^2}{2A_j^2v_j^2}.
+\]
+The decrement is positive, so
+\begin{equation}\label{eq:increment}
+ A_j-A_{j-1}
+ =\frac{A_j^2-A_{j-1}^2}{A_j+A_{j-1}}
+ \ge \sqrt{\frac{\rho(j,t)}2}\,v_j.
+\end{equation}
+Both $p_{t-1}$ and $A_{t-1}$ vanish.  Iterating \eqref{eq:triangle}, using
+\eqref{eq:increment}, and then telescoping gives
+\[
+ p_r\le\sum_{j=t}^rv_j
+ \le\sqrt2\sum_{j=t}^r
+ \frac{A_j-A_{j-1}}{\sqrt{\rho(j,t)}}
+ =\sqrt2A_r\sum_{j=t}^r
+ \frac{\lambda_{j,t}}{\sqrt{\rho(j,t)}}.
+\]
+Reversal in \eqref{eq:Omega} is exactly
+$\Omega_t(r)=2A_r^2/p_r^2$.  This proves the first inequality in
+\eqref{eq:transfer}.  The second follows because the $\lambda_{j,t}$ are
+positive and sum to one.
+\end{proof}
+
+Thus a lower bound valid on an entire $\rho$-column transfers to the bridge
+at the same constant.  The direction is important: no monotonicity of
+$\Omega_t(r)$ in $t$ is asserted or needed.
+
+\section{The exceptional stripe}\label{sec:t2}
+
+The sharp value occurs on $t=2$, so this stripe is proved directly from the
+bridge ratio rather than through Lemma~\ref{lem:transfer}.
+
+Put $m=r-1$ and introduce the Wallis ladder of~\cite{squaretail},
+\[
+ h_j=\left(\frac{(2j)!!}{(2j-1)!!}\right)^2,
+ \qquad
+ T_j=1+\sum_{i=1}^{j}h_i^{-1},
+ \qquad
+ v_m=\frac{h_m}{(2m+1)^2},
+\]
+whose rows are determined by $B_0(j)=T_j$, $C_0(j)=1$,
+\begin{equation}\label{eq:ladder}
+ B_k(j)=B_k(j-1)+h_j^{-1}C_k(j-1),
+ \qquad
+ C_k(j)=C_k(j-1)+\frac{h_j}{(2j+1)^2}B_{k-1}(j),
+\end{equation}
+with seeds $B_k(0)=0$ for $k\ge1$, $C_1(0)=1$, and $C_k(0)=0$ for $k\ge2$.
+
+The ladder is a rewriting of the two normalized rows of
+\S\ref{sec:transfer}.  On the even side this is proved in~\cite{squaretail},
+in the equivalent form $B_k(j)/T_j=[u^k]\Pi_{j+1}/[u^0]\Pi_{j+1}$:
+\begin{equation}\label{eq:Bid}
+ \frac{B_k(j)}{T_j}=[u^k]\mathsf Q_j .
+\end{equation}
+The odd side is the companion statement.  We record it because it is what
+makes \eqref{eq:reverseOmega} a rewriting rather than a numerical
+coincidence:
+\begin{equation}\label{eq:Cid}
+ C_k(m)=[u^k]\mathsf P_r
+ =\frac{[z^{\,r-k}]M_{2r-1}}{[z^{\,r}]M_{2r-1}} .
+\end{equation}
+For \eqref{eq:Cid}, the wall recurrence first gives
+\begin{equation}\label{eq:xladder}
+ x_{j+1}=\frac{h_jT_j}{(2j+1)^2}.
+\end{equation}
+Now $C_0(j)=1=[u^0]\mathsf P_{j+1}$, and the coefficient of $u^k$ in
+\eqref{eq:PQrec} reads
+\[
+ [u^k]\mathsf P_{j+1}=[u^k]\mathsf P_j+x_{j+1}[u^{k-1}]\mathsf Q_j .
+\]
+By \eqref{eq:Bid} and \eqref{eq:xladder} the last term equals
+$h_j(2j+1)^{-2}B_{k-1}(j)$, so this recursion is exactly the second half of
+\eqref{eq:ladder}.  Induction on $j$ proves \eqref{eq:Cid}.
+
+Substituting \eqref{eq:Bid} and \eqref{eq:Cid} into \eqref{eq:Omega} and
+cancelling the common normalizations gives
+\begin{equation}\label{eq:reverseOmega}
+ \Omega_t(r)=2r^2v_m^2\frac{P_t(B(m))}{Q_t(C(m))},
+\end{equation}
+where
+\begin{align*}
+ P_t(B)&=(B_{t-1}+B_t)^2
+ -(B_{t-2}+B_{t-1})(B_t+B_{t+1}),\\
+ Q_t(C)&=C_t^2-C_{t-1}C_{t+1}.
+\end{align*}
+Equation~\eqref{eq:reverseOmega} was also verified directly against the raw
+wall recurrence in exact rational arithmetic at every cell with
+$2\le t\le r\le9$, and against the rational ladder at the extremal row.
+
+\begin{proposition}[the $t=2$ minimum]\label{prop:t2}
+For every integer $r\ge2$,
+\[
+ \Omega_2(r)\ge\Omega_2(1350),
+\]
+with equality only at $r=1350$.
+\end{proposition}
+
+\begin{proof}[Exact certificate]
+The prefix computes all $3{,}000$ cells $2\le r\le3001$ as reduced rational
+comparisons with $\Omega_2(1350)$.  Every numerator and denominator is
+positive, the equality set is $\{1350\}$, and all other cells are strictly
+larger.  The nearest competitor is $r=1349$, whose positive gap is
+\[
+ 3.473032420463471\ldots\times10^{-9}.
+\]
+The comparison stream has SHA-256 digest
+\begin{center}
+\texttt{943bebfb449b9ec178562598433b1f76dd9f3cb0cab0e8203bfce784882245ae}.
+\end{center}
+
+For the half-line, set $b_k=(\pi/2)B_k$ and
+$x=\tau_m-\tau_{3000}^{\rm lo}\ge0$.  Outward rational envelopes give
+\[
+ P_2(b)\ge P_{\rm lo}(x),
+ \qquad
+ 0<Q_{\rm lo}(x)\le Q_2(C)\le Q_{\rm hi}(x).
+\]
+The exact Wallis bound supplies a strict scalar factor $k_m>1/2$.  The
+degree-ten polynomial
+\[
+ H(x)=P_{\rm lo}(x)-2\Omega_2(1350)Q_{\rm hi}(x)
+\]
+has all eleven rational coefficients strictly positive.  Its indexed
+coefficient digest is
+\begin{center}
+\texttt{d8ba995d1f52b231ff5e198bd881ec9d1bd0def96c8b9c1c6efbf1f95130482a}.
+\end{center}
+Hence $\Omega_2(r)>\Omega_2(1350)$ for every $r\ge3001$.  The prefix and
+half-line certificate overlap at $r=3001$.
+\end{proof}
+
+The target rational itself is regenerated from the wall recurrence.  It is
+not embedded as a several-thousand-digit constant.  A one-percent upward
+mutation of the target makes the constant coefficient of $H$ negative; this
+checks that the tail gate can detect a false strengthening.
+
+The half-line certificate is stronger than Proposition~\ref{prop:t2} needs,
+and the surplus localizes the whole question.
+
+\begin{corollary}[localization]\label{cor:localize}
+The set of cells with $\Omega_t(r)<4/3$ is exactly
+\[
+ \bigl\{\,(r,2)\;:\;808\le r\le2339\,\bigr\},
+\]
+a contiguous window of $1532$ cells on the single stripe $t=2$.
+\end{corollary}
+
+\begin{proof}
+The coefficient capacity of $H$ --- the largest target for which every
+coefficient inequality still holds --- is
+\[
+ 1.337695687131883021756995\ldots\;>\;\frac43 ,
+\]
+so the same construction at target $4/3$ retains eleven positive
+coefficients and gives $\Omega_2(r)>4/3$ for every $r\ge3001$.  On the prefix
+$2\le r\le3001$ the exact comparisons that prove Proposition~\ref{prop:t2}
+also decide every cell against $4/3$: exactly $1532$ lie below it, they are
+contiguous, and both boundaries are strict,
+\[
+ \Omega_2(807)>\tfrac43>\Omega_2(808),
+ \qquad
+ \Omega_2(2339)<\tfrac43<\Omega_2(2340).
+\]
+Every stripe $t\ge3$ is strictly above $4/3$: Proposition~\ref{prop:t3t4}
+for $t=3,4$, and Theorem~\ref{thm:bulk} with Lemma~\ref{lem:transfer} for
+$t\ge5$.
+\end{proof}
+
+The tail certificate is not tight at its own left edge, since
+$\Omega_2(3001)=1.3394612629\ldots$; the capacity therefore lies below the
+value it certifies against, as a valid bound must, and above $4/3$, as
+Corollary~\ref{cor:localize} needs.  The extremal cell $(1350,2)$ lies inside
+the window, so the entire sub-$4/3$ part of the array is one finite segment
+of one stripe.
+
+\section{The first higher stripes}\label{sec:firststripes}
+
+The separator $4/3$ first appears on $t=3$.
+
+\begin{proposition}\label{prop:t3t4}
+For every integer $r\ge3$, $\Omega_3(r)>4/3$.  For every integer $r\ge4$,
+$\rho(r,4)>4/3$ and consequently $\Omega_4(r)>4/3$.
+\end{proposition}
+
+\begin{proof}[Exact certificates]
+For $t=3$, the bridge ratio is checked directly on $3\le r\le3001$ and a
+degree-fourteen positive-coefficient polynomial proves the remaining
+half-line.  Its coefficient capacity is
+$1.4458344930865687354\ldots>4/3$; changing the target to $3/2$ creates
+negative coefficients.
+
+For $t=4$, the definition-level prefix checks the $997$ cells
+$4\le r\le1000$.  At anchor $1000$, a degree-thirty-eight polynomial has all
+$39$ coefficients strictly positive at target $4/3$.  Its coefficient
+capacity is $1.3417349730931779905\ldots$, so the margin is thin but exact.
+Lemma~\ref{lem:transfer} then gives the bridge statement.
+\end{proof}
+
+The two certificate joins are summarized in Table~\ref{tab:first}.
+\begin{table}[ht]
+\centering
+\caption{Exact certificates for the first higher stripes.  Capacities are
+reporting decimals of exact rationals.}\label{tab:first}
+\begin{tabular}{@{}ccccc@{}}
+\toprule
+stripe & object & exact prefix & tail degree & capacity\\
+\midrule
+$t=3$ & $\Omega_3$ & $3\le r\le3001$ & 14 & $1.4458344930\ldots$\\
+$t=4$ & $\rho(\cdot,4)$ & $4\le r\le1000$ & 38 & $1.3417349730\ldots$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{The uniform \texorpdfstring{$4/3$}{4/3} barrier}\label{sec:bulk}
+
+\begin{theorem}[bulk barrier]\label{thm:bulk}
+For every pair of integers $j\ge t\ge5$,
+\begin{equation}\label{eq:bulk}
+ \rho(j,t)>\frac43.
+\end{equation}
+\end{theorem}
+
+\begin{remark}
+Theorem~\ref{thm:bulk} is used below only as a separator, but it is a
+statement about the square-tail quotient in its own right.  The sharp global
+constant of~\cite{squaretail} is $\min\rho=\rho(129,2)=1.0145761645\ldots$
+over $2\le t\le r$; on the region $t\ge5$ the present theorem raises that to
+$\rho>4/3$, a factor of $1.3141776\ldots$.  It does not claim that $4/3$ is
+approached on any stripe; see \S\ref{sec:open}.
+\end{remark}
+
+The proof partitions the array by mechanisms rather than by a large bounding
+box.  Two terminal identities and one finite core handle $j<504$.  Columns
+$5$ through $10$ have exact positive-coefficient tails.  Above them, the
+increasing wall level $\level_j$ divides the array into top and joint regions.
+
+\subsection{Terminal cells and finite core}
+
+The upper two coefficient cells are symbolic identities from
+\cite{squaretail}:
+\begin{equation}\label{eq:terminal}
+ \rho(j,j)=\frac{j^2}{2},
+ \qquad
+ \rho(j,j-1)>\frac{2j^2}{9}.
+\end{equation}
+For a fixed column $t\ge5$, these give
+\[
+ \rho(t,t)\ge\frac{25}{2},
+ \qquad
+ \rho(t+1,t)>8.
+\]
+
+The remaining cells below row $504$ form the exact core
+\begin{equation}\label{eq:corebox}
+ 7\le j\le503,\qquad 5\le t\le j-2.
+\end{equation}
+There are
+$\sum_{j=7}^{503}(j-6)=123{,}753$ such cells.  A factorial-cancelled integer
+formula tests
+\[
+ 3N_{j,t}^2-4\bigl(2j^2\widehat S_{j,t}\widehat V_{j,t}\bigr)>0
+\]
+at every cell, which is exactly $\rho(j,t)>4/3$.  There are no failed or
+degenerate cells.  The minimum inside the box occurs at $(j,t)=(503,5)$ and is
+\[
+ 3.577109931649850292311076\ldots.
+\]
+The ordered comparison stream has digest
+\begin{center}
+\texttt{83797ef82eca71c6409a61f942bd81894d7352cf557c2bae2055bd40b9216402}.
+\end{center}
+
+\subsection{The fixed columns \texorpdfstring{$5\le t\le8$}{5 <= t <= 8}}
+
+The unbounded certificate is uniform in form.  At an anchor $m_0$, exact
+outward envelopes in a variable $x\ge0$ produce polynomials
+$u_{\rm lo},p_{\rm hi},q_{\rm hi},v$.  The comparison polynomial is
+\begin{equation}\label{eq:tailpoly}
+ H_{t,m_0}(x)=u_{\rm lo}(x)^2
+ -\frac43\,8p_{\rm hi}(x)q_{\rm hi}(x)v(x)^2.
+\end{equation}
+Strict positivity of every coefficient proves $\rho(j,t)>4/3$ for all
+$j\ge m_0+1$.  A definition-level integer prefix reaches the anchor and also
+checks the overlap cell $m_0+1$.  Table~\ref{tab:columns} gives the exact
+joins.  The capacity is the largest target allowed simultaneously by all
+coefficient inequalities, reported decimally only after the exact signs have
+been decided.
+
+\begin{table}[ht]
+\centering
+\caption{Complete fixed-column certificates at target $4/3$.}
+\label{tab:columns}
+\begin{tabular}{@{}ccccc@{}}
+\toprule
+$t$ & exact prefix & tail starts & degree & capacity\\
+\midrule
+5 & $5\le j\le1000$ & 1001 & 46 & $1.410970990331\ldots$\\
+6 & $6\le j\le4006$ & 4007 & 54 & $1.518325000294\ldots$\\
+7 & $7\le j\le12398$ & 12399 & 62 & $1.581611335023\ldots$\\
+8 & $8\le j\le19999$ & 20000 & 70 & $1.420818931366\ldots$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Several smaller anchors fail, which is useful evidence about the mechanism:
+$m_0=2003$ fails for $t=6$ with capacity $1.00047\ldots$, and $m_0=6199$
+fails for $t=7$ with capacity $1.16994\ldots$.  These failures do not weaken
+the theorem; they locate where the chosen envelope becomes strong enough.
+
+\subsection{The top region}
+
+The top estimate already proved in~\cite{squaretail} has more room than its
+original global anchor shows.  On
+\[
+ j\ge4,\qquad \level_j\le(t-2)^2,
+\]
+its proof gives
+\begin{equation}\label{eq:topchain}
+ \rho(j,t)>
+ \frac12\left(1-\frac2{4j-3}\right)^2
+             \left(2-\frac1j\right)^2.
+\end{equation}
+Both factors increase with $j$.  Restricting to $j\ge504$ therefore yields
+the exact floor
+\begin{equation}\label{eq:topfloor}
+ \rho(j,t)>
+ \frac12\left(\frac{2011}{2013}\frac{1007}{504}\right)^2
+ =\frac{4100936855929}{2058631521408}
+ =1.9920693981\ldots>\frac43.
+\end{equation}
+No new asymptotic estimate is needed: the earlier, much smaller floor was the
+same increasing product evaluated at $j=4$.
+
+\subsection{The gate-compatible columns \texorpdfstring{$t=9,10$}{t=9,10}}
+
+Columns $9$ and $10$ use the top region below an anchor and a
+positive-coefficient tail above it.  Since $\level_j$ is increasing, the
+single inequality $\level_{m_0}\le(t-2)^2$ places every row
+$504\le j\le m_0$ in \eqref{eq:topfloor}.  Table~\ref{tab:ceiling} records the
+two joins.
+
+\begin{table}[ht]
+\centering
+\caption{Prefix-free joins for columns $9$ and $10$.  The finite core covers
+$j<504$, the top theorem covers through $m_0$, and the tail begins at
+$m_0+1$.}\label{tab:ceiling}
+\begin{tabular}{@{}cccccc@{}}
+\toprule
+$t$ & $m_0$ & certified gate & tail starts & degree & capacity\\
+\midrule
+9 & 68133 & $\level_{68133}<49$ & 68134 & 78 & $1.660681546638\ldots$\\
+10 & 200000 & $\level_{200000}<64$ & 200001 & 86 & $1.515648188324\ldots$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For $t=9$ the splice is exact at the level crossing: outward intervals prove
+\[
+ \level_{68133}<49<\level_{68134}.
+\]
+Thus $68133$ is the largest top-compatible anchor.  A smaller build at
+$55000$ fails, while the ceiling build passes with every one of its $79$
+coefficients positive.  This corrects a tempting but false diagnostic: the
+envelope route is not dead for $t\ge9$; it is inadequate only at anchors that
+sit too low.  For $t=10$, the build at $100000$ fails and the build at
+$200000$ passes.  A separate sharpened-corridor Sturm certificate also closes
+the $t=10$ joint range, but it is not used in the assembly.
+For $t=9$, the sharpened-corridor slices combined with
+Proposition~\ref{prop:dlaw} give a second certificate chain across the dip
+$49\le\level_j\le768$.  This chain is likewise corroborating rather than
+load-bearing.
+
+\subsection{The joint region for \texorpdfstring{$t\ge11$}{t >= 11}}
+
+It remains to prove the $4/3$ floor when
+\begin{equation}\label{eq:jointdomain}
+ j\ge504,\qquad t\ge11,\qquad \level_j>(t-2)^2.
+\end{equation}
+The corridor reduction in~\cite{squaretail} uses a real parameter $Y$ and the
+rational function
+\begin{align}
+ G&=2t(2t+1),&
+ \alpha&=\frac{(t-1)(2t-1)}{t(2t+1)},&
+ \beta&=\frac{t(2t+1)}{(t+1)(2t+3)},\nonumber\\
+ x_0&=\frac{Y-5}{G},&
+ u_0&=\alpha\frac{Y-5}{Y},&
+ R_0&=1+x_0+(x_0u_0+x_0^2)\frac{1-\beta}{1-u_0}.
+\label{eq:R0}
+\end{align}
+
+\begin{lemma}[joint core]\label{lem:jointcore}
+For every integer $t\ge11$ and every real
+$Y\ge(t-2)(t-7)$, putting $a=Y+5(t-2)$ gives
+\begin{equation}\label{eq:core2720}
+ \frac{[(2t-1)R_0-1]^2}{2aR_0}\ge\frac{27}{20}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}[Exact polynomial certificate]
+Clear the positive denominators in \eqref{eq:core2720}.  For
+$t=11,\dots,16$, the resulting univariate polynomial after
+$Y=(t-2)(t-7)+Q$ is positive on $Q\ge0$ by exact Sturm sequences: the sign
+variations at $0$ and $+\infty$ agree and the value at $0$ is positive.
+
+For every $t\ge17$, substitute
+\[
+ t=S+17,\qquad Y=Q+(S+15)(S+10).
+\]
+The cleared bivariate polynomial has $105$ monomials in $(Q,S)$.  Every
+coefficient is nonnegative and the constant coefficient is positive.  It is
+therefore positive on the whole quadrant $Q,S\ge0$.  The indexed coefficient
+digest is
+\begin{center}
+\texttt{9726005502a811c97584bc22b98eeced6577d4b18a5c3c45df3eb178239c69b4}.
+\end{center}
+The two certificates cover all integers $t\ge11$ and the full real half-line
+in $Y$.
+\end{proof}
+
+The corridor chain also gives, on \eqref{eq:jointdomain},
+\begin{equation}\label{eq:attached}
+ \rho(j,t)\ge\frac{27}{20}
+ \left(1-\frac2{4j-3}\right)^2
+ \left(1-\frac2j\right)^2.
+\end{equation}
+The two attached factors increase with $j$.  At $j=504$ their product is
+\[
+ \frac{2011}{2013}\frac{251}{252}
+ =\frac{504761}{507276}.
+\]
+Consequently
+\begin{equation}\label{eq:jointfloor}
+ \rho(j,t)\ge
+ \frac{27}{20}\left(\frac{504761}{507276}\right)^2
+ =\frac{254783667121}{190614029760}
+ =1.3366469794\ldots>\frac43.
+\end{equation}
+The row-free core needed to clear $4/3$ after these attached factors is exactly
+\[
+ \frac{4/3}{(504761/507276)^2}
+ =\frac{343105253568}{254783667121}
+ =1.3466532507\ldots,
+\]
+which is strictly below $27/20$.
+
+To verify that \eqref{eq:jointdomain} lies in the domain of
+Lemma~\ref{lem:jointcore}, the corridor gives
+$Y\ge\level_j-5(t-2)$.  Hence
+\[
+ Y>(t-2)^2-5(t-2)=(t-2)(t-7).
+\]
+Moreover
+\begin{equation}\label{eq:dichotomyidentity}
+ (t-2)^2-5t=(t-9)^2+9(t-9)+4>0
+\end{equation}
+for every integer $t\ge9$, so the original joint hypothesis
+$\level_j>5t$ also holds.
+
+\subsection{Coverage proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:bulk}]
+Fix $j\ge t\ge5$.  If $j=t$ or $j=t+1$, use
+\eqref{eq:terminal}.  If $t+2\le j\le503$, use the finite core
+\eqref{eq:corebox}.  Thus assume $j\ge504$.
+
+For $5\le t\le8$, Table~\ref{tab:columns} closes the entire column.  For
+$t=9,10$, Table~\ref{tab:ceiling} and the top floor
+\eqref{eq:topfloor} close the column below the tail, while
+\eqref{eq:tailpoly} closes it above the anchor.
+
+Finally let $t\ge11$.  If $\level_j\le(t-2)^2$, use the top floor.  Otherwise
+\eqref{eq:jointdomain} holds, and the joint floor \eqref{eq:jointfloor}
+applies.  These two inequalities are complementary, with equality assigned
+to the top side, so no cell is omitted.  This exhausts the domain.
+\end{proof}
+
+\section{Assembly and sharpness}\label{sec:assembly}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Proposition~\ref{prop:t2} proves
+$\Omega_2(r)\ge\Omw$, with equality only at $r=1350$.
+Proposition~\ref{prop:t3t4} proves $\Omega_t(r)>4/3$ for $t=3,4$.
+For $t\ge5$, Theorem~\ref{thm:bulk} and Lemma~\ref{lem:transfer} give
+\[
+ \Omega_t(r)\ge\min_{t\le j\le r}\rho(j,t)>\frac43.
+\]
+The exact comparison \eqref{eq:separator} now gives \eqref{eq:main} and shows
+that no equality is possible away from $(1350,2)$.  Multiplying by $2$ proves
+the raw formulation \eqref{eq:rawsharp}; equality at the stated cell shows
+that its constant cannot be increased.
+\end{proof}
+
+The master join rebuilds $\Omw$, checks its target fingerprint and its exact
+comparison with $4/3$, validates the three closed lower-stripe records, every
+regional certificate and splice, and the symbolic coverage arithmetic.  It
+has $22$ named gates; all $22$ pass and there are no conditional legs.
+
+\subsection{Why monotonicity is not the proof}
+
+It is natural to guess that $\Omega_{t+1}(r)\ge\Omega_t(r)$ pointwise.  That
+statement is false.  An exact integer comparison at row $45082$ gives
+\begin{equation}\label{eq:monotonicityfail}
+ \Omega_3(45082)<\Omega_2(45082).
+\end{equation}
+The witness is the exact integer
+\[
+ D=L(G)_{r-3}L(C)_{r-2}-L(G)_{r-2}L(C)_{r-3},
+ \qquad
+ G=(1+z)M_{2r-2},\quad C=M_{2r-1},
+\]
+whose sign is that of $\Omega_3(r)-\Omega_2(r)$ because $L(C)_q>0$ on this
+range.  At $r=45082$ it is negative.  Its magnitude has bit length
+$5{,}416{,}154$ and $1{,}630{,}425$ decimal digits, and the SHA-256 digest of
+its big-endian byte encoding is
+\begin{center}
+\texttt{0aed686f60e5eaf6056db6cb8e1f59aa99610dc26293b7f9f57fb53d2f8ed47e}.
+\end{center}
+Only the top few coefficients of each wall row are consumed, so the producer
+carries a fixed-width top window of the recurrence and reaches $r=45082$ in
+well under a minute.
+This does not threaten Theorem~\ref{thm:main}; it only rules out a shortcut.
+The transfer lemma and the $4/3$ barrier compare each stripe with a common
+rational floor instead.
+
+The failed low-anchor tail builds have the same status.  They identify proof
+loss in a particular envelope, not counterexamples to the theorem.  In
+particular, the passing build at the largest top-compatible anchor for $t=9$
+shows why a global statement that the envelope route ``dies at $t=9$'' would
+be incorrect.
+
+\section{A decrement shell and the open profile}\label{sec:open}
+
+The bulk proof exposes a quantitative law that is stronger than the corridor
+bound needed for Theorem~\ref{thm:main}.  In the deposited ladder indexing,
+put
+\[
+ X_{m,k}=2k(2k+1)\frac{B_k(m)}{B_{k-1}(m)},
+ \qquad d_{m,k}=X_{m,k-1}-X_{m,k}.
+\]
+
+\begin{proposition}[certified decrement shell]\label{prop:dlaw}
+For every integer $m\ge68133$ with $\level_{m+1}\le768$, and every
+$k\in\{5,\ldots,11\}$,
+\begin{equation}\label{eq:dlaw}
+ (k-1)d_{m,k}\le\frac65\sqrt{\level_{m+1}}.
+\end{equation}
+\end{proposition}
+
+\begin{proof}[Exact two-leg certificate]
+The first leg propagates the normalized $B$--$C$ ladder with
+$192$-bit outward fixed-point intervals.  It checks
+\eqref{eq:dlaw} at every row $60000\le m\le262144$ and all seven indices,
+with no failure, and deposits the complete interval state at the last row.
+
+For the second leg, write $\beta_k=(\pi/2)B_k$ and use the polynomial flow
+\[
+ \beta_k'=\gamma_k,\qquad \gamma_k'=\beta_{k-1}.
+\]
+The connection polynomials are the exact closure of this flow, so one
+interval anchor suffices.  Injection errors are majorized in the shifted
+variable $x=\tau-\tau_{262144}$; the logarithmic tail moments are bounded
+exactly by
+\[
+ \sum_{j>m}\frac{\bigl(\tfrac12\log(j/m)\bigr)^i}{j^2}
+ \le \frac{i!}{2^i m}+\frac{2(i/8)^i}{m^2}.
+\]
+Fifty-seven contiguous windows of width $7/20$ cover
+$0\le x\le399/20$.  On each window, rational interval subdivision proves
+the seven cleared inequalities and certifies that every lower envelope
+which is squared is nonnegative.  At the right endpoint the lower bound for
+$\level$ exceeds $768$; strict increase of $\level_m$ then closes the stated
+window.  The minimum reported relative margin rises from
+$0.2719\ldots$ to $0.6261\ldots$; these decimals report exact rational
+signs.  Retargeting the same certificate from $6/5$ to $4/5$ fails in the
+first window at six indices, providing a negative control.
+\end{proof}
+
+Proposition~\ref{prop:dlaw} is not needed for the sharp constant: the
+top--tail join already closes $t=9$.  Combined with the sharpened-corridor
+slices, however, it gives a second separately gated proof chain for that
+stripe, parallel to the two chains available for $t=10$.  These routes share
+the wall definitions and upstream results from~\cite{squaretail}; they are
+not claimed to be fully independent implementations.
+
+The open object is now the profile behind \eqref{eq:dlaw}, not the displayed
+inequality itself.  Exact data suggest a scaling law of the form
+\[
+ d_{m,k}\sim\sqrt{\level_{m+1}}\,
+ g\!\left(\frac{k-1}{\sqrt{\level_{m+1}}}\right),
+\]
+with the measured normalized decrement near $0.88$ on the present window and
+drifting toward $1$.  Determining $g$, proving the limiting constant, and
+turning the profile into a uniform-in-$t$ deficit transfer remain open.
+So do the individual higher-stripe minima: the proof uses $4/3$ as a
+separator, not as their sharp value.  Finally, the present results are exact
+computer-assisted theorems rather than kernel-checked theorems; a
+proof-assistant replay remains a separate program.
+
+\section{Reproducibility and claim boundary}\label{sec:repro}
+
+The proof uses symbolic arguments and exact computation in distinct roles.
+Table~\ref{tab:claims} states the boundary explicitly.
+
+\begin{table}[ht]
+\centering
+\caption{Status of the durable claims.}\label{tab:claims}
+\small
+\begin{tabularx}{\textwidth}{@{}P{0.25\textwidth}P{0.22\textwidth}Y@{}}
+\toprule
+claim & status & anchor\\
+\midrule
+Theorem~\ref{thm:main} & exact computer-assisted theorem & written transfer
+and coverage proof plus the $22$-gate exact join\\
+terminal and top formulas & all-parameter theorems & symbolic derivations in
+the text and in~\cite{squaretail}\\
+finite core and prefixes & finite exact theorems on stated ranges & integer
+comparison streams with counts and digests\\
+tail and joint half-lines & exact computer-assisted theorems & rational
+coefficient signs and exact Sturm sequences\\
+reported decimal capacities & derived reporting values & exact rationals in
+the certificate records\\
+individual higher-stripe minima & open & exploratory numerical census only\\
+decrement law \eqref{eq:dlaw} & exact computer-assisted theorem & $192$-bit
+finite ladder, $57$ exact envelope windows, and rejected $4/5$ control\\
+limiting decrement profile & open & exploratory scaling data only\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+No floating-point comparison decides a theorem gate.  The finite core uses
+exact integers; prefix minima use exact cross multiplication; half-line tails
+use rational interval envelopes and coefficientwise positivity; the joint
+certificate uses integer polynomials and exact Sturm signs.  Every reported
+decimal is obtained after the exact verdict.
+
+One inherited interval constructor deserves disclosure.  Its nominal upper
+endpoint for $\pi$ used truncation and therefore produced a singleton lying one
+fixed-point unit too low.  The replay first detects the defect and then repairs
+the interval by an outward ceiling.  Every current consumer immediately scales
+the interval by $1/2$; exact integer rounding maps the defective and corrected
+cells to the same interval for $\pi/2$.  Thus the repair restores the source
+contract while changing every downstream coefficient by exactly zero.  A
+hard-coded $100$-decimal-digit enclosure for $\pi$ rejects the old constructor
+and accepts the repaired one.
+
+The release record contains the exact certificate records, the ordered
+comparison digest and summary extrema for every prefix stream, the
+positive-polynomial certificates, the failed-anchor controls, the exact
+crossing records, and the master join, together with the producer that
+regenerates each stream in full.  The reader-facing source map names the
+load-bearing artifacts and their digests.  This paper makes no kernel-verified
+claim.  The manuscript and its companion replay carry the identifier
+\href{https://doi.org/10.5281/zenodo.21866366}{doi:10.5281/zenodo.21866366}.
+
+\section{Conclusion}
+
+The bridge constant is controlled by a single exceptional cell, but proving
+that fact requires a global argument.  The direct $t=2$ certificate finds the
+cell.  The lossless transfer converts the rest of the question into a common
+$4/3$ square-tail barrier.  Terminal identities, a finite core, fixed columns,
+and the top--joint dichotomy then cover every remaining row without an
+asymptotic gap.
+
+This separates two constants that play different roles.  The factor $2$ in
+the earlier bridge theorem is structural and easy to transport through the
+Tur\'an triangle.  The number
+$2.655018313913361199726406175676\ldots$ is extremal: it is the largest raw
+factor valid over the whole shift wall, and its equality cell is unique.
+
+\section*{Acknowledgments}
+
+This work was carried out independently, without institutional affiliation or
+funding.
+
+Large language models were used as mathematical interlocutors: to test proof
+routes, carry out derivations, and organize exact certificate searches.  Every
+mathematical claim in the paper is supported by a written proof or an exact
+certificate, and responsibility for the result is mine.
+
+\begin{thebibliography}{9}
+
+\bibitem{delannoy}
+J.~Councilman,
+\emph{Strict total positivity of a real Delannoy multiplication table: the
+sharp half-line threshold}, v2.0, Zenodo, 2026;
+\href{https://doi.org/10.5281/zenodo.21778524}{doi:10.5281/zenodo.21778524}.
+
+\bibitem{greenpath}
+J.~Councilman,
+\emph{green-path-dpp: exact rational determinantal algorithms for grounded
+paths}, v0.1.0, Zenodo, 2026;
+\href{https://doi.org/10.5281/zenodo.21778518}{doi:10.5281/zenodo.21778518}.
+
+\bibitem{squaretail}
+J.~Councilman,
+\emph{Odd cycles, sech spectra, and a square-tail inequality}, v0.1.0,
+Zenodo, 2026;
+\href{https://doi.org/10.5281/zenodo.21853982}{doi:10.5281/zenodo.21853982}.
+
+\end{thebibliography}
+
+\end{document}

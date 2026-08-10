@@ -1,0 +1,55 @@
+{
+  "a1_pi_interval_repair": {
+    "corrected_reference_tripwire_passed": true,
+    "corrected_width_ulps": 1,
+    "defective_reference_tripwire_rejected": true,
+    "defective_width_ulps": 0,
+    "half_pi_exactly_invariant": true
+  },
+  "anchor_ratio": {
+    "decimal_truncated": "0.220057206831144904441573",
+    "denominator_digits": 173930,
+    "numerator_digits": 173930,
+    "sha256": "6089fd80a5b082ad9719976314c546b1d250600975882dd2f1a04ba874b6b83f"
+  },
+  "anchor_width": {
+    "denominator_digits": 78,
+    "numerator_digits": 6,
+    "sha256": "94e8a54f9053978dfbbeaefdd505dbb7a5c6f5daf4f14ce72d81b69112f354c0"
+  },
+  "base_certificate_gates": {
+    "P and Q upper": true,
+    "anchor factor": true,
+    "anchor width": true,
+    "certificate": false,
+    "certificate strict": false,
+    "continuum lower": false,
+    "index polynomial": true,
+    "numerator lower": false,
+    "pi bracket": true,
+    "predecessor lower": false
+  },
+  "base_certificate_passed": false,
+  "claim": "rho(r,10)>4/3 for every integer r>=100001",
+  "configuration": {
+    "anchor_m0": 100000,
+    "claim_start_r": 100001,
+    "interval_bits": 256,
+    "kmax": 11,
+    "t": 10,
+    "target": "4/3",
+    "workers": 1
+  },
+  "failure": "base target-one certificate failed",
+  "passed": false,
+  "schema": "h2-fixed-column-four-thirds-tail-v1",
+  "source": {
+    "common_verifier_sha256": "341caf50c74058246dbe22c3b35fb09cea7367df4d8d5173f15fef97b04bb65d",
+    "independent_path": "vendor/odd-cycles-square-tail-replay/verification/A1_verify_tail_independent.py",
+    "independent_sha256": "ad7afc6ac798c7c2db565b2358325fcf9a68de3926b1596d24a16f358a1a6ec6",
+    "producer_sha256": "0d03c57e62cbff406b2ce7bca3b841ed2666c805c17b49b3d0e2266ddead7085"
+  },
+  "source_interval_ladder_crosscheck": true,
+  "status": "FAIL",
+  "tail_log_moment_max_degree": 21
+}

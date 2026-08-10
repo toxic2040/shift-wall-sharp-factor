@@ -1,0 +1,110 @@
+{
+ "schema": "allt-sharp-shift-wall-join-v1",
+ "status": "PASS",
+ "theorem": "Omega_t(r) >= Omega_2(1350) for all integers r >= t >= 2, equality iff (t,r)=(2,1350); the sharp bridge factor is 2*Omega_2(1350) = 2.655018313913361199726406175676...",
+ "t5b": "rho(j,t) > 4/3 for every t >= 5, j >= t",
+ "constants": {
+  "c_star_decimal": "1.327509156956680599863203087838",
+  "four_thirds_minus_c_star": "0.005824176376652733470130",
+  "joint_floor": "254783667121/190614029760",
+  "needed_core": "343105253568/254783667121",
+  "top_floor": "4100936855929/2058631521408"
+ },
+ "leg_hashes": {
+  "core": "83797ef82eca71c6409a61f942bd81894d7352cf557c2bae2055bd40b9216402",
+  "joint_bidegree": "9726005502a811c97584bc22b98eeced6577d4b18a5c3c45df3eb178239c69b4"
+ },
+ "gate_count": 22,
+ "gates": [
+  {
+   "name": "27/20 strictly exceeds the needed joint core constant",
+   "passed": true
+  },
+  {
+   "name": "(27/20)*attached^2 > 4/3 (joint floor beats 4/3)",
+   "passed": true
+  },
+  {
+   "name": "top floor ((2011/2013)(1007/504))^2/2 > 4/3",
+   "passed": true
+  },
+  {
+   "name": "terminal floors t^2/2 >= 25/2 > 4/3 and 2(t+1)^2/9 >= 8 > 4/3",
+   "passed": true
+  },
+  {
+   "name": "c_* = Omega_2(1350) rebuilt, fingerprint matches deposit",
+   "passed": true
+  },
+  {
+   "name": "c_* < 4/3 exactly",
+   "passed": true
+  },
+  {
+   "name": "t=2 stripe: Omega_2 record verified, all gates, unique minimum at r=1350",
+   "passed": true
+  },
+  {
+   "name": "t=3 stripe: Omega_3>4/3 record verified, all gates, c_* fingerprint matches live rebuild",
+   "passed": true
+  },
+  {
+   "name": "t=4 stripe: rho(r,4)>4/3 transfer record verified, all gates, c_* fingerprint matches live rebuild",
+   "passed": true
+  },
+  {
+   "name": "core sweep PASS, 123753 cells, zero failures",
+   "passed": true
+  },
+  {
+   "name": "joint core per-t certified 11..200, no failures",
+   "passed": true
+  },
+  {
+   "name": "joint core bidegree tail t>=17: zero negative monomials",
+   "passed": true
+  },
+  {
+   "name": "t=5: PASS, prefix [5, 1000] + tail from 1001, all gates",
+   "passed": true
+  },
+  {
+   "name": "t=6: PASS, prefix [6, 4006] + tail from 4007, all gates",
+   "passed": true
+  },
+  {
+   "name": "t=7: PASS, prefix [7, 12398] + tail from 12399, all gates",
+   "passed": true
+  },
+  {
+   "name": "t=8: PASS, prefix [8, 19999] + tail from 20000, all gates",
+   "passed": true
+  },
+  {
+   "name": "t=9: UNCONDITIONAL \u2014 top gate (a_r<=49 through 68133) + tail from 68134, deps supplied by top/core legs above",
+   "passed": true
+  },
+  {
+   "name": "t=10: UNCONDITIONAL \u2014 top gate (a_r<=64 through 200000) + tail from 200001, deps supplied by top/core legs above",
+   "passed": true
+  },
+  {
+   "name": "t=10 second proof: sharpened corridor core (Sturm) agrees",
+   "passed": true
+  },
+  {
+   "name": "t=9 second proof: sharpened corridor core + (D-LAW) proved (leg 1 ladder + leg 2 envelope certificate, control rejected)",
+   "passed": true
+  },
+  {
+   "name": "symbolic dichotomy identity and positivity for every t>=9",
+   "passed": true
+  },
+  {
+   "name": "terminal/core/interior adjacency in both algebraic cases",
+   "passed": true
+  }
+ ],
+ "conditional_legs": [],
+ "failures": []
+}

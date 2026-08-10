@@ -1,0 +1,51 @@
+{
+  "algorithm": "square-tail-global-infimum-window-row-v1",
+  "canonical_rows_sha256": "8d8ccbfd7e5ca570af82949f91fd6907d92768f9b94716cb23b73e6e4310e3c1",
+  "cells": 19146,
+  "claim": "rho(r,t)>203/200 on the four residual finite column ranges",
+  "configuration": {
+    "worker_reason": "serial row recurrence; each row comparison is sub-second",
+    "workers": 1
+  },
+  "expected_cells": 19146,
+  "identity_replay_cells": 84,
+  "malformed_rows": [],
+  "missing_rows": [],
+  "mutation_controls": {
+    "reverse_diagonal_corruption_rejected": true
+  },
+  "passed": true,
+  "ranges": [
+    {
+      "cells": 497,
+      "r_hi": 1000,
+      "r_lo": 504,
+      "t": 5
+    },
+    {
+      "cells": 3130,
+      "r_hi": 3633,
+      "r_lo": 504,
+      "t": 6
+    },
+    {
+      "cells": 6946,
+      "r_hi": 8413,
+      "r_lo": 1468,
+      "t": 7
+    },
+    {
+      "cells": 8573,
+      "r_hi": 18456,
+      "r_lo": 9884,
+      "t": 8
+    }
+  ],
+  "resume_rows_reused": 0,
+  "rows": 16483,
+  "schema": "square-tail-global-infimum-windows-v1",
+  "source_sha256": "d0a72841504f37aad42ef4638faadb1beec3ceb9719d113c02dee873939eb842",
+  "status": "PASS",
+  "target": "203/200",
+  "unexpected_rows": []
+}

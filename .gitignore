@@ -1,0 +1,6 @@
+__pycache__/
+.ruff_cache/
+*.pyc
+*.tmp
+tmp/
+replay-work/

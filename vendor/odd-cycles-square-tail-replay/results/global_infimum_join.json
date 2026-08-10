@@ -1,0 +1,84 @@
+{
+  "counts": {
+    "bounded_reduction_windows": 3,
+    "finite_core_cells": 125250,
+    "residual_window_cells": 19146,
+    "residual_window_rows": 16483,
+    "unbounded_fixed_column_tails": 4
+  },
+  "coverage": {
+    "finite_core": "4<=r<=503 and 2<=t<=r-2",
+    "fixed_columns": {
+      "2": "analytic tail r>=504",
+      "3": "analytic tail r>=504",
+      "4": "analytic tail r>=504",
+      "5": "exact window 504<=r<=1000; analytic tail r>=1001",
+      "6": "exact window 504<=r<=3633; joint region r>=3634",
+      "7": "top region 504<=r<=1467; exact window 1468<=r<=8413; joint region r>=8414",
+      "8": "top region 504<=r<=9883; exact window 9884<=r<=18456; joint region r>=18457"
+    },
+    "outside_core_bound": "rho(r,t)>203/200>rho(129,2)",
+    "remaining_interior": "for t>=9, the exact top/joint partition is exhaustive",
+    "terminal_cells": "t=r for r>=2; t=r-1 for r>=3"
+  },
+  "domain": "integers r>=2 and 2<=t<=r",
+  "exact_floors": {
+    "joint_with_row_corrections": "4840889675299/4765350744000",
+    "top": "5929/5408"
+  },
+  "inputs": {
+    "core_uniqueness": {
+      "passed": true,
+      "schema": "square-tail-core-uniqueness-v1",
+      "sha256": "4534121b85555904b972174efbe53f42333287d9b2750162529b15a35b371828"
+    },
+    "finite_core": {
+      "passed": true,
+      "schema": "square-tail-finite-core-v1",
+      "sha256": "5a1182bf33f25170ae3d77eb99c06cfb1996eb14b7f4810f60b6cd141ecfb906"
+    },
+    "finite_windows": {
+      "passed": true,
+      "schema": "square-tail-global-infimum-windows-v1",
+      "sha256": "8458986645d0fde3ef4318a4c748c625bbaa6712ac70883dff16c48465799659"
+    },
+    "retargeted_tails": {
+      "passed": true,
+      "schema": "square-tail-global-infimum-retarget-probe-v3",
+      "sha256": "e4111f56fe7804b101b67f226696444960684258d384292d0a549cec84fd3598"
+    },
+    "terminal_cells": {
+      "passed": true,
+      "schema": "square-tail-terminal-cells-v1",
+      "sha256": "dab4a5f46d8a8910421cce5ef7118af4f13c7e3f5c294cf4e59d00a54c3e2f13"
+    },
+    "top_joint_reduction": {
+      "passed": true,
+      "schema": "square-tail-global-infimum-reduction-v1",
+      "sha256": "9d2ed19cad82b1a1430fb8d83e33fc445e52b7d7177b320f842ac3d91c4e0ae9"
+    }
+  },
+  "minimum": {
+    "cell": [
+      129,
+      2
+    ],
+    "exact_fraction_sha256": "63929d5845e7dfff87de264d7945ddb50c2e58f0d9ba73cb3484b46fd1e7b744",
+    "reporting_decimal_truncated": "1.014576164564870742",
+    "strictly_below_target": true
+  },
+  "mutation_controls": {
+    "t8_window_gap_rejected": true
+  },
+  "not_certified_here": [
+    "the separate trigamma-tail route"
+  ],
+  "passed": true,
+  "producer_file": "A42_global_infimum_join.py",
+  "producer_sha256": "afbfefb378f5acf26fdd09a3593b18b6d3d1e0aa24aad6c14e909b5b7b1a70b4",
+  "schema": "square-tail-global-infimum-join-v1",
+  "status": "PASS",
+  "target": "203/200",
+  "theorem": "min rho(r,t) = rho(129,2), attained at (129,2) and nowhere else; equivalently the sharp constant in d^2 >= (c/r^2) S V is c = 2 rho(129,2), attained at a unique cell",
+  "uniqueness": "global, and asserted only here: core_uniqueness.json supplies uniqueness on 4<=r<=503 and explicitly refuses the global claim; this join supplies the outside-core floor rho>203/200>rho(129,2) and composes the two. The dependency is one-way -- the core certificate does not consume this join"
+}

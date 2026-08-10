@@ -1,0 +1,54 @@
+{
+ "agreement_gate": {
+  "disagreements": [],
+  "sampled_cells": 128,
+  "stride": 977
+ },
+ "algorithm": "square-tail-dyadic-screen-v1",
+ "authority": "A43 is the authoritative exact certificate; this file is an accelerator whose entire sign stream is gated against it",
+ "canonical_sign_sha256": "1dc32143580dbaa9c1a26dd658f162c651476650219b256aabe76f956472178b",
+ "cells": 125250,
+ "cells_at_or_below_witness": [
+  [
+   129,
+   2
+  ]
+ ],
+ "cells_equal_to_witness": [
+  [
+   129,
+   2
+  ]
+ ],
+ "claim": "the A43 core uniqueness verdict, reproduced with a certified dyadic interval screen and exact fallback",
+ "configuration": {
+  "block_size": 25,
+  "worker_policy": "one outer ProcessPoolExecutor; no nested pool"
+ },
+ "exact_fallbacks": 1,
+ "gates": {
+  "A43 verdict reproduced": true,
+  "cell count matches core": true,
+  "exactly one cell at or below witness": true,
+  "screen agrees with exact on the sample": true,
+  "screen and fallback partition the core": true,
+  "sign stream matches A43 cell-by-cell": true,
+  "sole fallback is the exact equality at (129,2)": true,
+  "the witness attains equality": true
+ },
+ "mantissa_bits": 128,
+ "measured_cancellation_bits": {
+  "adjacent_row_deficit_worst": 9,
+  "attained_at": [
+   128,
+   2
+  ],
+  "comparison_margin_worst": 19,
+  "turan_worst_over_core": 7
+ },
+ "passed": true,
+ "schema": "square-tail-dyadic-screen-v1",
+ "screen_discharge_fraction": 0.999992,
+ "screened_above_witness": 125249,
+ "status": "PASS"
+}

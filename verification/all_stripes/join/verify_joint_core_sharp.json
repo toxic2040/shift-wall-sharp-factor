@@ -1,0 +1,477 @@
+{
+ "t10": {
+  "delta": "987/200",
+  "sigma": "987/25",
+  "target": "1077/800",
+  "y_floor": 24,
+  "verdict": "sturm"
+ },
+ "t9_conditional": {
+  "d_law": "(k-1)(X_(k-1)-X_k) <= (6/5) sqrt(a) for k=5..11 in the deposited A12 indexing; the equivalent shifted /k convention is consumed here; d_k < 987/200 for the first three decrements",
+  "target": "267/200",
+  "needed_at_region_edge": "1.333431 (r >= 68134)",
+  "pieces": [
+   {
+    "a": [
+     768,
+     "inf"
+    ],
+    "mode": "unconditional-corridor",
+    "verdict": "coeff-positive"
+   },
+   {
+    "a": [
+     49,
+     768
+    ],
+    "mode": "conditional-kwin9",
+    "slices": [
+     {
+      "a": [
+       49,
+       78
+      ],
+      "delta": "6/5",
+      "sigma": "34101/1400",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       78,
+       108
+      ],
+      "delta": "7/5",
+      "sigma": "519/20",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       108,
+       138
+      ],
+      "delta": "8/5",
+      "sigma": "38559/1400",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       138,
+       168
+      ],
+      "delta": "26/15",
+      "sigma": "8009/280",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       168,
+       198
+      ],
+      "delta": "29/15",
+      "sigma": "21137/700",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       198,
+       228
+      ],
+      "delta": "31/15",
+      "sigma": "1094/35",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       228,
+       258
+      ],
+      "delta": "11/5",
+      "sigma": "22623/700",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       258,
+       288
+      ],
+      "delta": "34/15",
+      "sigma": "45989/1400",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       288,
+       318
+      ],
+      "delta": "12/5",
+      "sigma": "1899/56",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       318,
+       348
+      ],
+      "delta": "38/15",
+      "sigma": "48961/1400",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       348,
+       378
+      ],
+      "delta": "13/5",
+      "sigma": "6213/175",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       378,
+       408
+      ],
+      "delta": "41/15",
+      "sigma": "5119/140",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       408,
+       438
+      ],
+      "delta": "14/5",
+      "sigma": "7419/200",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       438,
+       468
+      ],
+      "delta": "44/15",
+      "sigma": "53419/1400",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       468,
+       498
+      ],
+      "delta": "3",
+      "sigma": "27081/700",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       498,
+       528
+      ],
+      "delta": "46/15",
+      "sigma": "10981/280",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       528,
+       558
+      ],
+      "delta": "16/5",
+      "sigma": "56391/1400",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       558,
+       588
+      ],
+      "delta": "49/15",
+      "sigma": "4081/100",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       588,
+       618
+      ],
+      "delta": "10/3",
+      "sigma": "57877/1400",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       618,
+       648
+      ],
+      "delta": "17/5",
+      "sigma": "2931/70",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       648,
+       678
+      ],
+      "delta": "53/15",
+      "sigma": "30053/700",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       678,
+       708
+      ],
+      "delta": "18/5",
+      "sigma": "60849/1400",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       708,
+       738
+      ],
+      "delta": "11/3",
+      "sigma": "7699/175",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       738,
+       768
+      ],
+      "delta": "56/15",
+      "sigma": "1781/40",
+      "verdict": "whole-halfline"
+     }
+    ],
+    "all_ok": true
+   },
+   {
+    "a": [
+     49,
+     768
+    ],
+    "mode": "conditional-kwin8",
+    "slices": [
+     {
+      "a": [
+       49,
+       78
+      ],
+      "delta": "27/20",
+      "sigma": "34101/1400",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       78,
+       108
+      ],
+      "delta": "63/40",
+      "sigma": "519/20",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       108,
+       138
+      ],
+      "delta": "9/5",
+      "sigma": "38559/1400",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       138,
+       168
+      ],
+      "delta": "39/20",
+      "sigma": "8009/280",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       168,
+       198
+      ],
+      "delta": "87/40",
+      "sigma": "21137/700",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       198,
+       228
+      ],
+      "delta": "93/40",
+      "sigma": "1094/35",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       228,
+       258
+      ],
+      "delta": "99/40",
+      "sigma": "22623/700",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       258,
+       288
+      ],
+      "delta": "51/20",
+      "sigma": "45989/1400",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       288,
+       318
+      ],
+      "delta": "27/10",
+      "sigma": "1899/56",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       318,
+       348
+      ],
+      "delta": "57/20",
+      "sigma": "48961/1400",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       348,
+       378
+      ],
+      "delta": "117/40",
+      "sigma": "6213/175",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       378,
+       408
+      ],
+      "delta": "123/40",
+      "sigma": "5119/140",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       408,
+       438
+      ],
+      "delta": "63/20",
+      "sigma": "7419/200",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       438,
+       468
+      ],
+      "delta": "33/10",
+      "sigma": "53419/1400",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       468,
+       498
+      ],
+      "delta": "27/8",
+      "sigma": "27081/700",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       498,
+       528
+      ],
+      "delta": "69/20",
+      "sigma": "10981/280",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       528,
+       558
+      ],
+      "delta": "18/5",
+      "sigma": "56391/1400",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       558,
+       588
+      ],
+      "delta": "147/40",
+      "sigma": "4081/100",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       588,
+       618
+      ],
+      "delta": "15/4",
+      "sigma": "57877/1400",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       618,
+       648
+      ],
+      "delta": "153/40",
+      "sigma": "2931/70",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       648,
+       678
+      ],
+      "delta": "159/40",
+      "sigma": "30053/700",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       678,
+       708
+      ],
+      "delta": "81/20",
+      "sigma": "60849/1400",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       708,
+       738
+      ],
+      "delta": "33/8",
+      "sigma": "7699/175",
+      "verdict": "whole-halfline"
+     },
+     {
+      "a": [
+       738,
+       768
+      ],
+      "delta": "21/5",
+      "sigma": "1781/40",
+      "verdict": "whole-halfline"
+     }
+    ],
+    "all_ok": true
+   }
+  ],
+  "all_ok_primary": true
+ }
+}

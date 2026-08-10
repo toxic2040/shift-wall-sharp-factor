@@ -1,0 +1,97 @@
+{
+  "a1_pi_interval_repair": {
+    "corrected_reference_tripwire_passed": true,
+    "corrected_width_ulps": 1,
+    "defective_reference_tripwire_rejected": true,
+    "defective_width_ulps": 0,
+    "half_pi_exactly_invariant": true
+  },
+  "anchor_ratio": {
+    "decimal_truncated": "1.000471075521646907112312",
+    "denominator_digits": 103545,
+    "numerator_digits": 103545,
+    "sha256": "62805eea361dd63b67d4bf0e65e1fc0474a7a122e378e319f6183e1b180a1737"
+  },
+  "anchor_width": {
+    "denominator_digits": 77,
+    "numerator_digits": 4,
+    "sha256": "a34072be1cb99917cd79d05f5e778a5e7bf15d9b5aaa185991ad4849ae3f84e0"
+  },
+  "base_certificate_gates": {
+    "P and Q upper": true,
+    "anchor factor": true,
+    "anchor width": true,
+    "certificate": true,
+    "certificate strict": true,
+    "continuum lower": true,
+    "index polynomial": true,
+    "numerator lower": true,
+    "pi bracket": true,
+    "predecessor lower": true
+  },
+  "base_certificate_passed": true,
+  "capacity_limiting_indices": [
+    0
+  ],
+  "claim": "rho(r,6)>4/3 for every integer r>=2004",
+  "coefficient_capacity": {
+    "decimal_truncated": "1.000471075521646907112312",
+    "denominator_digits": 103545,
+    "numerator_digits": 103545,
+    "sha256": "62805eea361dd63b67d4bf0e65e1fc0474a7a122e378e319f6183e1b180a1737"
+  },
+  "coefficient_fingerprint_encoding": "ASCII index:numerator/denominator followed by newline",
+  "comparison_denominator_nonnegative": true,
+  "configuration": {
+    "anchor_m0": 2003,
+    "claim_start_r": 2004,
+    "interval_bits": 256,
+    "kmax": 7,
+    "t": 6,
+    "target": "4/3",
+    "workers": 1
+  },
+  "mutation_control": null,
+  "passed": false,
+  "retargeted_coefficient_count": 55,
+  "retargeted_degree": 54,
+  "retargeted_negative_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "retargeted_positive_coefficients": 51,
+  "retargeted_sha256": "03f9c6a027fb0176280d9c419763b5f944ef8d27e618550f4706c0da9b094c00",
+  "retargeted_zero_indices": [],
+  "schema": "h2-fixed-column-four-thirds-tail-v1",
+  "source": {
+    "common_verifier_sha256": "341caf50c74058246dbe22c3b35fb09cea7367df4d8d5173f15fef97b04bb65d",
+    "independent_path": "vendor/odd-cycles-square-tail-replay/verification/A1_verify_tail_independent.py",
+    "independent_sha256": "ad7afc6ac798c7c2db565b2358325fcf9a68de3926b1596d24a16f358a1a6ec6",
+    "producer_sha256": "0d03c57e62cbff406b2ce7bca3b841ed2666c805c17b49b3d0e2266ddead7085"
+  },
+  "source_interval_ladder_crosscheck": true,
+  "status": "FAIL",
+  "tail_log_moment_max_degree": 13,
+  "target_one_reconstruction_exact": true,
+  "three_halves_control": {
+    "consistent_with_capacity": true,
+    "negative_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      30,
+      31
+    ],
+    "strictly_positive": false,
+    "zero_indices": []
+  },
+  "zero_denominator_indices": [
+    53,
+    54
+  ]
+}

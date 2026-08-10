@@ -1,0 +1,125 @@
+{
+  "cell_count": 19992,
+  "chunks": [
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 7648,
+      "r_lo": 8
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 10000,
+      "r_lo": 7648
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 11698,
+      "r_lo": 10000
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 13075,
+      "r_lo": 11698
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 14254,
+      "r_lo": 13075
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 15296,
+      "r_lo": 14254
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 16236,
+      "r_lo": 15296
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 17097,
+      "r_lo": 16236
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 17894,
+      "r_lo": 17097
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 18638,
+      "r_lo": 17894
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 19338,
+      "r_lo": 18638
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 20000,
+      "r_lo": 19338
+    }
+  ],
+  "claim": "rho(r,8)>4/3 for every integer r in [8,19999]",
+  "comparison_sha256": "c87770e3d4624781eaed368f979b79e4b2975f469e0b31a9fe288d7f2c470b38",
+  "comparison_stream_encoding": "ASCII r:<|=|> followed by newline",
+  "decrement_signs": {
+    "negative": 0,
+    "positive": 20004,
+    "zero": 0
+  },
+  "definition_crosscheck": {
+    "cells": 53,
+    "engine": "vendor/odd-cycles-square-tail-replay/verification/engine.py",
+    "failures": [],
+    "range": [
+      8,
+      60
+    ]
+  },
+  "finite_minimum": {
+    "decimal_truncated_50": "4.52472057606382470753630539486561129753655227913163",
+    "denominator_digits": 284731,
+    "margin_over_four_thirds_24": "3.191387242730491374202972",
+    "numerator_digits": 284732,
+    "sha256": "72f4a3dfb96a7165f5b9ef37b28c51f67e4299d34b63a7e57c665f40ad56eaed"
+  },
+  "finite_minimum_r": 19999,
+  "m0": 19999,
+  "minimum_at_right_endpoint": true,
+  "overlap_row": {
+    "comparison": ">",
+    "decimal_truncated_50": "4.52468453922347666925692238261987826317586121687342",
+    "denominator_digits": 284771,
+    "margin_over_four_thirds_24": "3.191351205890143335923589",
+    "numerator_digits": 284772,
+    "r": 20000,
+    "raw_sha256": "4dc35031af125962125f0c7a73a43c6dc5913e6efe3e448c9137387f4a17311b",
+    "sha256": "97a0333220e10262679dbf3d959b53b21ad4e18bcb848610eb754f5481277fcd"
+  },
+  "passed": true,
+  "problems": [],
+  "range": [
+    8,
+    19999
+  ],
+  "raw_row_fingerprint_encoding": "ASCII lowercase-hex numerator/denominator",
+  "schema": "h2-fixed-column-four-thirds-prefix-v1",
+  "status": "PASS",
+  "strict_failures": [],
+  "t": 8,
+  "terminal_rows": [
+    {
+      "equals_half_r_squared": true,
+      "r": 8,
+      "value_decimal_6": "32.000000"
+    },
+    {
+      "r": 9,
+      "value_decimal_6": "36.937452"
+    }
+  ],
+  "workers_note": "one outer ProcessPoolExecutor over r-range chunks; no nested pools"
+}

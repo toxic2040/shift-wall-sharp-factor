@@ -1,0 +1,102 @@
+{
+  "claim": "rho(j,5)>4/3 for every integer j>=5",
+  "column": 5,
+  "coverage": {
+    "overlap_cell": 1001,
+    "prefix": [
+      5,
+      1000
+    ],
+    "tail": "r>=1001"
+  },
+  "failures": [],
+  "gates": {
+    "final attempt is the passing one": true,
+    "overlap cell exact comparison": true,
+    "overlap cell is m0 plus one": true,
+    "overlap margin positive": true,
+    "prefix cell count": true,
+    "prefix column and range": true,
+    "prefix definition crosscheck": true,
+    "prefix minimum above target": true,
+    "prefix passed": true,
+    "prefix schema": true,
+    "prefix strict": true,
+    "tail base gates": true,
+    "tail capacity above four thirds": true,
+    "tail column and anchor": true,
+    "tail mutation control": true,
+    "tail passed": true,
+    "tail pi repair": true,
+    "tail reconstruction and denominator": true,
+    "tail schema": true,
+    "tail strictly positive": true,
+    "three halves control recorded": true
+  },
+  "overlap_row": {
+    "comparison": ">",
+    "decimal_truncated_50": "3.08640805979093020647454664963317974090804733261036",
+    "denominator_digits": 12588,
+    "margin_over_four_thirds_24": "1.753074726457596873141213",
+    "numerator_digits": 12589,
+    "r": 1001,
+    "raw_sha256": "0ea775d06a74593202cebc188395d88964111a802abe2b60069ef1ab3b682841",
+    "sha256": "8058b2017c2f7d946dc724d41d49df6d55e7b6310c91d69150624678331644aa"
+  },
+  "passed": true,
+  "prefix": {
+    "cell_count": 996,
+    "comparison_sha256": "bda288cb059276b6643bf6f6689aa6aa91a78b3b3b180e1a070ca4f8e3d4d278",
+    "file": "H2_PREFIX_T5.json",
+    "finite_minimum": {
+      "decimal_truncated_50": "3.08701629636097344786572165301322831232241723705237",
+      "denominator_digits": 12566,
+      "margin_over_four_thirds_24": "1.753682963027640114532388",
+      "numerator_digits": 12567,
+      "sha256": "30841ddf1ecf9a62acac83e5e9256a1f1bb703a62d838fae5cdea15433365ea8"
+    },
+    "finite_minimum_r": 1000,
+    "minimum_at_right_endpoint": true,
+    "sha256": "13db95d05ce993da7579acfe13ffdec103e632a637ec9f01bfad7d6afb98a4e5"
+  },
+  "schema": "h2-fixed-column-four-thirds-join-v1",
+  "status": "PASS",
+  "tail": {
+    "anchor_m0": 1000,
+    "capacity_limiting_indices": [
+      24
+    ],
+    "coefficient_capacity": {
+      "decimal_truncated": "1.410970990331148792594654",
+      "denominator_digits": 30684,
+      "numerator_digits": 30684,
+      "sha256": "e3ecbd743fca1b41054de198eeb23e98c3bdfe1a608f92e073ee7dbcf0406548"
+    },
+    "file": "H2_TAIL_T5_M1000.json",
+    "mutation_control": {
+      "first_failing_negative_indices": [
+        24
+      ],
+      "first_failing_target": "106/75",
+      "first_failing_target_decimal": "1.413333",
+      "grid_step": "1/100",
+      "previous_grid_target": "421/300",
+      "previous_grid_target_no_negative": true
+    },
+    "retargeted_degree": 46,
+    "retargeted_sha256": "d24df0232421bce4fef034648cd1808398cefc6554a6a6a8113ccf37b17c17cc",
+    "sha256": "eb849b3c9921362c8362ee37added7f2bb3a4ed7e18a83635c594b2d79a8058e",
+    "three_halves_control_strictly_positive": false
+  },
+  "tail_attempts": [
+    {
+      "anchor_m0": 1000,
+      "anchor_ratio_decimal": "1.646934530721418218327540",
+      "capacity_decimal": "1.410970990331148792594654",
+      "file": "H2_TAIL_T5_M1000.json",
+      "retargeted_negative_indices": [],
+      "sha256": "eb849b3c9921362c8362ee37added7f2bb3a4ed7e18a83635c594b2d79a8058e",
+      "status": "PASS"
+    }
+  ]
+}

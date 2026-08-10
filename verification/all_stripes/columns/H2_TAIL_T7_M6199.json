@@ -1,0 +1,90 @@
+{
+  "a1_pi_interval_repair": {
+    "corrected_reference_tripwire_passed": true,
+    "corrected_width_ulps": 1,
+    "defective_reference_tripwire_rejected": true,
+    "defective_width_ulps": 0,
+    "half_pi_exactly_invariant": true
+  },
+  "anchor_ratio": {
+    "decimal_truncated": "1.169940886982916669801804",
+    "denominator_digits": 138441,
+    "numerator_digits": 138441,
+    "sha256": "52497dc377e67aaf5f527dd4eb78e1236aea44ff71d5da6670f7341dc5044401"
+  },
+  "anchor_width": {
+    "denominator_digits": 78,
+    "numerator_digits": 4,
+    "sha256": "89cb02d40ce9ff17f170cf9d33c614b471d5bbfd89dec5d183322e519294258d"
+  },
+  "base_certificate_gates": {
+    "P and Q upper": true,
+    "anchor factor": true,
+    "anchor width": true,
+    "certificate": true,
+    "certificate strict": true,
+    "continuum lower": true,
+    "index polynomial": true,
+    "numerator lower": true,
+    "pi bracket": true,
+    "predecessor lower": true
+  },
+  "base_certificate_passed": true,
+  "capacity_limiting_indices": [
+    0
+  ],
+  "claim": "rho(r,7)>4/3 for every integer r>=6200",
+  "coefficient_capacity": {
+    "decimal_truncated": "1.169940886982916669801804",
+    "denominator_digits": 138441,
+    "numerator_digits": 138441,
+    "sha256": "52497dc377e67aaf5f527dd4eb78e1236aea44ff71d5da6670f7341dc5044401"
+  },
+  "coefficient_fingerprint_encoding": "ASCII index:numerator/denominator followed by newline",
+  "comparison_denominator_nonnegative": true,
+  "configuration": {
+    "anchor_m0": 6199,
+    "claim_start_r": 6200,
+    "interval_bits": 256,
+    "kmax": 8,
+    "t": 7,
+    "target": "4/3",
+    "workers": 1
+  },
+  "mutation_control": null,
+  "passed": false,
+  "retargeted_coefficient_count": 63,
+  "retargeted_degree": 62,
+  "retargeted_negative_indices": [
+    0,
+    1
+  ],
+  "retargeted_positive_coefficients": 61,
+  "retargeted_sha256": "3eb6a2ebd99a66f3d63e3cec772ec41d6c629d08cacc36dec2535fa6be0c96b5",
+  "retargeted_zero_indices": [],
+  "schema": "h2-fixed-column-four-thirds-tail-v1",
+  "source": {
+    "common_verifier_sha256": "341caf50c74058246dbe22c3b35fb09cea7367df4d8d5173f15fef97b04bb65d",
+    "independent_path": "vendor/odd-cycles-square-tail-replay/verification/A1_verify_tail_independent.py",
+    "independent_sha256": "ad7afc6ac798c7c2db565b2358325fcf9a68de3926b1596d24a16f358a1a6ec6",
+    "producer_sha256": "0d03c57e62cbff406b2ce7bca3b841ed2666c805c17b49b3d0e2266ddead7085"
+  },
+  "source_interval_ladder_crosscheck": true,
+  "status": "FAIL",
+  "tail_log_moment_max_degree": 15,
+  "target_one_reconstruction_exact": true,
+  "three_halves_control": {
+    "consistent_with_capacity": true,
+    "negative_indices": [
+      0,
+      1,
+      2
+    ],
+    "strictly_positive": false,
+    "zero_indices": []
+  },
+  "zero_denominator_indices": [
+    61,
+    62
+  ]
+}

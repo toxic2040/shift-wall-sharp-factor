@@ -1,0 +1,70 @@
+{
+  "cell_count": 996,
+  "chunks": [
+    {
+      "exact_min_comparisons": 1,
+      "r_hi": 1001,
+      "r_lo": 5
+    }
+  ],
+  "claim": "rho(r,5)>4/3 for every integer r in [5,1000]",
+  "comparison_sha256": "bda288cb059276b6643bf6f6689aa6aa91a78b3b3b180e1a070ca4f8e3d4d278",
+  "comparison_stream_encoding": "ASCII r:<|=|> followed by newline",
+  "decrement_signs": {
+    "negative": 0,
+    "positive": 997,
+    "zero": 0
+  },
+  "definition_crosscheck": {
+    "cells": 56,
+    "engine": "vendor/odd-cycles-square-tail-replay/verification/engine.py",
+    "failures": [],
+    "range": [
+      5,
+      60
+    ]
+  },
+  "finite_minimum": {
+    "decimal_truncated_50": "3.08701629636097344786572165301322831232241723705237",
+    "denominator_digits": 12566,
+    "margin_over_four_thirds_24": "1.753682963027640114532388",
+    "numerator_digits": 12567,
+    "sha256": "30841ddf1ecf9a62acac83e5e9256a1f1bb703a62d838fae5cdea15433365ea8"
+  },
+  "finite_minimum_r": 1000,
+  "m0": 1000,
+  "minimum_at_right_endpoint": true,
+  "overlap_row": {
+    "comparison": ">",
+    "decimal_truncated_50": "3.08640805979093020647454664963317974090804733261036",
+    "denominator_digits": 12588,
+    "margin_over_four_thirds_24": "1.753074726457596873141213",
+    "numerator_digits": 12589,
+    "r": 1001,
+    "raw_sha256": "0ea775d06a74593202cebc188395d88964111a802abe2b60069ef1ab3b682841",
+    "sha256": "8058b2017c2f7d946dc724d41d49df6d55e7b6310c91d69150624678331644aa"
+  },
+  "passed": true,
+  "problems": [],
+  "range": [
+    5,
+    1000
+  ],
+  "raw_row_fingerprint_encoding": "ASCII lowercase-hex numerator/denominator",
+  "schema": "h2-fixed-column-four-thirds-prefix-v1",
+  "status": "PASS",
+  "strict_failures": [],
+  "t": 5,
+  "terminal_rows": [
+    {
+      "equals_half_r_squared": true,
+      "r": 5,
+      "value_decimal_6": "12.500000"
+    },
+    {
+      "r": 6,
+      "value_decimal_6": "14.790331"
+    }
+  ],
+  "workers_note": "one outer ProcessPoolExecutor over r-range chunks; no nested pools"
+}

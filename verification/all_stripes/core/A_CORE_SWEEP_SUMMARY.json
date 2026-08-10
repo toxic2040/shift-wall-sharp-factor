@@ -1,0 +1,27 @@
+{
+  "schema": "h3-core-sweep-four-thirds-v1",
+  "claim": "rho(r,t) > 4/3 for every 7 <= r <= 503 and 5 <= t <= r-2",
+  "route": "definition-level exact integers, (2r-1)! cancelled; sign test = 3*M^2 - 4*(2 r^2 Lg Lv)",
+  "status": "PASS",
+  "rows": 497,
+  "total_cells": 123753,
+  "expected_cells": 123753,
+  "failures": [],
+  "degenerate": [],
+  "comparison_stream_encoding": "ASCII r:t:cmp newline, r=7..503 ascending, t=5..r-2 ascending",
+  "comparison_stream_sha256": "83797ef82eca71c6409a61f942bd81894d7352cf557c2bae2055bd40b9216402",
+  "global_minimum": {
+    "r": 503,
+    "t": 5,
+    "sha256_of_num_slash_den": "9d91f555537628a32fca0f4b9050cd970532424070d7605c5725f3624fc7c98b",
+    "numerator_digits": 10330,
+    "denominator_digits": 10329,
+    "decimal_truncated_24": "3.577109931649850292311076",
+    "margin_over_four_thirds_decimal_truncated_24": "2.243776598316516958977742"
+  },
+  "execution": {
+    "interpreter": "3.14.5 free-threading build | packaged by conda-forge | (main, May 20 2026, 00:15:54) [GCC 14.3.0]",
+    "workers": 6,
+    "chunk_rows": 8
+  }
+}

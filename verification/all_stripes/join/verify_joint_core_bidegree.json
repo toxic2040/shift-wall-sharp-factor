@@ -1,0 +1,10 @@
+{
+ "schema": "joint-core-27-20-bidegree-v1",
+ "claim": "cleared CORE-27/20 polynomial, t=S+17, Y=Q+(S+15)(S+10): all monomial coefficients in (Q,S) nonnegative, constant positive => CORE-27/20 for every integer t>=17, Y >= (t-2)(t-7)",
+ "T0": 17,
+ "monomial_count": 105,
+ "negative_monomials": 0,
+ "constant_positive": true,
+ "coefficient_sha256": "9726005502a811c97584bc22b98eeced6577d4b18a5c3c45df3eb178239c69b4",
+ "status": "PASS"
+}

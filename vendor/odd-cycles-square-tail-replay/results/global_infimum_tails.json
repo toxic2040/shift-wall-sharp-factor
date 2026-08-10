@@ -1,0 +1,266 @@
+{
+  "algorithm": "square-tail-global-infimum-retarget-components-v3",
+  "columns": {
+    "2": {
+      "above_capacity_mutation": {
+        "denominator_digits": 25752,
+        "numerator_digits": 25752,
+        "sha256": "e6f7b45d0ded84dbf6f6ae979206cd2c503a5deed7f8676ca3a0710e644a88f1"
+      },
+      "algorithm": "square-tail-global-infimum-retarget-components-v3",
+      "anchor_m0": 503,
+      "anchor_ratio": {
+        "denominator_digits": 25754,
+        "numerator_digits": 25754,
+        "sha256": "17355ff989db95a5e045d6e92a39980ff5a13023f482dcb501239d960326553c"
+      },
+      "anchor_ratio_decimal_truncated": "1.037480400875012",
+      "capacity_limiting_indices": [
+        0
+      ],
+      "claim_start_r": 504,
+      "coefficient_capacity": {
+        "denominator_digits": 25754,
+        "numerator_digits": 25754,
+        "sha256": "17355ff989db95a5e045d6e92a39980ff5a13023f482dcb501239d960326553c"
+      },
+      "coefficient_capacity_decimal_truncated": "1.037480400875012",
+      "coefficient_capacity_vs_target": "above",
+      "coefficient_count": 23,
+      "degree": 22,
+      "gates": {
+        "above_capacity_mutation_rejected": true,
+        "capacity_exceeds_target": true,
+        "comparison_denominator_nonnegative": true,
+        "producer_digest_stable": true,
+        "retargeted_coefficients_strictly_positive": true,
+        "source_certificate_passed": true,
+        "source_digest_stable": true,
+        "source_interval_ladder_replay": true,
+        "target_one_reconstruction_exact": true
+      },
+      "negative_coefficient_indices": [],
+      "passed": true,
+      "producer_sha256": "475a3d9a3dc2e569ef255ff122dda7ed0b9874ec0eb47fac2c8197ba50d6e425",
+      "retargeted_polynomial_sha256": "73cdc20aedac603c90dfe2a42bb34998bfa3cf7bd6ff0cbbd77cdd65bffd92bb",
+      "schema": "square-tail-global-infimum-retarget-probe-v3",
+      "source_sha256": "ad7afc6ac798c7c2db565b2358325fcf9a68de3926b1596d24a16f358a1a6ec6",
+      "status": "PASS",
+      "t": 2,
+      "target": "203/200",
+      "zero_coefficient_indices": []
+    },
+    "3": {
+      "above_capacity_mutation": {
+        "denominator_digits": 36038,
+        "numerator_digits": 36038,
+        "sha256": "07f088b21fa0d4d8979afeabc711164fe0eda9d22c95189f6bf0c2c8779b1aad"
+      },
+      "algorithm": "square-tail-global-infimum-retarget-components-v3",
+      "anchor_m0": 503,
+      "anchor_ratio": {
+        "denominator_digits": 42490,
+        "numerator_digits": 42491,
+        "sha256": "cfa7d5435bd05910a4e1ec106b13fffbd1751aa2f50a3182080500b649a02042"
+      },
+      "anchor_ratio_decimal_truncated": "1.350415220372230",
+      "capacity_limiting_indices": [
+        9
+      ],
+      "claim_start_r": 504,
+      "coefficient_capacity": {
+        "denominator_digits": 36039,
+        "numerator_digits": 36039,
+        "sha256": "98d411c6fab165474ce6fdbc4952a587ebacaf5b2bca6ecf79ff02ca272a938f"
+      },
+      "coefficient_capacity_decimal_truncated": "1.199325541741801",
+      "coefficient_capacity_vs_target": "above",
+      "coefficient_count": 31,
+      "degree": 30,
+      "gates": {
+        "above_capacity_mutation_rejected": true,
+        "capacity_exceeds_target": true,
+        "comparison_denominator_nonnegative": true,
+        "producer_digest_stable": true,
+        "retargeted_coefficients_strictly_positive": true,
+        "source_certificate_passed": true,
+        "source_digest_stable": true,
+        "source_interval_ladder_replay": true,
+        "target_one_reconstruction_exact": true
+      },
+      "negative_coefficient_indices": [],
+      "passed": true,
+      "producer_sha256": "475a3d9a3dc2e569ef255ff122dda7ed0b9874ec0eb47fac2c8197ba50d6e425",
+      "retargeted_polynomial_sha256": "a26b30e213771f51044990204445df17a9a94a9af9cf00c6b6681f6d12686b44",
+      "schema": "square-tail-global-infimum-retarget-probe-v3",
+      "source_sha256": "ad7afc6ac798c7c2db565b2358325fcf9a68de3926b1596d24a16f358a1a6ec6",
+      "status": "PASS",
+      "t": 3,
+      "target": "203/200",
+      "zero_coefficient_indices": []
+    },
+    "4": {
+      "above_capacity_mutation": {
+        "denominator_digits": 38046,
+        "numerator_digits": 38046,
+        "sha256": "72b9447b8c36194a7c27b632f35475985bbed06dc83e30ef4b05837f1863cc31"
+      },
+      "algorithm": "square-tail-global-infimum-retarget-components-v3",
+      "anchor_m0": 503,
+      "anchor_ratio": {
+        "denominator_digits": 59221,
+        "numerator_digits": 59221,
+        "sha256": "61b34ca858962c74ff6018cf2c3aca2a1bb36ae8efd2bdafb32e7149ebc91be3"
+      },
+      "anchor_ratio_decimal_truncated": "1.676476455677754",
+      "capacity_limiting_indices": [
+        17
+      ],
+      "claim_start_r": 504,
+      "coefficient_capacity": {
+        "denominator_digits": 38050,
+        "numerator_digits": 38050,
+        "sha256": "7c55b16a4ace67649c80bd2fa2d2f644e59964feb69460dedcc73af16283eb02"
+      },
+      "coefficient_capacity_decimal_truncated": "1.296907776732946",
+      "coefficient_capacity_vs_target": "above",
+      "coefficient_count": 39,
+      "degree": 38,
+      "gates": {
+        "above_capacity_mutation_rejected": true,
+        "capacity_exceeds_target": true,
+        "comparison_denominator_nonnegative": true,
+        "producer_digest_stable": true,
+        "retargeted_coefficients_strictly_positive": true,
+        "source_certificate_passed": true,
+        "source_digest_stable": true,
+        "source_interval_ladder_replay": true,
+        "target_one_reconstruction_exact": true
+      },
+      "negative_coefficient_indices": [],
+      "passed": true,
+      "producer_sha256": "475a3d9a3dc2e569ef255ff122dda7ed0b9874ec0eb47fac2c8197ba50d6e425",
+      "retargeted_polynomial_sha256": "0871df39df04906382c7ed88c0dba8361266b76ac740fc193a1830cfe70e1cdb",
+      "schema": "square-tail-global-infimum-retarget-probe-v3",
+      "source_sha256": "ad7afc6ac798c7c2db565b2358325fcf9a68de3926b1596d24a16f358a1a6ec6",
+      "status": "PASS",
+      "t": 4,
+      "target": "203/200",
+      "zero_coefficient_indices": []
+    },
+    "5": {
+      "above_capacity_mutation": {
+        "denominator_digits": 30678,
+        "numerator_digits": 30679,
+        "sha256": "46702a552eab79c2360f5d16f5ff2265bf36ef4bd6010deaaa7f09c081ae7db9"
+      },
+      "algorithm": "square-tail-global-infimum-retarget-components-v3",
+      "anchor_m0": 1000,
+      "anchor_ratio": {
+        "denominator_digits": 55301,
+        "numerator_digits": 55301,
+        "sha256": "505257fc249c1d2bbc5b0ecef3e0686d27bf5e7ba32869416435bf3c3388859b"
+      },
+      "anchor_ratio_decimal_truncated": "1.646934530721418",
+      "capacity_limiting_indices": [
+        24
+      ],
+      "claim_start_r": 1001,
+      "coefficient_capacity": {
+        "denominator_digits": 30684,
+        "numerator_digits": 30684,
+        "sha256": "e3ecbd743fca1b41054de198eeb23e98c3bdfe1a608f92e073ee7dbcf0406548"
+      },
+      "coefficient_capacity_decimal_truncated": "1.410970990331148",
+      "coefficient_capacity_vs_target": "above",
+      "coefficient_count": 47,
+      "degree": 46,
+      "gates": {
+        "above_capacity_mutation_rejected": true,
+        "capacity_exceeds_target": true,
+        "comparison_denominator_nonnegative": true,
+        "producer_digest_stable": true,
+        "retargeted_coefficients_strictly_positive": true,
+        "source_certificate_passed": true,
+        "source_digest_stable": true,
+        "source_interval_ladder_replay": true,
+        "target_one_reconstruction_exact": true
+      },
+      "negative_coefficient_indices": [],
+      "passed": true,
+      "producer_sha256": "475a3d9a3dc2e569ef255ff122dda7ed0b9874ec0eb47fac2c8197ba50d6e425",
+      "retargeted_polynomial_sha256": "ed882fb63903152967494162c80b72da1bb07d68f8e26effa12d5bec13fca797",
+      "schema": "square-tail-global-infimum-retarget-probe-v3",
+      "source_sha256": "ad7afc6ac798c7c2db565b2358325fcf9a68de3926b1596d24a16f358a1a6ec6",
+      "status": "PASS",
+      "t": 5,
+      "target": "203/200",
+      "zero_coefficient_indices": []
+    }
+  },
+  "controls": {
+    "original_t2_anchor_rejected": true,
+    "record": {
+      "above_capacity_mutation": {
+        "denominator_digits": 23074,
+        "numerator_digits": 23074,
+        "sha256": "db935c56608eb69436d207a8ed4c6951fe7fa0841b9c2d7d233131bba523d220"
+      },
+      "algorithm": "square-tail-global-infimum-retarget-components-v3",
+      "anchor_m0": 312,
+      "anchor_ratio": {
+        "denominator_digits": 23076,
+        "numerator_digits": 23076,
+        "sha256": "3b0454d1cac960875b5d095f05a7b24e85d110d451b6304509a12fdc56259a0d"
+      },
+      "anchor_ratio_decimal_truncated": "1.000146747800241",
+      "capacity_limiting_indices": [
+        0
+      ],
+      "claim_start_r": 313,
+      "coefficient_capacity": {
+        "denominator_digits": 23076,
+        "numerator_digits": 23076,
+        "sha256": "3b0454d1cac960875b5d095f05a7b24e85d110d451b6304509a12fdc56259a0d"
+      },
+      "coefficient_capacity_decimal_truncated": "1.000146747800241",
+      "coefficient_capacity_vs_target": "below",
+      "coefficient_count": 23,
+      "degree": 22,
+      "gates": {
+        "above_capacity_mutation_rejected": true,
+        "capacity_exceeds_target": false,
+        "comparison_denominator_nonnegative": true,
+        "producer_digest_stable": true,
+        "retargeted_coefficients_strictly_positive": false,
+        "source_certificate_passed": true,
+        "source_digest_stable": true,
+        "source_interval_ladder_replay": true,
+        "target_one_reconstruction_exact": true
+      },
+      "negative_coefficient_indices": [
+        0,
+        1
+      ],
+      "passed": false,
+      "producer_sha256": "475a3d9a3dc2e569ef255ff122dda7ed0b9874ec0eb47fac2c8197ba50d6e425",
+      "retargeted_polynomial_sha256": "f4b539fa019375c75fd33f68ba3b8192ecd8299156cd1214c0274a3fb49b1ad3",
+      "schema": "square-tail-global-infimum-retarget-probe-v3",
+      "source_sha256": "ad7afc6ac798c7c2db565b2358325fcf9a68de3926b1596d24a16f358a1a6ec6",
+      "status": "FAIL",
+      "t": 2,
+      "target": "203/200",
+      "zero_coefficient_indices": []
+    }
+  },
+  "errors": [],
+  "missing": [],
+  "passed": true,
+  "producer_sha256": "475a3d9a3dc2e569ef255ff122dda7ed0b9874ec0eb47fac2c8197ba50d6e425",
+  "schema": "square-tail-global-infimum-retarget-probe-v3",
+  "scope": "four unbounded fixed-column analytic tails t=2..5 only; finite windows and joint/top regions are separate",
+  "source_file": "A1_verify_tail_independent.py",
+  "source_sha256": "ad7afc6ac798c7c2db565b2358325fcf9a68de3926b1596d24a16f358a1a6ec6",
+  "status": "PASS",
+  "target": "203/200"
+}

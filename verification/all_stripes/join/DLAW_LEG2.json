@@ -1,0 +1,1097 @@
+{
+ "schema": "dlaw-leg2-single-anchor-v2",
+ "status": "PASS",
+ "gate_constant": 216,
+ "law": "(k-1)(X_{k-1}-X_k) <= (6/5) sqrt(a_{m+1}), k=5..11, deposited A12 indexing",
+ "window": "tau(262144) through a > 768",
+ "x_end": 19.95,
+ "m_lo": 262144,
+ "h_step": "7/20",
+ "window_count": 57,
+ "windows": [
+  {
+   "window": 0,
+   "x": [
+    0.0,
+    0.35
+   ],
+   "a_lo_start": 59.183906860054236,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.27198134859182266
+  },
+  {
+   "window": 1,
+   "x": [
+    0.35,
+    0.7
+   ],
+   "a_lo_start": 64.834406797874,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.3581719381438052
+  },
+  {
+   "window": 2,
+   "x": [
+    0.7,
+    1.05
+   ],
+   "a_lo_start": 70.73082182645496,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.39881977896894955
+  },
+  {
+   "window": 3,
+   "x": [
+    1.05,
+    1.4
+   ],
+   "a_lo_start": 76.87304474722174,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.4198287688836012
+  },
+  {
+   "window": 4,
+   "x": [
+    1.4,
+    1.75
+   ],
+   "a_lo_start": 83.26098447609776,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.4321153085160167
+  },
+  {
+   "window": 5,
+   "x": [
+    1.75,
+    2.1
+   ],
+   "a_lo_start": 89.89456312518722,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.4402354301162953
+  },
+  {
+   "window": 6,
+   "x": [
+    2.1,
+    2.45
+   ],
+   "a_lo_start": 96.77371369649435,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.4462119258469593
+  },
+  {
+   "window": 7,
+   "x": [
+    2.45,
+    2.8
+   ],
+   "a_lo_start": 103.89837824298621,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.4510179936622734
+  },
+  {
+   "window": 8,
+   "x": [
+    2.8,
+    3.15
+   ],
+   "a_lo_start": 111.26850639012291,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.45516013254518184
+  },
+  {
+   "window": 9,
+   "x": [
+    3.15,
+    3.5
+   ],
+   "a_lo_start": 118.88405413802789,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.45892017897824205
+  },
+  {
+   "window": 10,
+   "x": [
+    3.5,
+    3.85
+   ],
+   "a_lo_start": 126.74498288405545,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.4624632418186929
+  },
+  {
+   "window": 11,
+   "x": [
+    3.85,
+    4.2
+   ],
+   "a_lo_start": 134.8512586198517,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.4658895972455314
+  },
+  {
+   "window": 12,
+   "x": [
+    4.2,
+    4.55
+   ],
+   "a_lo_start": 143.20285126761664,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.4692614890939617
+  },
+  {
+   "window": 13,
+   "x": [
+    4.55,
+    4.9
+   ],
+   "a_lo_start": 151.79973412820294,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.47261787326889676
+  },
+  {
+   "window": 14,
+   "x": [
+    4.9,
+    5.25
+   ],
+   "a_lo_start": 160.6418834196677,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.47598297339668955
+  },
+  {
+   "window": 15,
+   "x": [
+    5.25,
+    5.6
+   ],
+   "a_lo_start": 169.72927788944148,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.4793714662252911
+  },
+  {
+   "window": 16,
+   "x": [
+    5.6,
+    5.95
+   ],
+   "a_lo_start": 179.06189848676755,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.48279173638105416
+  },
+  {
+   "window": 17,
+   "x": [
+    5.95,
+    6.3
+   ],
+   "a_lo_start": 188.63972808475984,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.48624797734657516
+  },
+  {
+   "window": 18,
+   "x": [
+    6.3,
+    6.65
+   ],
+   "a_lo_start": 198.4627512435271,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.4897415783669469
+  },
+  {
+   "window": 19,
+   "x": [
+    6.65,
+    7.0
+   ],
+   "a_lo_start": 208.53095400745377,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.4932720564610003
+  },
+  {
+   "window": 20,
+   "x": [
+    7.0,
+    7.35
+   ],
+   "a_lo_start": 218.8443237310272,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.49683769161183783
+  },
+  {
+   "window": 21,
+   "x": [
+    7.35,
+    7.7
+   ],
+   "a_lo_start": 229.40284892862806,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5004359643591403
+  },
+  {
+   "window": 22,
+   "x": [
+    7.7,
+    8.05
+   ],
+   "a_lo_start": 240.2065191445244,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5040638596078244
+  },
+  {
+   "window": 23,
+   "x": [
+    8.05,
+    8.4
+   ],
+   "a_lo_start": 251.25532483996838,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5077180785557227
+  },
+  {
+   "window": 24,
+   "x": [
+    8.4,
+    8.75
+   ],
+   "a_lo_start": 262.54925729482665,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5113951867513097
+  },
+  {
+   "window": 25,
+   "x": [
+    8.75,
+    9.1
+   ],
+   "a_lo_start": 274.0883085216082,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5150917172996766
+  },
+  {
+   "window": 26,
+   "x": [
+    9.1,
+    9.45
+   ],
+   "a_lo_start": 285.8724711901041,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5188042423063851
+  },
+  {
+   "window": 27,
+   "x": [
+    9.45,
+    9.8
+   ],
+   "a_lo_start": 297.9017385611412,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5225294216771644
+  },
+  {
+   "window": 28,
+   "x": [
+    9.8,
+    10.15
+   ],
+   "a_lo_start": 310.17610442819034,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.526264035692506
+  },
+  {
+   "window": 29,
+   "x": [
+    10.15,
+    10.5
+   ],
+   "a_lo_start": 322.6955630657626,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5300050059186177
+  },
+  {
+   "window": 30,
+   "x": [
+    10.5,
+    10.85
+   ],
+   "a_lo_start": 335.4601091836912,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5337494077228797
+  },
+  {
+   "window": 31,
+   "x": [
+    10.85,
+    11.2
+   ],
+   "a_lo_start": 348.46973788652997,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5374944767520788
+  },
+  {
+   "window": 32,
+   "x": [
+    11.2,
+    11.55
+   ],
+   "a_lo_start": 361.72444463741283,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5412376110855177
+  },
+  {
+   "window": 33,
+   "x": [
+    11.55,
+    11.9
+   ],
+   "a_lo_start": 375.22422522581286,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5449763703122569
+  },
+  {
+   "window": 34,
+   "x": [
+    11.9,
+    12.25
+   ],
+   "a_lo_start": 388.9690757387185,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5487084724476365
+  },
+  {
+   "window": 35,
+   "x": [
+    12.25,
+    12.6
+   ],
+   "a_lo_start": 402.95899253481144,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5524317893613507
+  },
+  {
+   "window": 36,
+   "x": [
+    12.6,
+    12.95
+   ],
+   "a_lo_start": 417.1939722212885,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5561443412116892
+  },
+  {
+   "window": 37,
+   "x": [
+    12.95,
+    13.3
+   ],
+   "a_lo_start": 431.6740116330161,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5598442902498693
+  },
+  {
+   "window": 38,
+   "x": [
+    13.3,
+    13.65
+   ],
+   "a_lo_start": 446.3991078137487,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.563529934261788
+  },
+  {
+   "window": 39,
+   "x": [
+    13.65,
+    14.0
+   ],
+   "a_lo_start": 461.36925799917583,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5671996998428205
+  },
+  {
+   "window": 40,
+   "x": [
+    14.0,
+    14.35
+   ],
+   "a_lo_start": 476.5844596015944,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5708521356478897
+  },
+  {
+   "window": 41,
+   "x": [
+    14.35,
+    14.7
+   ],
+   "a_lo_start": 492.0447101960264,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5744859057191618
+  },
+  {
+   "window": 42,
+   "x": [
+    14.7,
+    15.05
+   ],
+   "a_lo_start": 507.75000750762564,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5780997829638922
+  },
+  {
+   "window": 43,
+   "x": [
+    15.05,
+    15.4
+   ],
+   "a_lo_start": 523.7003494002366,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5816926428326207
+  },
+  {
+   "window": 44,
+   "x": [
+    15.4,
+    15.75
+   ],
+   "a_lo_start": 539.8957338659839,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5852634572312104
+  },
+  {
+   "window": 45,
+   "x": [
+    15.75,
+    16.1
+   ],
+   "a_lo_start": 556.3361590157847,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5888112886877398
+  },
+  {
+   "window": 46,
+   "x": [
+    16.1,
+    16.45
+   ],
+   "a_lo_start": 573.0216230706922,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5923352847859701
+  },
+  {
+   "window": 47,
+   "x": [
+    16.45,
+    16.8
+   ],
+   "a_lo_start": 589.9521243539843,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5958346728702285
+  },
+  {
+   "window": 48,
+   "x": [
+    16.8,
+    17.15
+   ],
+   "a_lo_start": 607.1276612839252,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.5993087550214933
+  },
+  {
+   "window": 49,
+   "x": [
+    17.15,
+    17.5
+   ],
+   "a_lo_start": 624.5482323671324,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.6027569033008013
+  },
+  {
+   "window": 50,
+   "x": [
+    17.5,
+    17.85
+   ],
+   "a_lo_start": 642.2138361924933,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.6061785552534814
+  },
+  {
+   "window": 51,
+   "x": [
+    17.85,
+    18.2
+   ],
+   "a_lo_start": 660.1244714255763,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.6095732096658985
+  },
+  {
+   "window": 52,
+   "x": [
+    18.2,
+    18.55
+   ],
+   "a_lo_start": 678.2801368034926,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.6129404225651813
+  },
+  {
+   "window": 53,
+   "x": [
+    18.55,
+    18.9
+   ],
+   "a_lo_start": 696.6808311301645,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.6162798034516449
+  },
+  {
+   "window": 54,
+   "x": [
+    18.9,
+    19.25
+   ],
+   "a_lo_start": 715.3265532719653,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.6195910117532071
+  },
+  {
+   "window": 55,
+   "x": [
+    19.25,
+    19.6
+   ],
+   "a_lo_start": 734.2173021536955,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.6228737534909378
+  },
+  {
+   "window": 56,
+   "x": [
+    19.6,
+    19.95
+   ],
+   "a_lo_start": 753.3530767548671,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true
+   },
+   "min_rel_margin": 0.6261277781449103
+  }
+ ],
+ "soundness_note": "single-anchor envelopes cite the deposited INJ/ENV algebra with the Leg-1 anchor; injection budgets are the deposited tail_sum with the (3.4) global constant c0 = pi/2 + log(4/3)/2 + 3/(8 m_lo) (infinite-tail moments from m_lo soundly cover the full range).  Gamma-from-beta-derivative review DONE: coefficientwise brackets survive differentiation and d/dx E^beta_k = E^gamma_k + d_* (E^gamma_k)' >= E^gamma_k since error polys have nonnegative coefficients.  Lower-envelope nonnegativity certified per window (env_pos gate) so squared lower envelopes are valid lower bounds."
+}

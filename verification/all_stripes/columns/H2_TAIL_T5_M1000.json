@@ -1,0 +1,103 @@
+{
+  "a1_pi_interval_repair": {
+    "corrected_reference_tripwire_passed": true,
+    "corrected_width_ulps": 1,
+    "defective_reference_tripwire_rejected": true,
+    "defective_width_ulps": 0,
+    "half_pi_exactly_invariant": true
+  },
+  "anchor_ratio": {
+    "decimal_truncated": "1.646934530721418218327540",
+    "denominator_digits": 55301,
+    "numerator_digits": 55301,
+    "sha256": "505257fc249c1d2bbc5b0ecef3e0686d27bf5e7ba32869416435bf3c3388859b"
+  },
+  "anchor_width": {
+    "denominator_digits": 77,
+    "numerator_digits": 3,
+    "sha256": "6d3518a3723e0533e23d895b44e6d167aaebfbb63619c283c221a528d37b09e6"
+  },
+  "base_certificate_gates": {
+    "P and Q upper": true,
+    "anchor factor": true,
+    "anchor width": true,
+    "certificate": true,
+    "certificate strict": true,
+    "continuum lower": true,
+    "index polynomial": true,
+    "numerator lower": true,
+    "pi bracket": true,
+    "predecessor lower": true
+  },
+  "base_certificate_passed": true,
+  "capacity_limiting_indices": [
+    24
+  ],
+  "claim": "rho(r,5)>4/3 for every integer r>=1001",
+  "coefficient_capacity": {
+    "decimal_truncated": "1.410970990331148792594654",
+    "denominator_digits": 30684,
+    "numerator_digits": 30684,
+    "sha256": "e3ecbd743fca1b41054de198eeb23e98c3bdfe1a608f92e073ee7dbcf0406548"
+  },
+  "coefficient_fingerprint_encoding": "ASCII index:numerator/denominator followed by newline",
+  "comparison_denominator_nonnegative": true,
+  "configuration": {
+    "anchor_m0": 1000,
+    "claim_start_r": 1001,
+    "interval_bits": 256,
+    "kmax": 6,
+    "t": 5,
+    "target": "4/3",
+    "workers": 1
+  },
+  "mutation_control": {
+    "first_failing_negative_indices": [
+      24
+    ],
+    "first_failing_target": "106/75",
+    "first_failing_target_decimal": "1.413333",
+    "grid_step": "1/100",
+    "previous_grid_target": "421/300",
+    "previous_grid_target_no_negative": true
+  },
+  "passed": true,
+  "retargeted_coefficient_count": 47,
+  "retargeted_degree": 46,
+  "retargeted_negative_indices": [],
+  "retargeted_positive_coefficients": 47,
+  "retargeted_sha256": "d24df0232421bce4fef034648cd1808398cefc6554a6a6a8113ccf37b17c17cc",
+  "retargeted_zero_indices": [],
+  "schema": "h2-fixed-column-four-thirds-tail-v1",
+  "source": {
+    "common_verifier_sha256": "341caf50c74058246dbe22c3b35fb09cea7367df4d8d5173f15fef97b04bb65d",
+    "independent_path": "vendor/odd-cycles-square-tail-replay/verification/A1_verify_tail_independent.py",
+    "independent_sha256": "ad7afc6ac798c7c2db565b2358325fcf9a68de3926b1596d24a16f358a1a6ec6",
+    "producer_sha256": "0d03c57e62cbff406b2ce7bca3b841ed2666c805c17b49b3d0e2266ddead7085"
+  },
+  "source_interval_ladder_crosscheck": true,
+  "status": "PASS",
+  "tail_log_moment_max_degree": 11,
+  "target_one_reconstruction_exact": true,
+  "three_halves_control": {
+    "consistent_with_capacity": true,
+    "negative_indices": [
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "strictly_positive": false,
+    "zero_indices": []
+  },
+  "zero_denominator_indices": [
+    45,
+    46
+  ]
+}

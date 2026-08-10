@@ -1,0 +1,167 @@
+{
+  "claim": "complete square-tail coverage for integers r>=2 and 2<=t<=r",
+  "columns": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "coverage": {
+    "decrement_orientation": "terminal cells explicit; t>=3 by profile comparison; t=2 by 309 finite signs plus its oriented tail",
+    "finite_core": "4<=r<=503, 2<=t<=r-2",
+    "fixed_prefixes": [
+      {
+        "cells": 196,
+        "r_hi": 699,
+        "r_lo": 504,
+        "t": 5
+      },
+      {
+        "cells": 1500,
+        "r_hi": 2003,
+        "r_lo": 504,
+        "t": 6
+      },
+      {
+        "cells": 5696,
+        "r_hi": 6199,
+        "r_lo": 504,
+        "t": 7
+      },
+      {
+        "cells": 19496,
+        "r_hi": 19999,
+        "r_lo": 504,
+        "t": 8
+      }
+    ],
+    "fixed_tails": {
+      "2": "r>=313",
+      "3": "r>=116",
+      "4": "r>=250",
+      "5": "r>=700",
+      "6": "r>=2004",
+      "7": "r>=6200",
+      "8": "r>=20000"
+    },
+    "terminal_cells": "t=r for r>=2; t=r-1 for r>=3",
+    "top_or_joint": "r>=504, t>=9: top if t>=sqrt(a_r)+2; otherwise a_r>(t-2)^2>5t and the joint theorem applies"
+  },
+  "failures": [],
+  "finite_sq_cells": 152138,
+  "gates": {
+    "boundary mutation t=8 rejected": true,
+    "finite SQ comparison total": true,
+    "finite full-row core": true,
+    "fixed tail t=2": true,
+    "fixed tail t=3": true,
+    "fixed tail t=4": true,
+    "fixed tail t=5": true,
+    "fixed tail t=6": true,
+    "fixed tail t=7": true,
+    "fixed tail t=8": true,
+    "fixed-column prefix staircase": true,
+    "oriented t=2 decrement": true,
+    "read finite core": true,
+    "read fixed tail t=2": true,
+    "read fixed tail t=3": true,
+    "read fixed tail t=4": true,
+    "read fixed tail t=5": true,
+    "read fixed tail t=6": true,
+    "read fixed tail t=7": true,
+    "read fixed tail t=8": true,
+    "read fixed-column prefixes": true,
+    "read t=2 decrement orientation": true,
+    "read terminal cells": true,
+    "seven fixed columns have no finite gap": true,
+    "t>=9 top/joint partition": true,
+    "tail coefficient total": true,
+    "two terminal cells": true
+  },
+  "inputs": {
+    "finite_core": {
+      "file": "finite_core.json",
+      "passed": true,
+      "schema": "square-tail-finite-core-v1",
+      "sha256": "5a1182bf33f25170ae3d77eb99c06cfb1996eb14b7f4810f60b6cd141ecfb906"
+    },
+    "fixed_prefixes": {
+      "file": "fixed_prefixes.json",
+      "passed": true,
+      "schema": "square-tail-fixed-prefix-v1",
+      "sha256": "d1578fc525facc29767d91df9cf72f995384168a27924e5274bdff3bc94f6c9b"
+    },
+    "fixed_tails": {
+      "2": {
+        "file": "fixed_tail_t2.json",
+        "passed": true,
+        "schema": "square-tail-fixed-column-v1",
+        "sha256": "4098a1d01ade20293dab1ca695fa0861410eb2f6ce22ab4d592ceb8ec06bab7c"
+      },
+      "3": {
+        "file": "fixed_tail_t3.json",
+        "passed": true,
+        "schema": "square-tail-fixed-column-v1",
+        "sha256": "48665fc629826e5e721d8ae0ed54200ea78d8d6d53aa7b0302e0bd48732355a9"
+      },
+      "4": {
+        "file": "fixed_tail_t4.json",
+        "passed": true,
+        "schema": "square-tail-fixed-column-v1",
+        "sha256": "90c3ba75debea6c03d02c7a3f6f781f8e4789a7bced4c145fc0450efbfd4705b"
+      },
+      "5": {
+        "file": "fixed_tail_t5.json",
+        "passed": true,
+        "schema": "square-tail-fixed-column-v1",
+        "sha256": "e8da0568569647af854fc4cc03d02bc9d995ea2805e294c4e239c141cd13ebd2"
+      },
+      "6": {
+        "file": "fixed_tail_t6.json",
+        "passed": true,
+        "schema": "square-tail-fixed-column-v1",
+        "sha256": "798526d43a8db1cf6f5a9ce8143f47cc0890b3062cabeb79fbfe2f789bf3b997"
+      },
+      "7": {
+        "file": "fixed_tail_t7.json",
+        "passed": true,
+        "schema": "square-tail-fixed-column-v1",
+        "sha256": "e0258d503b051c89ff5f71b51e933ff0a3709619661819ed504a7c5bb6ef39b7"
+      },
+      "8": {
+        "file": "fixed_tail_t8.json",
+        "passed": true,
+        "schema": "square-tail-fixed-column-v1",
+        "sha256": "628027f8e517baa9abad96116ab24f81c421e1befdb789e2e418551034dec899"
+      }
+    },
+    "t2_orientation": {
+      "file": "t2_orientation.json",
+      "passed": true,
+      "schema": "square-tail-t2-orientation-v1",
+      "sha256": "f132ef77243a40dcda118faf0f8d1a3f3fdfa3902f63c6845e62ff204576c505"
+    },
+    "terminal_cells": {
+      "file": "terminal_cells.json",
+      "passed": true,
+      "schema": "square-tail-terminal-cells-v1",
+      "sha256": "dab4a5f46d8a8910421cce5ef7118af4f13c7e3f5c294cf4e59d00a54c3e2f13"
+    }
+  },
+  "mutation_controls": {
+    "boundary_t8_rejected": true
+  },
+  "passed": true,
+  "schema": "square-tail-symbolic-join-v2",
+  "status": "PASS",
+  "symbolic_join": {
+    "boundary_t8": "-4",
+    "identity": "(t-2)^2-5t=(t-9)^2+9(t-9)+4",
+    "range": "integer t>=9"
+  },
+  "tail_coefficients": 329,
+  "version": 2
+}

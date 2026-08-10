@@ -1,0 +1,236 @@
+{
+  "checkpoints": {
+    "100000": {
+      "a_lower": "51.807134901635936",
+      "a_upper": "51.807134901635936"
+    },
+    "1001": {
+      "a_lower": "23.017252387031385",
+      "a_upper": "23.017252387031385"
+    },
+    "12399": {
+      "a_lower": "37.429373414120626",
+      "a_upper": "37.429373414120626"
+    },
+    "1467": {
+      "a_lower": "24.999927844544875",
+      "a_upper": "24.999927844544875"
+    },
+    "1468": {
+      "a_lower": "25.003528675002174",
+      "a_upper": "25.003528675002174"
+    },
+    "18456": {
+      "a_lower": "39.999838749880622",
+      "a_upper": "39.999838749880622"
+    },
+    "18457": {
+      "a_lower": "40.000194306190560",
+      "a_upper": "40.000194306190560"
+    },
+    "200": {
+      "a_lower": "15.477554030254289",
+      "a_upper": "15.477554030254289"
+    },
+    "20000": {
+      "a_lower": "40.528698221913934",
+      "a_upper": "40.528698221913934"
+    },
+    "200000": {
+      "a_lower": "57.065673426641014",
+      "a_upper": "57.065673426641014"
+    },
+    "2004": {
+      "a_lower": "26.672779658655127",
+      "a_upper": "26.672779658655127"
+    },
+    "27000": {
+      "a_lower": "42.532891795828419",
+      "a_upper": "42.532891795828419"
+    },
+    "3633": {
+      "a_lower": "29.999710791767828",
+      "a_upper": "29.999710791767828"
+    },
+    "3634": {
+      "a_lower": "30.001291275727197",
+      "a_upper": "30.001291275727197"
+    },
+    "4007": {
+      "a_lower": "30.564820727336961",
+      "a_upper": "30.564820727336961"
+    },
+    "500": {
+      "a_lower": "19.605907550559929",
+      "a_upper": "19.605907550559929"
+    },
+    "55000": {
+      "a_lower": "47.465591845980375",
+      "a_upper": "47.465591845980375"
+    },
+    "60": {
+      "a_lower": "10.702719219490393",
+      "a_upper": "10.702719219490393"
+    },
+    "6200": {
+      "a_lower": "33.141212425787851",
+      "a_upper": "33.141212425787851"
+    },
+    "68133": {
+      "a_lower": "48.999958692135809",
+      "a_upper": "48.999958692135809"
+    },
+    "8413": {
+      "a_lower": "34.999886598779978",
+      "a_upper": "34.999886598779978"
+    },
+    "8414": {
+      "a_lower": "35.000619521943029",
+      "a_upper": "35.000619521943029"
+    },
+    "9883": {
+      "a_lower": "35.999452350373785",
+      "a_upper": "35.999452350373785"
+    },
+    "9884": {
+      "a_lower": "36.000084478648969",
+      "a_upper": "36.000084478648969"
+    }
+  },
+  "claim": "a_r = 6 E_1(r-1) is strictly increasing; a_68133 <= 49 and a_200000 <= 64, certified outward",
+  "configuration": {
+    "interval_bits": 256,
+    "r_max": 200001,
+    "workers": 1
+  },
+  "crossings": [
+    {
+      "a_at_lower": "25.003528675002",
+      "a_below_upper": "24.999927844544",
+      "bracketed": true,
+      "first_r_at_or_above": 1468,
+      "threshold": 25
+    },
+    {
+      "a_at_lower": "30.001291275727",
+      "a_below_upper": "29.999710791767",
+      "bracketed": true,
+      "first_r_at_or_above": 3634,
+      "threshold": 30
+    },
+    {
+      "a_at_lower": "35.000619521943",
+      "a_below_upper": "34.999886598779",
+      "bracketed": true,
+      "first_r_at_or_above": 8414,
+      "threshold": 35
+    },
+    {
+      "a_at_lower": "36.000084478648",
+      "a_below_upper": "35.999452350373",
+      "bracketed": true,
+      "first_r_at_or_above": 9884,
+      "threshold": 36
+    },
+    {
+      "a_at_lower": "40.000194306190",
+      "a_below_upper": "39.999838749880",
+      "bracketed": true,
+      "first_r_at_or_above": 18457,
+      "threshold": 40
+    }
+  ],
+  "exact_crosschecks": [
+    {
+      "exact_decimal_20": "10.70271921949039350127",
+      "inside_interval": true,
+      "r": 60
+    },
+    {
+      "exact_decimal_20": "15.47755403025428978270",
+      "inside_interval": true,
+      "r": 200
+    },
+    {
+      "exact_decimal_20": "19.60590755055992942518",
+      "inside_interval": true,
+      "r": 500
+    }
+  ],
+  "failures": [],
+  "gates": {
+    "100000": {
+      "a_lower": "51.807134901635936563",
+      "a_upper": "51.807134901635936563",
+      "certified": true,
+      "geometry": "a_r <= 64 = (t-2)^2 puts (r,t) in the TOP region for the matching column",
+      "limit": 64
+    },
+    "200000": {
+      "a_lower": "57.065673426641014037",
+      "a_upper": "57.065673426641014037",
+      "certified": true,
+      "geometry": "a_r <= 64 = (t-2)^2 puts (r,t) in the TOP region for the matching column",
+      "limit": 64
+    },
+    "55000": {
+      "a_lower": "47.465591845980375058",
+      "a_upper": "47.465591845980375058",
+      "certified": true,
+      "geometry": "a_r <= 49 = (t-2)^2 puts (r,t) in the TOP region for the matching column",
+      "limit": 49
+    },
+    "68133": {
+      "a_lower": "48.999958692135809177",
+      "a_upper": "48.999958692135809177",
+      "certified": true,
+      "geometry": "a_r <= 49 = (t-2)^2 puts (r,t) in the TOP region for the matching column",
+      "limit": 49
+    }
+  },
+  "interval_width_at_r_max": "0.000000000000000000000000000000000000000000000000000000000000",
+  "method": "256-bit fixed-point outward-rounded interval ladder over the cancellation-free (G) recurrence of A2_stable.py, using the deposited A1 Iv class; strict increase certified by D_1 > 0 at every step",
+  "monotonicity": {
+    "certified_strictly_increasing": true,
+    "d1_positive_steps": 200000
+  },
+  "passed": true,
+  "schema": "h2-wallis-a-gate-v1",
+  "sources": {
+    "producer": "7fda0d23d741a67d54577a7f47cab1c604611266726c85bb24b6f81ce4fc42d4",
+    "vendor/odd-cycles-square-tail-replay/verification/A1_verify_tail_independent.py": "ad7afc6ac798c7c2db565b2358325fcf9a68de3926b1596d24a16f358a1a6ec6",
+    "vendor/odd-cycles-square-tail-replay/verification/A2_stable.py": "f11ed177bf9298e6f8a99bbdf6d5544c9f520af31bbf2c6d5bce34441676c88a"
+  },
+  "status": "PASS",
+  "threshold_locations": {
+    "45": {
+      "a_at_lower": "45.000132931598",
+      "a_previous_upper": "44.999953807551",
+      "first_r_at_or_above": 38718,
+      "max_gate_anchor": 38717,
+      "previous_upper_below": true,
+      "threshold": 45
+    },
+    "49": {
+      "a_at_lower": "49.000064652794",
+      "a_previous_upper": "48.999958692135",
+      "first_r_at_or_above": 68134,
+      "max_gate_anchor": 68133,
+      "previous_upper_below": true,
+      "threshold": 49
+    },
+    "50": {
+      "a_at_lower": "50.000005204892",
+      "a_previous_upper": "49.999912002325",
+      "first_r_at_or_above": 78204,
+      "max_gate_anchor": 78203,
+      "previous_upper_below": true,
+      "threshold": 50
+    },
+    "64": {
+      "first_r_at_or_above": null,
+      "note": "not reached: a_r stays below 64 through r=200001",
+      "threshold": 64
+    }
+  }
+}

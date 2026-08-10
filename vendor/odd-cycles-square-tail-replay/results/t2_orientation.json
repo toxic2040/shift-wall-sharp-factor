@@ -1,0 +1,26 @@
+{
+  "cells": 309,
+  "claim": "d_(r,2)>0 for every integer r>=4",
+  "configuration": {
+    "workers": 1
+  },
+  "normalization_replay": {
+    "failures": [],
+    "range": "4<=r<=18"
+  },
+  "passed": true,
+  "schema": "square-tail-t2-orientation-v1",
+  "sign_failures": [],
+  "smallest_integer_numerator": {
+    "M": "15995366",
+    "r": 4
+  },
+  "status": "PASS",
+  "tail_orientation": {
+    "anchor_m0": 312,
+    "gate": "V*G-corr has nonnegative coefficients and positive constant term",
+    "passed": true,
+    "range": "integer r>=313"
+  },
+  "version": 1
+}

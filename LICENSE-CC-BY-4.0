@@ -1,0 +1,8 @@
+The Paper 4 manuscript and PDF under paper/, the top-level README.md,
+REPRODUCIBILITY.md, ENVIRONMENT.md, the files under docs/, and the certificate
+records under verification/ are licensed under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0).
+
+Full text: https://creativecommons.org/licenses/by/4.0/
+
+The vendored Paper 3 release retains the license notices in its own directory.

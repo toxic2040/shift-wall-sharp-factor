@@ -1,0 +1,188 @@
+{
+  "conclusion": "global infimum reduced to four unbounded tails t=2..5 and three bounded exact windows",
+  "cross_row_quotient_lemma": {
+    "conclusion": "X_(r,k)/X_(r-1,k) is strictly increasing in k on its common domain",
+    "dependencies": [
+      "positive first lowering and convex L give p>0 and q>=0",
+      "positive predecessor coefficients give mu_k>0 on the common domain"
+    ],
+    "identity": "mu_k^2-mu_(k-1)mu_(k+1)=p^2+mu_(k-1)q>0",
+    "ratio_relation": "X_(r,k)/X_(r-1,k)=mu_(k-1)/mu_k"
+  },
+  "dependencies": {
+    "A12_ratio_sign.py": "7b32ae0e3ae8cac971b8d437a804d09075459e68ed41a943bf9d3d2609197644",
+    "A13_delta5.py": "b15c9ac43b051f8eca00ca37fef13be52e920deed8dd710b0ac2672a9d52f98c",
+    "A14_uniform_sc.py": "9e03e979097d660014fda7aa1c14da959439f3c3eade5593cafe90de86491de9",
+    "A15_TOP_COVERAGE.md": "25f4b1190548f01afffb9bb1ff9a656aca9bdf687ee9bd8ec88745e1dd266184",
+    "A15_top_coverage.py": "bf0a40416df37a0b34be13d2e32a73b90042f106c6ec5c5161aabd78ff606120",
+    "A2_stable.py": "f11ed177bf9298e6f8a99bbdf6d5544c9f520af31bbf2c6d5bce34441676c88a",
+    "A8_l_curvature.py": "ca5c0c791ba43a4266ef776090222adc565f5a18d19fdf6309035857a4da6cf2"
+  },
+  "failures": [],
+  "finite_core_witness": {
+    "cell": [
+      129,
+      2
+    ],
+    "decimal_truncated": "1.014576164564870742",
+    "role": "exact minimum of the replayed r<=503 core",
+    "source_file": "results/finite_core.json",
+    "source_sha256": "5a1182bf33f25170ae3d77eb99c06cfb1996eb14b7f4810f60b6cd141ecfb906",
+    "value": {
+      "denominator_digits": 1233,
+      "numerator_digits": 1233,
+      "sha256": "9c09b2864de0e742c291698d4c63ad631d2d872c122f62b6c0fdc8c10b47e373"
+    }
+  },
+  "gates": {
+    "103/100 mutation rejected": true,
+    "513/500 strengthens 101/100": true,
+    "a_504 exceeds 16": true,
+    "core witness lies below 203/200": true,
+    "corrected joint floor exceeds 203/200": true,
+    "cross-row quotient strictness identity": true,
+    "exact a_r crossing at 25": true,
+    "exact a_r crossing at 30": true,
+    "exact a_r crossing at 35": true,
+    "exact a_r crossing at 36": true,
+    "exact a_r crossing at 40": true,
+    "existing exact core witness record": true,
+    "joint denominator has positive coefficients": true,
+    "joint floor retains row corrections": true,
+    "level recurrence matches normalized-row engine": true,
+    "level recurrence stays positive through final crossing": true,
+    "normalizer correction increases in r": true,
+    "quadratic correction increases in r": true,
+    "row-free 513/500 core at t=6": true,
+    "row-free 513/500 core at t=7": true,
+    "row-free 513/500 core for t>=8": true,
+    "three bounded windows": true,
+    "top bridge anchored at r=4": true,
+    "top floor exact value": true,
+    "top floor exceeds 203/200": true,
+    "top normalizer factor increases in r": true,
+    "top quadratic factor increases in r": true
+  },
+  "joint_floor_with_row_corrections": {
+    "application": "row_free_core * attached_factor^2",
+    "attached_factor": "504761/507276",
+    "floor": "4840889675299/4765350744000",
+    "floor_decimal_truncated": "1.015851704387994",
+    "margin_over_target": "4058670139/4765350744000",
+    "normalizer_factor": "2011/2013",
+    "quadratic_factor": "251/252",
+    "row": 504,
+    "row_free_core": "513/500"
+  },
+  "joint_row_free_core": {
+    "constant": "513/500",
+    "mutation_103_over_100_numerator": "-354958271730000000",
+    "role": "row-free core only",
+    "sturm": {
+      "6": {
+        "length": 7,
+        "primitive_sequence_sha256": "5c1bd3b3ce2ec877ccb1d276dc477cbf335d3028cd1ac5564eaf94cfba218c5e",
+        "value_at_zero_positive": true,
+        "variations_infinity": 2,
+        "variations_zero": 2
+      },
+      "7": {
+        "length": 7,
+        "primitive_sequence_sha256": "c01000683e4ff65aff8dccf073b2d12438d4c7b2008197dbe970235fd5c39c79",
+        "value_at_zero_positive": true,
+        "variations_infinity": 2,
+        "variations_zero": 2
+      }
+    },
+    "t_ge_8": {
+      "bidegree": [
+        6,
+        14
+      ],
+      "coefficient_sha256": "35de1cb73586ba77690c7d569270c1c5016897c4ad01a0ee66f14064129e941f",
+      "positive_monomial_terms": 74
+    }
+  },
+  "level_crossings": {
+    "bounded_windows": {
+      "6": {
+        "r_hi": 3633,
+        "r_lo": 504
+      },
+      "7": {
+        "r_hi": 8413,
+        "r_lo": 1468
+      },
+      "8": {
+        "r_hi": 18456,
+        "r_lo": 9884
+      }
+    },
+    "crossings": {
+      "25": {
+        "a_at_crossing_decimal_truncated": "25.003528675002",
+        "current_difference_digits": 8902,
+        "current_difference_positive": true,
+        "first_r_with_a_ge_threshold": 1468,
+        "previous_difference_digits": 8893,
+        "previous_difference_negative": true,
+        "witness_sha256": "5e0ab9f323006afc4a20b2289fbc68ce3c151417b56536656a2c832b15ade960"
+      },
+      "30": {
+        "a_at_crossing_decimal_truncated": "30.001291275727",
+        "current_difference_digits": 24903,
+        "current_difference_positive": true,
+        "first_r_with_a_ge_threshold": 3634,
+        "previous_difference_digits": 24895,
+        "previous_difference_negative": true,
+        "witness_sha256": "baa937586253cc1d2bcb5181d4ada0f40e311b7263fcd40a48d9c5aaaa1dfb36"
+      },
+      "35": {
+        "a_at_crossing_decimal_truncated": "35.000619521943",
+        "current_difference_digits": 63802,
+        "current_difference_positive": true,
+        "first_r_with_a_ge_threshold": 8414,
+        "previous_difference_digits": 63792,
+        "previous_difference_negative": true,
+        "witness_sha256": "69a756b97384eadbc1f2c291bf76b2436673ef4e2bafc8c2d0ee607415d1f2ba"
+      },
+      "36": {
+        "a_at_crossing_decimal_truncated": "36.000084478648",
+        "current_difference_digits": 76331,
+        "current_difference_positive": true,
+        "first_r_with_a_ge_threshold": 9884,
+        "previous_difference_digits": 76323,
+        "previous_difference_negative": true,
+        "witness_sha256": "a9243e085756007cef7a84d98602f583d7729d4cfe2bdfc3ddb2a9210fce639a"
+      },
+      "40": {
+        "a_at_crossing_decimal_truncated": "40.000194306190",
+        "current_difference_digits": 152555,
+        "current_difference_positive": true,
+        "first_r_with_a_ge_threshold": 18457,
+        "previous_difference_digits": 152546,
+        "previous_difference_negative": true,
+        "witness_sha256": "6a39165d72040fe6c0374021ed5932c6b1fdca6e2c2e4c3fb8a031ce0855e850"
+      }
+    },
+    "dependency": "all-row strict increase of a_r from the proved first-lowering theorem"
+  },
+  "not_certified_here": [
+    "rho>=203/200 on the four unbounded tails t=2..5",
+    "rho>=203/200 on the three bounded t=6,7,8 windows",
+    "final global-infimum join"
+  ],
+  "passed": true,
+  "producer_file": "A40_global_infimum_reduction.py",
+  "producer_sha256": "99e30bcb95a7a8eb42755b99c63abf4c6aa4eb19c3a390b1f55303d3d81a4fd6",
+  "schema": "square-tail-global-infimum-reduction-v1",
+  "status": "PASS",
+  "target": "203/200",
+  "top_floor": {
+    "anchor_row": 4,
+    "dependency": "A15-TOP exact scalar lower bound",
+    "r_psi_floor": "77/52",
+    "rho_floor": "5929/5408",
+    "rho_floor_decimal_truncated": "1.096338757396449"
+  }
+}

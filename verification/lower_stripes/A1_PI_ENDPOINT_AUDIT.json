@@ -1,0 +1,4425 @@
+{
+  "algorithm": "ast-consumer-inventory-plus-exact-endpoint-transfer-v1",
+  "claim": "The inherited fixed PI constructors are invalid, but their missing upper ulp has zero theorem/result blast radius in every current consumer because scal(1,2) absorbs it exactly.",
+  "claim_boundary": "The standalone PI interval constructors remain defective and must not be reused. The zero blast-radius proof applies only while the pinned consumer inventory remains unchanged.",
+  "coefficient_direction_audits": [
+    {
+      "actual_changed_coefficients": 0,
+      "actual_downstream_sensitivity_bound": "D*delta=0 exactly",
+      "anchor_m0": 3000,
+      "coefficient_count": 112,
+      "coefficients": [
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "682d4e6eaa5eb8f5c7db89a78987ad6449f04d0afc4cb2ccb162bec5b384c962",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "a5aab765f937f52e9ae3c2e905eea23d854ee23cf478783118c498927e65f8ca",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "1849688d838727d0c63b0def1a6b767d9d423625d0bfa0e9368eb21555bb41e3",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "df0847cf48d0a53d7a93f908fe39b11ceac875d147a7175a8576ed9ccbd882f0",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "5939b923ab84cbeb66d7c9c04f0cba813b82903846ba79c409aff1ef25b39f18",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "32cc4a5c63381da22d1ed455b71e45797c9c4c9a72990901b9c8a0c1231a5ae4",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 6,
+          "corrected_sha256": "9b1d7c88a45118192956899549ed6b548e765ebca561aab13da03e975211c8a6",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 7,
+          "corrected_sha256": "e9fa2176796affb4b9f6dd7b9bac0450bd141db2d4e6dba994ba987543d88a27",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 8,
+          "corrected_sha256": "758062068b0a89fd096783f8dae7b940a0fa0c84c36a31450fa27fba48e34cd0",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 9,
+          "corrected_sha256": "aa71b8b48d64e459b375b0ac0b394ee2cd229ba0bead3ae05022ca98ccfd18e0",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 10,
+          "corrected_sha256": "b4b8f9e3628475caeb0a2ec7295d63c4992342111c8a338b5953cc7e65b3a432",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "bf352613614ff23af253d8e7c7d6ff2a25d44ba75dc7f4c6c3e6698e2aa32992",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "5e12a1843d546973a723d391ef25b88e1bb985b79874b051c81625a435ff4427",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "f191b8c7cbf926976e5ee707a90819021bff01fb067a0bee5f34fb6b647bebca",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "87e23df0ea4c755284847fa5ae23b370e838fe6897816d44cb62d17676ecc0ea",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "bb48546fe1e1489106b14bc4b116de0dd01ac3aedb917695223ec4580a8460b3",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "8372ed4d553f14476b0516db4c551845ba9337d97e2cca6f84437b19308bb8eb",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 6,
+          "corrected_sha256": "43a0bd6dcd00530ba60c3e596e15d350b2e12d46232d9cd03dc604ed90ab6390",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 7,
+          "corrected_sha256": "e481ebe24f404d42b2132cac4705b17924230192443f526cb6c06eb6c9c155c3",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 8,
+          "corrected_sha256": "46aca9231cebc98d3db1e3d5ea1be5f8da80f2b1e1915e221da8d9d303f920cf",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 9,
+          "corrected_sha256": "aa71b8b48d64e459b375b0ac0b394ee2cd229ba0bead3ae05022ca98ccfd18e0",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 10,
+          "corrected_sha256": "b4b8f9e3628475caeb0a2ec7295d63c4992342111c8a338b5953cc7e65b3a432",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "3005e4052bf40078bbfe1981425ab5b013ba76453473c664236e79e666d857ea",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "114127bb9f96bd4cd3a927833aa2ffb73f6e69ea3cd87d0007bd7de7a10c9333",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "3fd9ef488f4c0e321f53d78b694dbdc85d5cddd1b01c97e2ed23d0bf2cb429e5",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "1f3755eff01efec8e1c0b49b023ff3ca5b1356b8c0affcae0634f60bdb7e6d12",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "4ccd88bb9ea2c9cbbbdc9d6e0708d003c38ea97eefa15c14afdb056a29b38db3",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "3808f55729e79ccfd337439523d68d4b7d40a7ad08c5b93e63fe5a6b5e36e45d",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 6,
+          "corrected_sha256": "0f1dd91a01aa357abfa0affea0f9c6774984ef8cc94b514f2716dab3b238a9c4",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 7,
+          "corrected_sha256": "e50d7974a50719eb8c455c26573959543f53f4900229d62d7cdab0aba97d1189",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 8,
+          "corrected_sha256": "ac4fcb7b5605b567ba36218464415a5e018bc887f026e4bec8f59e7df07381cf",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "a2dbcd381e9e712a21e882c650d596992ae15130eccb3edf57d32fb4e3f4e56c",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "dd80891930f31e31da5c7116ef57f3ad8b04d76591a6ae20b8b685dfef79cfa1",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "d0f1476024160d312f24a75b02fb2253ddd9cb683ca65dcc83789007bfd2eb3b",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "bbf057f882c6c765881e8c9daa8e6a1f1d2d24cc35a6a6121c0793b6bc8d0133",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "53ae89ceb5bd4581cbec03cd13364a283f85e342afcf8278013275cb6c8562ac",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "a9ef6fcf256b1e1cb39ae1f9f3667ff108dd7e8e0fe581d9826899338ffd3aab",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 6,
+          "corrected_sha256": "a0738287c55f7f387360ecd2826121719644aaa3d32501922ef58cb590fada63",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 7,
+          "corrected_sha256": "e50d7974a50719eb8c455c26573959543f53f4900229d62d7cdab0aba97d1189",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 8,
+          "corrected_sha256": "ac4fcb7b5605b567ba36218464415a5e018bc887f026e4bec8f59e7df07381cf",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "537b0a6a2c8ede6ff3330a3698c8f2a6c4a4aa9e1a61560a2eaf0ada273ffc1d",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 0,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 0,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "d11eec58d7d71f4b6914eef63d4012bce1ec173f8b5a90d64196266359051a77",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 1,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "b1e6d1884b129770045d91e33734a0dba3f257079d939af58fdb4bbc1b782528",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 1,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "3c3f842a392cb9b4bc53813c878c0029285040a110adacd83b6ba37933e9259b",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 1,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "8f854692d8bc8def84a88d511dd150de9dd8b6bfe000d5a417dde49e4a3d12c2",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 1,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "b2dab6ca5efb627b6d839c4c8655030731a84652d3791586a82b4027c1535eb4",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "1fd2a281f430966d4df855db98e9fdc6d32d6b006ba0af226d8202564279aebe",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "2361a2093594e6b78db4a8e9efedd32e207923ff1150ea1f12fb6adb9e9c58d9",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "33501a8a23d352a30fea73ba8706ea8522084d3a49df79c70d09f8123f8438cc",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "77ea0cd307cc376b6f483c1f7dfef1c6c26905669530b074c834e1dfc745ae87",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "ac68274d0683242427ff7530f8c3ae56dbb477ad0b37a858b10847e358f821ba",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "f9e9b6c1dd5dfc2518e2a5ca763bc63f1feb39ceb200e73f154fed2b1bf32f4e",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "190c383c4773b59be1fdd06f587983edf83f3f5d7cbd2a28516c0543b6142583",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "f52c317df6aa842dd0d5b1283b07460b7b7e4bd0a3e556e6ff4ffce7b751c902",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "5f90b8d3ad69de4d19507588df130b6eb4c91faf2ca0ad6753abeb090e2bc809",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "60e6f63eb5a584660dddc873ab1134b60fd0a18228b37595c33a306d4b5047d2",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "b5d6f9c49e7d412ad6394f0115cd119ef3dde90e66b95ae3fe1e64dbb01f41d2",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 6,
+          "corrected_sha256": "1ac01151b01ebe0cd357270298a5068eee09a8d120e62e11fc86845ee194f9bc",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 7,
+          "corrected_sha256": "20c5ece32567e3820a6595688c96ea8d1388dc7e8d4c37e0c40578332aae1fd9",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "537b0a6a2c8ede6ff3330a3698c8f2a6c4a4aa9e1a61560a2eaf0ada273ffc1d",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 0,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 0,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "430bc1092d96bda1fec099bbcd55f4734e57527418736d9b24e8a2a3a8b063c6",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 1,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "8c7c22945e850913b8de2c9b4563faed21dc2e0c02c710cec6bcea6a20b51b9c",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 1,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "3c3f842a392cb9b4bc53813c878c0029285040a110adacd83b6ba37933e9259b",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 1,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "8f854692d8bc8def84a88d511dd150de9dd8b6bfe000d5a417dde49e4a3d12c2",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 1,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "cfd1ec81932a2ab29d3186b03928aef01dba83daf4e27976d2e076c822be3876",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "7ec41534ca59dd05dc18a7c695a8a10d3b64f3c47f3a0c370552ddc96899a1df",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "b7e9dd15d9c4731c1ea80eeab62a6a08ae0b86427a62df53cab4ef86778ecbb1",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "b88e46589387846c6e6a208e634481195852ece62ddf4f1f127c83b7e8f6f579",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "77ea0cd307cc376b6f483c1f7dfef1c6c26905669530b074c834e1dfc745ae87",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "ac68274d0683242427ff7530f8c3ae56dbb477ad0b37a858b10847e358f821ba",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "06cd3e445cfe7e8b5eb502035c1d71cf15dddeb6d98b0f7f6f2cb7269dd23a06",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "87966a37e9308450d71362ae8d1935eb20a373405cbaec8449ec7e79e2f1ab36",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "02b4f6d1162801ec266fc48dbc6e0bd62b2839619aea15db112e0905d1ee03a5",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "263d36b2acc62f600f0c8895146d42b293d848702eea2414f76482be3f0fc88c",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "2614ac50a460d164d3b5adaa1b765f10c5426c321d7cdff2b8fbae9b90e13f85",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "8c5f8e76cf38266bd452e3cb949c234bbdc390e54fdb0810376069977603e53f",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 6,
+          "corrected_sha256": "1ac01151b01ebe0cd357270298a5068eee09a8d120e62e11fc86845ee194f9bc",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 7,
+          "corrected_sha256": "20c5ece32567e3820a6595688c96ea8d1388dc7e8d4c37e0c40578332aae1fd9",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 0,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "b1e6d1884b129770045d91e33734a0dba3f257079d939af58fdb4bbc1b782528",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 1,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "537b0a6a2c8ede6ff3330a3698c8f2a6c4a4aa9e1a61560a2eaf0ada273ffc1d",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 1,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "d939926f05444b0f4495fb9629ecbfa80d99a8ec1a20d06800ca5a3d5f4fd276",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 1,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "1e3faa1d5ae24478d9a5807f9f73fc2cd00fe1cb2324db52e4879c301cdc7aca",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "459711bbb9a9cecb8a84e61a541d40d50cfc29e35cb407a229c9da79b774c330",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "446e4f1dc1c861405031e06998ed645a211e69470c34afda1de1c4f89f348b63",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "f06b2019d128b04d7a2da5a20e4ac9af1592dc5e4210932594999b589ee56be0",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "8f3ccc3707f2ccfd7e9e0865fc507f30685543e84b32fe75f0d8d9f769e81c01",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "66dcb2f94b1706ed2800701879f98d0646e0ac3ba4a0d730cbe39bca233946a6",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "955bde29dbccd3ec92ac02a0c2541e76517f0af11cea469bd36a7f4e0799f8c9",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "3ab37dcd879c16381a2323b9ee0aacdbd58fdb929101f5667b130e14427383ec",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "46189256607ad9a86d946b5ec22890a3e5e76583d3df2f0180dc33458bab0849",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "b20fb138e0150ae65d984dc6e9b8fd029b48c6fb646925efd043235c9dd46d25",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "e50d7974a50719eb8c455c26573959543f53f4900229d62d7cdab0aba97d1189",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 6,
+          "corrected_sha256": "52701504dc5cfdc4d989b7c1202af2a7d01c7ab792575659de707d66aa9961f2",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 0,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "8c7c22945e850913b8de2c9b4563faed21dc2e0c02c710cec6bcea6a20b51b9c",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 1,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "537b0a6a2c8ede6ff3330a3698c8f2a6c4a4aa9e1a61560a2eaf0ada273ffc1d",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 1,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "d939926f05444b0f4495fb9629ecbfa80d99a8ec1a20d06800ca5a3d5f4fd276",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 1,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "311f77f7cbfb3505902bb87a85a30e8a29990654bc1068af13180d27e713466a",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "addfe740a1541b805ba58f58393790d666fc0f282a2d3730c26f54b3a3970bff",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "f83e33ba9351f7f7f0ea5b5a8c7569685dc5c4c783b1c4e71be60ed70d2176e1",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "f06b2019d128b04d7a2da5a20e4ac9af1592dc5e4210932594999b589ee56be0",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "8f3ccc3707f2ccfd7e9e0865fc507f30685543e84b32fe75f0d8d9f769e81c01",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "70eff2b6397ceb8589c05f0d636a03daf56dc92c9d74561a4e8d4534481841aa",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "f88fa52f571b0aad18dc1d1783b851293ee962f6b8da37e6b9c4407efe251215",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "aad681ec83f04aa51f393dfa20c0e33d0867948919674779f9686c9b8483d503",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "7a870c804fae08f68ec2fc0cded7492f1eceed824ca2a23c2860714ba83a9dfd",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "d3c5b75902e6a1113d449f7e5ed5f94c1d0995de75212a2e409956c25babf5c5",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "e50d7974a50719eb8c455c26573959543f53f4900229d62d7cdab0aba97d1189",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 6,
+          "corrected_sha256": "52701504dc5cfdc4d989b7c1202af2a7d01c7ab792575659de707d66aa9961f2",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        }
+      ],
+      "lower_probe": "widen corrected PI.lo downward by two fixed-point ulps; this changes half_pi.lo by one fixed-point ulp",
+      "minimum_H_coefficient": {
+        "decimal_truncated": "0.000036375661375661375661",
+        "denominator_digits": 6,
+        "index": 10,
+        "numerator_digits": 2,
+        "sha256": "b4b8f9e3628475caeb0a2ec7295d63c4992342111c8a338b5953cc7e65b3a432"
+      },
+      "minimum_upper_reachable_H_coefficient": {
+        "decimal_truncated": "0.050465637998208767953715",
+        "denominator_digits": 8948,
+        "index": 8,
+        "numerator_digits": 8946,
+        "sha256": "758062068b0a89fd096783f8dae7b940a0fa0c84c36a31450fa27fba48e34cd0",
+        "strict_simple_lower_bound": "1/20"
+      },
+      "source_gate_corrected_passed": true,
+      "t": 2,
+      "target": "1168670182645776041649749606421195868019464589149806286955874347363203955731060829145459956631800597470266621743833203905618606494926460125521665809606585834538156569737706225644706184595711174026998238702465713173700059407969307060446935863700878442963055925072689073199409729946327437515867007663335337433045070630836447055028150765613958890354222775897766796087459865264072696413973821179143986564351802004179073270499188489295673481557081427111026574659346825204152756047997480806411010841338370281715296187776689884862413519828491838012079638000105038579663489557925607782235478156632703582831925701318779230407106816278192343778567470514372020719253508602052416876555968337246349015032858920498902656049749998158788049418420748208453600225460167229895402715037168161196611818285423938062791368765284325063793232292654238217601734022249029601994311375152860926489629542515246332503723381096837497071295999890664370825433290293558167011824019894290653005272459202757395146792011700644092500866898658603281938929913133901318474024864784169303563454158535855760132292958785249763317766311227206885416349795826172472432273384584009988908076286010934695066388588130220891544244165210849962748458457745440576750289476244982094490578306916148546302538383895303352582914091818952803054092431622191097414244849969306176104385480504275334173631384241000684242601145123054201923385111201180549321544427852491050129415015196644679338049730353508268244466189271976498810399920370876016957704492266800830818901310636796464792064887283185772965798760936208670989925959139483372618304079916755253649114315142360468204189600318980714732921607100155404338828691925997193153448813880674667971065693286444797992815947690114475350308341311911107602264318460700212483462859348060811826789829143474672806577112842367748624370596254363268737100244481749659484232892152065346682240846734061193418247727192592031219959894937501558857237204450331423047722124220512228174546102332659503556845174468421887194365930443207294887086574519159661445437912238800678941488842203331027495913947196812930650647160373127465034731090619586306796641577357773925014325092387103898768269276998060575236784032264041056371737323497169385831285555403454107097169270257934625150989472289325630799920052167095722780144346275550284611680296120028645218432095881871726720227980515379666689775493590453399599679171353459745088288846933483016092854094129134045018621290802776454455070632247959746369200602040009310197190720111803650513274613942203598349135896004892506863873478132085846908416538486984382225610105882931140624609668310204936068216934588432465747353125636926683436519336678018556182068154004875773234709734659806242512689401207653155584100877001233080677125524436207493371266085975064321369253488910434888262255357173533279155927429781624475278435414737749081172522422433333531325284574227457200902999035566774001843565028322471805998781199838075182337121558015244831788385897764631658379541704934641571631348857718350906622381686605956059866347646667458374507291374178075624592488614760827366326047697547273816176847701708583749019041096319846192001187604904652400836016166245036107076526523124044096296750484575835251345491660337942405117016706621701290854461894624260493960405102292909074746177734430137636693357512775168341249738379617888727665702863736279725297274240741947867443120183194140564360986010912835862015513674211505862625766974598533381176149427616191705856991014994388035072552679771044834686684942742677933574282177305518622550200933753479011454764920767859379884212561287512847519673633214445711549130067691762254003279862988933258301996637211848525890693249359640220205456888668303298403359148270810005107688859022632128683936551529163532881484971360667367255879932407841216807748213808088596737573246929760183156090585313890341919451020410593926876669410529232273100910757927157223252828791041357976946818646908466508464579663318311561892361707259624784125163241798349911263946630900918625126447172337355774722357278481732347933128780610618649124530746037677953363538222678179141408560719656644389599080842895996405752820936196086797845389770537269860565926800688062099929109405018927563299678980405177123699363714701808201364174818311054648930735997305516161494980773892516909414086571942146498783165160244996718641751161400148080705541264807878963071949357476928359428341142204472031050234754359110617008609450824007780562707950399329907331155543254078744312041711227291595678395647433793258935125110816543711837673803107592873576796496862138050956587393891220128630490923228024797638736049692928240777102053246751055489800517398924780148545615835891773452025224246094035187989218333236604693212398276943631294664714393573476894214931201187140255907939471477754991824086646416237573824267606087627778034846409587775320986381904955060702332537101580880528344785047799386154256214365872967598274640709887227585736280819778904300449155777562325405394246401880963375164128234481727171574291595027263914726201686956274870924169736419958305940100315794033043455969556972354961092656924497692839483229125559114592708473295359581259514914316066719693534847460702012102481358014606027605514843469093070933502184022548084675398311325943958900699859914909871675704495177556629718157077264456829066334181856074742573457639984971896112774543354879582084829983346691093446017972048076009043507503613950459575815605923596824206753040387919862197188161429684967672823213176367612686836940630734698520441060265886155206141598887786211606744791581652185072250589715336970813599547152267467885805476002080280090273056670412148422181599954554420468565099618697241239482274094313010072231647371145429428000752249895224091382601511200277132483684351410700389792092588152426761089610845886339864842369290148384101458408662445567722692016717818953695912815457015059441546167712356955124543273352096668518231902174274496649182389976798648288251385420532766442721216646030593087999844071924033318016801074936259040910918473883502958637739936153156151020426779711623415576688899099287348007161514104029961067624503908567579703067472776736503333766973233251540913665245741957819044518900724156001865895107048091399744629659082767246216585428223161972461549888202520196262349672751779042779305299556666102278730183731248496984584162252286021313900865537510227691882390082906020717677605916122647116563051645416857271383065719433567890236073959687302531866186894185602301899060559709064669058387987549054765126226380675702094947004894140647688539492858628525717650056209520213940370846520697079365895134978077472392098368075084245835824009358435490053933179086292179158556089936962839790655930697897827078227069379185019341683967900353833430656187212493272998323902556408/880348114000928276730395707872912103571495381610039440282617269338384713354083231132287090712750230948489895371615910209399187445619999164900293650041311108559007705499503686630652101580958910931566472304981011719929253264457422973028618487319742119140763199298767940155121629788720401390546078493058658794894954366410720193592567663576396111805265784914984665797116070138086744705683690311136381724301188253337874415574045260517675957433030443238230680542016082199520283722375683063753130408363693634890657802341074344173588464854872283548996541513585367964893419341795591304575709013023352490310225151753459558405305505180179390666730821886397954253931381335518557036221069142240779332425074743771250637775214207400079427052696814880363552037475449882786464851801171426222742395879274956680247167922398881520460752071366704100798807675656165144724484919493533119476801610632275196322276868617627292963535637515888070000270977762638951290286403812107062786300633960905985127177578871908341953813406423009574770507081058162835702969534181339595371112179138950668324464922115822281642651163481234463937027000669937474222949855586671135203884753430134241168115881420695938176090109221837017523573546359832971406211868232885775925031406722383497606782883238804352339906230531708143208570720227089719533605160502901230866013883884037173421660811590916337716643016486206709910274483092670961953531898187091299452559173493534468906520131590472897905432570537795113895595610510906840634616624812417570102646343515366987224305946324114537162775306048317600927774078178752350748566354245680859603647041614815847399747300418813578398415306315353311551198512558226049712867268302734184429776289821948081359825053051412628750837379470882160354840004644931201921235190209783616972053443561246605924789820706663255213921508063929221444472933904021821889579237726711233302842962723972327423096223348308386650017139195355945767442175605148527324340872493104917167450902659165052619137055030258326875683371236006841957501631685209740755237647594107565706131143616290471970650172308915349652133403776413429684913830886674094038754084740900378226467806821607378008556521330977543083028265492488378068259231019125543300937522216916784083960708871321744270119563520425757619009550562487322761658997921441629787352662296542556049872198958173105116326448679707869297013859817292553471992453697096404200637502119014951553341981068542926184729363085686776438646427406898975900737903838548085934856204729651377609171590991111342435873649479470938352546917038337514515246340476263989033583006069649015119242199630544701486973914718142138742621174953477028771646737760299690840543400633697203476273350552318614016779006836298611200577634238869936646518461016774160580480986917869482318308937199186326425336827761108573008309225069350200804065885292265447993544311825283497631175851575678459432913960337122376557472137083858720443663203561133990916227283217250952502655291231012024445378089896245118462443449233298885363852067020091895521728201625885858246420857650435024749352314970319125366331067741927940982488805419982953728656303096956895953467114381999128491382219931745936017048250080543573665887583274246758144848935176966350956480449887284917796936327634078886801459189726581337084674187151664431410681070255118497504336516910582136915654289063968381970176077309971356911191179132302367269930392641484894134656308894189534187671001794143101724194082039562071510594872288804545428368769103745778192802814113839378199213425959461980672027390768887183573911562303791988489830378742939545188080865145011304688168780989127052845401178765210448527878993596203048287254057835051120584941521865754148570589746480972917956888782288748637075202591030280978514587234083961727172932922997050445543210202922085543375818116913420687828494795665811809145190075985418768588781596245528015098467077157889982364040408606394596725544604641300130427423810798889525276876751173880423945725989750571375400064889236344351986959084238259129863933482973809008199049738349129547905335834362249710163512056341841962106494858557018115297688857775335360673103563662407054578600241869108639356469992691493187845723313982163116988791405137188761282911384498773534560782878309987189326294940806009180471429469162079548557355933864303897122993936499970087763417033084518234280718221168068075716309779123362319783686590972843023093110339488642854045747036593934257827636582278195458472248263072361361802887667185571044943187387671033132097189293834318567028756571862850529438737480609450894060211017575698328756759246853443150504120210405212250728979905068312609556402995534852856663333966358764669986474370642205558371981920595508453834280303360791550030625779269142583829777112017834841840578421139264318855129799836693464379542955684405567048308489310612043772334427455549098100429934249640726600479182447409532930006560858958100410271385536311100042467205554123368842530528420615887481128438250298818670566698920884925001278063776723639715282635350495800499646378496192908207781098722456587840586039448876102701598982855299049434227060993010551867227189576674200961915567924899963712911958939348094262762943954967699313436414111710922200667814896258844130892050292215466666358086924115359556302817408241023591535967248856936385737271029345043185856132142071935808963733195652403332233590370810347606682973427690731061954357628418862646521378362333733836675513004015681725359882856889531837812703728078586715490349877309722398972110673288000703265868773840203235115287169508969630547940682395063466660287310785992927393527044238658772050922566488639825184475851061301310421163640911317144857145600800502907651769583581191340699138660846030526466903317273897286565687263628985238481691760568371584644845252732326994890406101646254254802665110175838318155885100162053948902912520029485275533254108781332083346747718773036307920564466738508011395088323860532663855254293413368091264100393844503845632212685772544329468807330487621493772349824313945066982204813948201674838737174113659870611401078339307089326594706568973891618162388719819912367101299084123331611399620809037575756513657633911066330154690302731656013454164687233458397243906882047343740357571003700376688807139076068509272084467121724810230688099974019455702568495114338409690683990400122910459318334454407192095871183582469373547749404338671697215411391670405156652561143541920230074633224260044785541485742918983029108754404490976013366523971173189390061274450612228763500835726316903781346976069982282397996438827475586120747386059841018806663782615575420750348767190466925702375714268600356032889525184275360570007101726575987962155461687639207684318859632823016376483044800457449574202762106958416193492714483984375",
+      "upper_probe": "widen corrected PI.hi by one more fixed-point ulp; this is the first widening that changes half_pi.hi"
+    },
+    {
+      "actual_changed_coefficients": 0,
+      "actual_downstream_sensitivity_bound": "D*delta=0 exactly",
+      "anchor_m0": 3000,
+      "coefficient_count": 166,
+      "coefficients": [
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "92da2e06fabb1bb37d1f144135547d2dc35551606044b271472d5ff7649e827f",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "b7d83bce660dcc86ad936c59782d303f7147e96c69b4aaf2f9ab8994caa2bf4c",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "d2de64f0f06a3888739bb26e342f61449da67b3dfc9b77f1bcf270c505b1056e",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "cc8f9fb1961f8e59db3de0bda65f7e6a6758dede3548967f52cfd6f0280ae681",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "80826a5007a4c1a3a5736238567d461ce260f63db5bb34d0488ef4ff88cc869c",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "2890a746130ac48bb36a4155a1fda3dc44ded80de6a89b1d58e57604901775aa",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 6,
+          "corrected_sha256": "d6e5e94daa081ea373b084c4907bfe0907825c775d35708d79d2fc80123e2537",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 7,
+          "corrected_sha256": "9cf43f6f449a34f746d90b61e9670d4f32524b9d7841103cda0a6926c7f3ea18",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 8,
+          "corrected_sha256": "afd6bc2c8e9f15127c35bed5164854bfe90ca6439e90dd9eb6521db9f0a358c0",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 9,
+          "corrected_sha256": "280ffbd2f3999c1df6966941a06f2c3ef0718a7d3eefdcdf363361693c02fbb8",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 10,
+          "corrected_sha256": "48ef546809a9782f9e96465f2dbac344647212d6ea74f60d83e4fb4cde7bb2bf",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 11,
+          "corrected_sha256": "3c1930710191d77c569d816403ebaf49dbea64bfd04750246723d0fcf61e40c4",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 12,
+          "corrected_sha256": "3c16a6c6440e424ca3cfb325fea4adb5e7568fc03d2afac565e93bfcca9d7c8c",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 13,
+          "corrected_sha256": "14e702afa105377d3f3c12ec0c922ebb28bd8bb9282b3070d9f2631cd3930650",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 14,
+          "corrected_sha256": "72f8c5b22afa4cd51b29ca855319283e03f7adb05c52ed1564ada95072808c9e",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "H",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": null,
+          "proof_role": "lower surplus Plo-2*c*Qhi; an upward Plo or downward Qhi is unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "cbf9a3084287378feb0f5a91f91a7e3bb262a62311e28c38cb3524e6ab3cef24",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "7c8f71c137303be92cfcc6b022e08f9dc6a70aa4c27e632adc68f5deeede4f03",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "32d7da4a1eaa4f194c03ed886b0d4c9025b5c4434a8f780c9a10dffbaefff96a",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "0feb479df1c11d33c689f38d36467c6f334953f1946f5b56e0babbed45982e66",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "72a675ab512c5f0c99df459799250b6e5aae7d2b6fc0abc41e7f566c4e01f620",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "54031235fe32ef564f0ce18043268de18775befa52f15858aa63170291807bcb",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 6,
+          "corrected_sha256": "95f7cba4f072b083d2257d7923556b798130b41b30367cceb1f2b830bf82dfff",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 7,
+          "corrected_sha256": "05f6f34dc912d3046a7b360d6150dae3c30e7c8771f2ec616acdae3bab7a3147",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 8,
+          "corrected_sha256": "652391eed4c7c684ef4583c5ba314765b02e063e9e766e8ec672429a5da3429e",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 9,
+          "corrected_sha256": "3321059f91b482b45679650e537ff338f2a3ec58dc93efef17d58fff247a4de7",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 10,
+          "corrected_sha256": "5d7bfd077f528779a1eb39376bf27262689234837cb9be09eb42fee14b0eb3ea",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 11,
+          "corrected_sha256": "2dfb2c2c5259350db063a88285122b6966e558eef855cada0acf87ee0552c3a9",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 12,
+          "corrected_sha256": "e42680cd7cf1991e4e43d8b8cd88538000c136249b679a24e9a9bacd0f8b2694",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 13,
+          "corrected_sha256": "14e702afa105377d3f3c12ec0c922ebb28bd8bb9282b3070d9f2631cd3930650",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 14,
+          "corrected_sha256": "72f8c5b22afa4cd51b29ca855319283e03f7adb05c52ed1564ada95072808c9e",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "Plo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": null,
+          "proof_role": "lower numerator; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "e2b85d9183c1d1786f376b33948704de1cec56a9b471baecccf8fe2e825dd096",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "08888f63ed9119c8cb62fa74859567a7d5e4d3dcd328b1a7eefe38c0dc7669a0",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "f5ee2c3ea2090431a84ae34cbf26fb988f5647cc6479ec74b057f0c9a7726c5d",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "73394ae8b7d2cb67f0c44a971873760adf7574f10c16d6bcc0ef6fc0155da73d",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "c674c8590ec3319288c1c189da4a7bc30a613a4e1ef1c5abe760ed801f69d07d",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "d2ed1b2c0b86a5ea00ae25270b9de79ad2994575da9ba3bf233a943dec81e20c",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 6,
+          "corrected_sha256": "16b8c9b411ce389c631dc761f9c12d9c325610edb19b40cc7b8ee7dc6c828cdc",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 7,
+          "corrected_sha256": "773064ce25f714b58b924436e521051bf35cd675ef2672330378423529a5b659",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 8,
+          "corrected_sha256": "67f01bd0c34ed831b4360980e4be8f9917272d28b54444fb7e5814c6b597b687",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 9,
+          "corrected_sha256": "aea6d809bf9aa7cf3c33e02df2f7208f112fa53945b63cddda47f457b9edd2c3",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 10,
+          "corrected_sha256": "95f9154abc4c490316449fc449727f0e95c3893e05123cedfda9be798c282baa",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 11,
+          "corrected_sha256": "338a62851a99eb3aa494a1d03b2bd4c76ff5791b85d2673657fce99065b5a2d5",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 12,
+          "corrected_sha256": "62f7df2370a952065ea2169e23b786b4d1c0e024c0101546dbf7bb97d372df40",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "Qhi",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": null,
+          "proof_role": "upper denominator; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "db2ea619c8c0ca36cac3c92758bde8eca0d3ac9514381abd43bedab451109f60",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "f5ac8bda39cc57f0c72661016588722027c3a57568573e2804a37970e3e8cc0c",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "f7feac5ae50c8b390f9fdbddb641777d3a726ad6eeccfb16d6b8172ea5bd27f3",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "28b09ad2aecc8587748a03c18ea4ad4ddbfd69691099442ed43f1e5512750d06",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "cc0f5870c053b0c122348ab767c5224196b79cdb77b28909ea93b4bd97a76c1f",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "bda98e0fc4e67d35a5e27b2a08f9ca87034ae63fa4c000cdc79b5337fa61d511",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 6,
+          "corrected_sha256": "b91c725e2154339a06a625c502c054aa5f14c4d1b1ab8c5ee1136ab6ab166d56",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 7,
+          "corrected_sha256": "b330d9e22e6ab9813dacdb6dca7ccee3fb1f7883f2ba9133f312fef86c31d01c",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 8,
+          "corrected_sha256": "e54ecb7dc7443b91b18ae34721846f64cd3668a8611824c613c83d2d20cc6bfc",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 9,
+          "corrected_sha256": "edbb0c3640d65e5607e00d330f10ec9e8becd2f4912cf913f2b575abd4e658e8",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 10,
+          "corrected_sha256": "f8dda6910c6bda9001644ed3103aff338afcb704cbdd579b8acddb7f64bbcefc",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 11,
+          "corrected_sha256": "338a62851a99eb3aa494a1d03b2bd4c76ff5791b85d2673657fce99065b5a2d5",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 12,
+          "corrected_sha256": "62f7df2370a952065ea2169e23b786b4d1c0e024c0101546dbf7bb97d372df40",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "Qlo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": null,
+          "proof_role": "positive lower denominator; invalid upward movement can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "537b0a6a2c8ede6ff3330a3698c8f2a6c4a4aa9e1a61560a2eaf0ada273ffc1d",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 0,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 0,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "d11eec58d7d71f4b6914eef63d4012bce1ec173f8b5a90d64196266359051a77",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 1,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "b1e6d1884b129770045d91e33734a0dba3f257079d939af58fdb4bbc1b782528",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 1,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "3c3f842a392cb9b4bc53813c878c0029285040a110adacd83b6ba37933e9259b",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 1,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "8f854692d8bc8def84a88d511dd150de9dd8b6bfe000d5a417dde49e4a3d12c2",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 1,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "b2dab6ca5efb627b6d839c4c8655030731a84652d3791586a82b4027c1535eb4",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "1fd2a281f430966d4df855db98e9fdc6d32d6b006ba0af226d8202564279aebe",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "2361a2093594e6b78db4a8e9efedd32e207923ff1150ea1f12fb6adb9e9c58d9",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "33501a8a23d352a30fea73ba8706ea8522084d3a49df79c70d09f8123f8438cc",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "77ea0cd307cc376b6f483c1f7dfef1c6c26905669530b074c834e1dfc745ae87",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "ac68274d0683242427ff7530f8c3ae56dbb477ad0b37a858b10847e358f821ba",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "f9e9b6c1dd5dfc2518e2a5ca763bc63f1feb39ceb200e73f154fed2b1bf32f4e",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "190c383c4773b59be1fdd06f587983edf83f3f5d7cbd2a28516c0543b6142583",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "f52c317df6aa842dd0d5b1283b07460b7b7e4bd0a3e556e6ff4ffce7b751c902",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "5f90b8d3ad69de4d19507588df130b6eb4c91faf2ca0ad6753abeb090e2bc809",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "60e6f63eb5a584660dddc873ab1134b60fd0a18228b37595c33a306d4b5047d2",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "b5d6f9c49e7d412ad6394f0115cd119ef3dde90e66b95ae3fe1e64dbb01f41d2",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 6,
+          "corrected_sha256": "1ac01151b01ebe0cd357270298a5068eee09a8d120e62e11fc86845ee194f9bc",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 7,
+          "corrected_sha256": "20c5ece32567e3820a6595688c96ea8d1388dc7e8d4c37e0c40578332aae1fd9",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "00c101a2399a9295db74f3e11a7cd22859176a932815880d54110774525d41f4",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 4,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "f24fa548df03fbe83cffe2ad40215e9280e2abcb2988bed579f12772543ecf15",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 4,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "d4896fad8d95a73aafe522fcdb5b418f182df00f9356148c97dbaee284e293d8",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 4,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "3df2f5529cc39d313982967829fac98300105236318b944efdfe718069fa4e15",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 4,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "73c7b8ab1c4df1669801586d6e5d47e8c282bd3c999fa4ce00980f123adc8105",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 4,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "c4dfc8d873da97c6e5b31858381da11147a65358c713a392788337fc9e371513",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 4,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 6,
+          "corrected_sha256": "64407996c16091db4df07808d7c38c53916af54a1dda0a7715cc5d95223634a8",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 4,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 7,
+          "corrected_sha256": "cdbf936ab52039d16a5b7982f726a981c67dc5299d99a5121a944e440cf4dc65",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 4,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 8,
+          "corrected_sha256": "72ecfe217ee3b84cc819efb2929b80f9ad93ebc1bee04aa56528c2e6049ec931",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 4,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 9,
+          "corrected_sha256": "7f00270baa84cb5f2a137584cc5d16a72e8052cc69ea64b26924b74572ae83b2",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "bhi",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 4,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "537b0a6a2c8ede6ff3330a3698c8f2a6c4a4aa9e1a61560a2eaf0ada273ffc1d",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 0,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 0,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "430bc1092d96bda1fec099bbcd55f4734e57527418736d9b24e8a2a3a8b063c6",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 1,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "8c7c22945e850913b8de2c9b4563faed21dc2e0c02c710cec6bcea6a20b51b9c",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 1,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "3c3f842a392cb9b4bc53813c878c0029285040a110adacd83b6ba37933e9259b",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 1,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "8f854692d8bc8def84a88d511dd150de9dd8b6bfe000d5a417dde49e4a3d12c2",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 1,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "cfd1ec81932a2ab29d3186b03928aef01dba83daf4e27976d2e076c822be3876",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "7ec41534ca59dd05dc18a7c695a8a10d3b64f3c47f3a0c370552ddc96899a1df",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "b7e9dd15d9c4731c1ea80eeab62a6a08ae0b86427a62df53cab4ef86778ecbb1",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "b88e46589387846c6e6a208e634481195852ece62ddf4f1f127c83b7e8f6f579",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "77ea0cd307cc376b6f483c1f7dfef1c6c26905669530b074c834e1dfc745ae87",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "ac68274d0683242427ff7530f8c3ae56dbb477ad0b37a858b10847e358f821ba",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "06cd3e445cfe7e8b5eb502035c1d71cf15dddeb6d98b0f7f6f2cb7269dd23a06",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "87966a37e9308450d71362ae8d1935eb20a373405cbaec8449ec7e79e2f1ab36",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "02b4f6d1162801ec266fc48dbc6e0bd62b2839619aea15db112e0905d1ee03a5",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "263d36b2acc62f600f0c8895146d42b293d848702eea2414f76482be3f0fc88c",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "2614ac50a460d164d3b5adaa1b765f10c5426c321d7cdff2b8fbae9b90e13f85",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "8c5f8e76cf38266bd452e3cb949c234bbdc390e54fdb0810376069977603e53f",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 6,
+          "corrected_sha256": "1ac01151b01ebe0cd357270298a5068eee09a8d120e62e11fc86845ee194f9bc",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 7,
+          "corrected_sha256": "20c5ece32567e3820a6595688c96ea8d1388dc7e8d4c37e0c40578332aae1fd9",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "7a2563b7a5930352f9f718fb6d3398e877015ea29c644c6dc6cb9941a7154610",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 4,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "45b2ba519a67797568b8a91b2a91cd36c120c2888efc7d92a59e14e8d688aec9",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 4,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "6b46c2d1bb4523176a714d07c00e1a38a5ec6628a4581c2af79b56549fab3f9a",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 4,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "ef1eedb3d3614f5ecc1e59c5955bed5de221dc7f1ecad420e5d8b7e34ec5f11b",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 4,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "80dfc86132fcf400cf75b9ae1cbf62d2959e183d79eec69a6625f3f3b04cd2b9",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 4,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "2cefd688b50266ab4dd6effa41a58688bd4a2520bc58c37ce1024e963805c4a4",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 4,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 6,
+          "corrected_sha256": "a66fa45d88bac7479ec4c4a8052ce795aba3473d22e2fdb62bea1484ee1c36a1",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 4,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 7,
+          "corrected_sha256": "31dc966f0ddd35c74bea2d0196a2b28b6c63967c9092bac2714ddb3df9175722",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 4,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 8,
+          "corrected_sha256": "72ecfe217ee3b84cc819efb2929b80f9ad93ebc1bee04aa56528c2e6049ec931",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 4,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 9,
+          "corrected_sha256": "7f00270baa84cb5f2a137584cc5d16a72e8052cc69ea64b26924b74572ae83b2",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "blo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 4,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 0,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "b1e6d1884b129770045d91e33734a0dba3f257079d939af58fdb4bbc1b782528",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 1,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "537b0a6a2c8ede6ff3330a3698c8f2a6c4a4aa9e1a61560a2eaf0ada273ffc1d",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 1,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "d939926f05444b0f4495fb9629ecbfa80d99a8ec1a20d06800ca5a3d5f4fd276",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 1,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "1e3faa1d5ae24478d9a5807f9f73fc2cd00fe1cb2324db52e4879c301cdc7aca",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "459711bbb9a9cecb8a84e61a541d40d50cfc29e35cb407a229c9da79b774c330",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "446e4f1dc1c861405031e06998ed645a211e69470c34afda1de1c4f89f348b63",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "f06b2019d128b04d7a2da5a20e4ac9af1592dc5e4210932594999b589ee56be0",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "8f3ccc3707f2ccfd7e9e0865fc507f30685543e84b32fe75f0d8d9f769e81c01",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 2,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "66dcb2f94b1706ed2800701879f98d0646e0ac3ba4a0d730cbe39bca233946a6",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "955bde29dbccd3ec92ac02a0c2541e76517f0af11cea469bd36a7f4e0799f8c9",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "3ab37dcd879c16381a2323b9ee0aacdbd58fdb929101f5667b130e14427383ec",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "46189256607ad9a86d946b5ec22890a3e5e76583d3df2f0180dc33458bab0849",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "b20fb138e0150ae65d984dc6e9b8fd029b48c6fb646925efd043235c9dd46d25",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "e50d7974a50719eb8c455c26573959543f53f4900229d62d7cdab0aba97d1189",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 6,
+          "corrected_sha256": "52701504dc5cfdc4d989b7c1202af2a7d01c7ab792575659de707d66aa9961f2",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 3,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "aebeb26a216ae84dfb264d4e9fd82481cb23ef328bccff57e64e254c00bca272",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 4,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "ad8ccb4a650d4b031036bee5944bebf81653dd01cf86a98494cc96ef8d44787a",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 4,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "1c4ab132a744d30c15d5ae2f0c13e9e8a56e44bd83156b971acd08c634bbd8be",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 4,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "eb10fd9b7261fa1928a587561c810da2c32c0107fe201948ea1b79f608878898",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 4,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "c31a8373c7b616a526e369a82b50115c4b99cc2feaf6c99a19c7c2d64164bf0b",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 4,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "ec3a15b7a49f3abf0f0c5de1e6dac5a7932b8cc16a60775a638d49bba6481564",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "+",
+          "first_surviving_upper_probe_delta_sign": "+",
+          "level": 4,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 6,
+          "corrected_sha256": "6a0b34de1d77a3c68d25aa3073d7de2b20a48912197eca84d2834594b884ca83",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 4,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 7,
+          "corrected_sha256": "942f13b828a7b4ddad993c193df51cf54447fee31188af425fb7241bde97cab6",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 4,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 8,
+          "corrected_sha256": "6725e16b84d15009642174a5d1f491b6ca314e48c5440cfbd1a4f2809b52d8e0",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "chi",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 4,
+          "proof_role": "upper envelope; a downward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "253d950f11ebdbeb4c2d54c57803deb69869b832a2e03010620d462a85d15290",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 0,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "8c7c22945e850913b8de2c9b4563faed21dc2e0c02c710cec6bcea6a20b51b9c",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 1,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "537b0a6a2c8ede6ff3330a3698c8f2a6c4a4aa9e1a61560a2eaf0ada273ffc1d",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 1,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "d939926f05444b0f4495fb9629ecbfa80d99a8ec1a20d06800ca5a3d5f4fd276",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 1,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "311f77f7cbfb3505902bb87a85a30e8a29990654bc1068af13180d27e713466a",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "addfe740a1541b805ba58f58393790d666fc0f282a2d3730c26f54b3a3970bff",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "f83e33ba9351f7f7f0ea5b5a8c7569685dc5c4c783b1c4e71be60ed70d2176e1",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "f06b2019d128b04d7a2da5a20e4ac9af1592dc5e4210932594999b589ee56be0",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "8f3ccc3707f2ccfd7e9e0865fc507f30685543e84b32fe75f0d8d9f769e81c01",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 2,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "70eff2b6397ceb8589c05f0d636a03daf56dc92c9d74561a4e8d4534481841aa",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "f88fa52f571b0aad18dc1d1783b851293ee962f6b8da37e6b9c4407efe251215",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "aad681ec83f04aa51f393dfa20c0e33d0867948919674779f9686c9b8483d503",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "7a870c804fae08f68ec2fc0cded7492f1eceed824ca2a23c2860714ba83a9dfd",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "d3c5b75902e6a1113d449f7e5ed5f94c1d0995de75212a2e409956c25babf5c5",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "e50d7974a50719eb8c455c26573959543f53f4900229d62d7cdab0aba97d1189",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 6,
+          "corrected_sha256": "52701504dc5cfdc4d989b7c1202af2a7d01c7ab792575659de707d66aa9961f2",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 3,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 0,
+          "corrected_sha256": "4ef81f80c7310158a2f39eeafa9829acd5bc4d0636d97b90c35f2964c8c33acd",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 4,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 1,
+          "corrected_sha256": "1b233a7163b0606fc0b5e2e091dcd8f4ace9a6ba876c0aa4e60b3cd163d9783c",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 4,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 2,
+          "corrected_sha256": "d55e187d772e2091d3560bd6f4b78529bd0b64ce3012d888be6aaa661c8cc892",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 4,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 3,
+          "corrected_sha256": "dac61c769f1ccd01d4797f1f1e0a3f5e70e6c283f88a7a7a3050321e540d7c22",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 4,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 4,
+          "corrected_sha256": "8086fbda1c3309bbac33a99cced1a4942828f965a1d7ebe817eb29da8d2b070a",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 4,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 5,
+          "corrected_sha256": "8420eec2d3638e75668f5c00b0b618b436836cc6bf04dd2b9b220b515d033942",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 4,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 6,
+          "corrected_sha256": "98a41029844ebfe79a99e61f99a555100eac3bb09cc813d519da3883fa7fcc83",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "upper",
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "-",
+          "level": 4,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 7,
+          "corrected_sha256": "942f13b828a7b4ddad993c193df51cf54447fee31188af425fb7241bde97cab6",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [
+            "lower"
+          ],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "-",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 4,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        },
+        {
+          "actual_missing_upper_ulp_delta": "0/1",
+          "actual_missing_upper_ulp_reaches_coefficient": false,
+          "coefficient_index": 8,
+          "corrected_sha256": "6725e16b84d15009642174a5d1f491b6ca314e48c5440cfbd1a4f2809b52d8e0",
+          "corrected_sign": "+",
+          "endpoint_direction_tag": [],
+          "family": "clo",
+          "first_surviving_lower_probe_delta_sign": "0",
+          "first_surviving_upper_probe_delta_sign": "0",
+          "level": 4,
+          "proof_role": "lower envelope; an upward error can be unsafe"
+        }
+      ],
+      "lower_probe": "widen corrected PI.lo downward by two fixed-point ulps; this changes half_pi.lo by one fixed-point ulp",
+      "minimum_H_coefficient": {
+        "decimal_truncated": "0.000000016403166204753506",
+        "denominator_digits": 8,
+        "index": 14,
+        "numerator_digits": 1,
+        "sha256": "72f8c5b22afa4cd51b29ca855319283e03f7adb05c52ed1564ada95072808c9e"
+      },
+      "minimum_upper_reachable_H_coefficient": {
+        "decimal_truncated": "0.000046193912009291598999",
+        "denominator_digits": 2340,
+        "index": 12,
+        "numerator_digits": 2335,
+        "sha256": "3c16a6c6440e424ca3cfb325fea4adb5e7568fc03d2afac565e93bfcca9d7c8c",
+        "strict_simple_lower_bound": "1/25000"
+      },
+      "source_gate_corrected_passed": true,
+      "t": 3,
+      "target": "4/3",
+      "upper_probe": "widen corrected PI.hi by one more fixed-point ulp; this is the first widening that changes half_pi.hi"
+    }
+  ],
+  "constructors": {
+    "independent": {
+      "corrected_half_pi_integer_endpoints": [
+        181885788445883162140117471388864931326696688664196214979386075558969447233092,
+        181885788445883162140117471388864931326696688664196214979386075558969447233093
+      ],
+      "corrected_reference_tripwire_passed": true,
+      "corrected_width_ulps": 1,
+      "defective_half_pi_integer_endpoints": [
+        181885788445883162140117471388864931326696688664196214979386075558969447233092,
+        181885788445883162140117471388864931326696688664196214979386075558969447233093
+      ],
+      "defective_reference_tripwire_rejected": true,
+      "defective_upper_mod4": 1,
+      "defective_upper_parity": "odd",
+      "defective_width_ulps": 0,
+      "downstream_D_times_delta": "0/1",
+      "fixed_pi_delta": "1/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+      "half_pi_delta": "0/1",
+      "half_pi_exactly_invariant": true,
+      "hard_reference_decimal_places": 100,
+      "scale": "SCALE",
+      "scale_bits": 256,
+      "upper_repair_delta_ulps": 1
+    },
+    "primary": {
+      "corrected_half_pi_integer_endpoints": [
+        181885788445883162140117471388864931326696688664196214979386075558969447233092,
+        181885788445883162140117471388864931326696688664196214979386075558969447233093
+      ],
+      "corrected_reference_tripwire_passed": true,
+      "corrected_width_ulps": 1,
+      "defective_half_pi_integer_endpoints": [
+        181885788445883162140117471388864931326696688664196214979386075558969447233092,
+        181885788445883162140117471388864931326696688664196214979386075558969447233093
+      ],
+      "defective_reference_tripwire_rejected": true,
+      "defective_upper_mod4": 1,
+      "defective_upper_parity": "odd",
+      "defective_width_ulps": 0,
+      "downstream_D_times_delta": "0/1",
+      "fixed_pi_delta": "1/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+      "half_pi_delta": "0/1",
+      "half_pi_exactly_invariant": true,
+      "hard_reference_decimal_places": 100,
+      "scale": "D",
+      "scale_bits": 256,
+      "upper_repair_delta_ulps": 1
+    }
+  },
+  "deposited_battery_conclusion": "No full battery rerun is needed for this one-ulp defect: the AST inventory proves every current fixed-PI arithmetic path begins with the identical defective/corrected half_pi interval. A13 is direct; A35 and A39 are indirect through the same two constructors.",
+  "direct_exact_endpoint_uses": {
+    "PI_HI": "unchanged; positive upper-clock and injection computations consume the exact rational upper endpoint",
+    "PI_LO": "unchanged; used as certified rational lower endpoint"
+  },
+  "fixed_PI_load_sites": [
+    {
+      "first_operation": "scal(1,2)",
+      "line": 30,
+      "missing_upper_ulp_absorbed": true,
+      "path": "verification/A13_delta5.py",
+      "source": "a1.PI.scal(1, 2)"
+    },
+    {
+      "first_operation": "scal(1,2)",
+      "line": 458,
+      "missing_upper_ulp_absorbed": true,
+      "path": "verification/A1_verify_tail.py",
+      "source": "PI.scal(1, 2)"
+    },
+    {
+      "first_operation": "scal(1,2)",
+      "line": 283,
+      "missing_upper_ulp_absorbed": true,
+      "path": "verification/A1_verify_tail_independent.py",
+      "source": "PI.scal(1, 2)"
+    }
+  ],
+  "gates": {
+    "all_fixed_PI_consumers_halve_first": true,
+    "both_defective_constructors_reproduced": true,
+    "half_pi_exactly_invariant": true,
+    "hard_reference_tripwire_fix_two": true,
+    "source_hashes_pinned": true,
+    "t2_coefficients_exactly_invariant": true,
+    "t3_coefficients_exactly_invariant": true
+  },
+  "passed": true,
+  "producer_sha256": "1ba6be80af187156e48a883c29b7a23e6450266eebf541af005a07cc9b7cb9b1",
+  "schema": "a1-pi-endpoint-direction-audit-v1",
+  "source_hashes": {
+    "verification/A13_delta5.py": "b15c9ac43b051f8eca00ca37fef13be52e920deed8dd710b0ac2672a9d52f98c",
+    "verification/A1_verify_tail.py": "7cc90454d04a71b2eecc6123eee98c82896f2809ff1514d0262125732bb50958",
+    "verification/A1_verify_tail_independent.py": "ad7afc6ac798c7c2db565b2358325fcf9a68de3926b1596d24a16f358a1a6ec6",
+    "verification/A35_t2_decrement_sign.py": "34649e7ef042176e9bc56255ab9469958d6758bd9734ff5cbb4371c9dbc9104b",
+    "verification/A39_global_infimum_retarget_probe.py": "475a3d9a3dc2e569ef255ff122dda7ed0b9874ec0eb47fac2c8197ba50d6e425",
+    "verify_all.py": "fd568bada17e9dce4b9248135aa6c41b10a780993d11f1e3e2c52c8aa7b67535"
+  },
+  "source_repo": "vendor/odd-cycles-square-tail-replay",
+  "status": "PASS"
+}

@@ -1,0 +1,47 @@
+{
+  "claim": "square-tail inequality on t=r for r>=2 and t=r-1 for r>=3",
+  "configuration": {
+    "workers": 1
+  },
+  "definition_replay": {
+    "cells": 21,
+    "range": "2<=r<=12",
+    "role": "definition-level transcription check; half-lines are symbolic",
+    "sha256": "e799795e3023590d2f87b33f8b8546f08085ee73e300666ddde8fb588cb17ad6",
+    "status": "PASS"
+  },
+  "failures": [],
+  "passed": true,
+  "schema": "square-tail-terminal-cells-v1",
+  "status": "PASS",
+  "symbolic": {
+    "status": "PASS",
+    "top": {
+      "identity": "rho(r,r)=r^2/2",
+      "range": "integer r>=2"
+    },
+    "top_minus_one": {
+      "D": "(320*r**6 - 576*r**5 - 1300*r**4 + 4740*r**3 - 5275*r**2 + 2541*r - 360)/90",
+      "E": "(r - 1)*(2*r - 1)*(160*r**4 - 48*r**3 - 802*r**2 + 1071*r - 360)/90",
+      "K": "(r - 1)**2*(2*r - 1)**4/r**2",
+      "R_coefficients_low_to_high": [
+        7020,
+        425439,
+        1133721,
+        1294641,
+        808325,
+        295836,
+        62924,
+        7104,
+        320
+      ],
+      "conclusion": "rho(r,r-1)>2r^2/9>=2 for every integer r>=3",
+      "identity": "D-3K=R(r-3)/(90r^2)"
+    },
+    "wall_coefficients": {
+      "v_n": "n*(n - 2)*(n - 1)*(n + 1)*(20*n**2 - 8*n - 21)/360",
+      "w_n": "n*(n + 1)*(2*n + 1)/6"
+    }
+  },
+  "version": 1
+}

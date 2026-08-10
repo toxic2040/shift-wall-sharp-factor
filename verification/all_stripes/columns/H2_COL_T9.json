@@ -1,0 +1,187 @@
+{
+  "a_gate": {
+    "bounds": {
+      "a1_pi_interval_repair": {
+        "corrected_reference_tripwire_passed": true,
+        "corrected_width_ulps": 1,
+        "defective_reference_tripwire_rejected": true,
+        "defective_width_ulps": 0,
+        "half_pi_exactly_invariant": true
+      },
+      "anchor_ratio": {
+        "decimal_truncated": "1.800750939158134805144576",
+        "denominator_digits": 217274,
+        "numerator_digits": 217275,
+        "sha256": "ade940961d34654b97b06fa4e981f729f4c5f68370d4fc0105539cd90d0c6366"
+      },
+      "anchor_width": {
+        "denominator_digits": 77,
+        "numerator_digits": 5,
+        "sha256": "ecf60ce40f344fc0d07e55ef390ead34b62d6468ca517eb74cab93bf8e0e7cc9"
+      },
+      "base_certificate_gates": {
+        "P and Q upper": true,
+        "anchor factor": true,
+        "anchor width": true,
+        "certificate": true,
+        "certificate strict": true,
+        "continuum lower": true,
+        "index polynomial": true,
+        "numerator lower": true,
+        "pi bracket": true,
+        "predecessor lower": true
+      },
+      "base_certificate_passed": true,
+      "capacity_limiting_indices": [
+        49
+      ],
+      "claim": "rho(r,9)>4/3 for every integer r>=68134",
+      "coefficient_capacity": {
+        "decimal_truncated": "1.660681546638665507494059",
+        "denominator_digits": 83239,
+        "numerator_digits": 83239,
+        "sha256": "a4b779504908e2cdf6ff0cc1bda123e2dab0ae9088bce10d16272159d1b783b0"
+      },
+      "coefficient_fingerprint_encoding": "ASCII index:numerator/denominator followed by newline",
+      "comparison_denominator_nonnegative": true,
+      "configuration": {
+        "anchor_m0": 68133,
+        "claim_start_r": 68134,
+        "interval_bits": 256,
+        "kmax": 10,
+        "t": 9,
+        "target": "4/3",
+        "workers": 1
+      },
+      "mutation_control": {
+        "first_failing_negative_indices": [
+          48,
+          49
+        ],
+        "first_failing_target": "499/300",
+        "first_failing_target_decimal": "1.663333",
+        "grid_step": "1/100",
+        "previous_grid_target": "124/75",
+        "previous_grid_target_no_negative": true
+      },
+      "passed": true,
+      "retargeted_coefficient_count": 79,
+      "retargeted_degree": 78,
+      "retargeted_negative_indices": [],
+      "retargeted_positive_coefficients": 79,
+      "retargeted_sha256": "4d5499dcf7547a35c998149948df84a5e35ba40c9015ca8588cfad7e88e4276c",
+      "retargeted_zero_indices": [],
+      "schema": "h2-fixed-column-four-thirds-tail-v1",
+      "source": {
+        "common_verifier_sha256": "341caf50c74058246dbe22c3b35fb09cea7367df4d8d5173f15fef97b04bb65d",
+        "independent_path": "vendor/odd-cycles-square-tail-replay/verification/A1_verify_tail_independent.py",
+        "independent_sha256": "ad7afc6ac798c7c2db565b2358325fcf9a68de3926b1596d24a16f358a1a6ec6",
+        "producer_sha256": "0d03c57e62cbff406b2ce7bca3b841ed2666c805c17b49b3d0e2266ddead7085"
+      },
+      "source_interval_ladder_crosscheck": true,
+      "status": "PASS",
+      "tail_log_moment_max_degree": 19,
+      "target_one_reconstruction_exact": true,
+      "three_halves_control": {
+        "consistent_with_capacity": true,
+        "negative_indices": [],
+        "strictly_positive": true,
+        "zero_indices": []
+      },
+      "zero_denominator_indices": [
+        77,
+        78
+      ]
+    },
+    "file": "H2_A_GATE.json",
+    "interval_width_at_r_max": "0.000000000000000000000000000000000000000000000000000000000000",
+    "limit": 49,
+    "row": 68133,
+    "sha256": "c3fdef648550a2dade7f6fa6551135daf4ebf8420cd8652d4a1fd0dc8fe27b84"
+  },
+  "claim": "rho(j,9)>4/3 for every integer j>=68134 (tail leg, proved here); for 504<=j<=68133, a_j<=49=(t-2)^2 is certified here, placing every such cell in the TOP region whose 4/3 closure is outside this lane; cells j<504 belong to the finite core, also outside this lane",
+  "column": 9,
+  "coverage": {
+    "external_dependencies": [
+      "TOP-region 4/3 closure for a_r<=(t-2)^2",
+      "finite core r<504"
+    ],
+    "tail": "r>=68134",
+    "top_gate": "a_r<=49 certified for all r<=68133 (monotone + endpoint)"
+  },
+  "failures": [],
+  "gates": {
+    "a-gate certified": true,
+    "a-gate crossings bracketed": true,
+    "a-gate exact crosschecks": true,
+    "a-gate limit matches (t-2)^2": true,
+    "a-gate monotonicity certified": true,
+    "a-gate passed": true,
+    "a-gate row matches anchor": true,
+    "final attempt is the passing one": true,
+    "tail base gates": true,
+    "tail capacity above four thirds": true,
+    "tail column and anchor": true,
+    "tail mutation control": true,
+    "tail passed": true,
+    "tail pi repair": true,
+    "tail reconstruction and denominator": true,
+    "tail schema": true,
+    "tail strictly positive": true,
+    "three halves control recorded": true
+  },
+  "passed": true,
+  "schema": "h2-fixed-column-four-thirds-prefix-free-join-v1",
+  "status": "TAIL_PLUS_TOP_GATE_PROVED",
+  "tail": {
+    "anchor_m0": 68133,
+    "capacity_limiting_indices": [
+      49
+    ],
+    "coefficient_capacity": {
+      "decimal_truncated": "1.660681546638665507494059",
+      "denominator_digits": 83239,
+      "numerator_digits": 83239,
+      "sha256": "a4b779504908e2cdf6ff0cc1bda123e2dab0ae9088bce10d16272159d1b783b0"
+    },
+    "file": "H2_TAIL_T9_M68133.json",
+    "mutation_control": {
+      "first_failing_negative_indices": [
+        48,
+        49
+      ],
+      "first_failing_target": "499/300",
+      "first_failing_target_decimal": "1.663333",
+      "grid_step": "1/100",
+      "previous_grid_target": "124/75",
+      "previous_grid_target_no_negative": true
+    },
+    "retargeted_degree": 78,
+    "retargeted_sha256": "4d5499dcf7547a35c998149948df84a5e35ba40c9015ca8588cfad7e88e4276c",
+    "sha256": "041b779765a911b3190db6de3db81dc75f4af7e2fad244734f9f8f83e1ff94e0",
+    "three_halves_control_strictly_positive": true
+  },
+  "tail_attempts": [
+    {
+      "anchor_m0": 55000,
+      "anchor_ratio_decimal": "0.967142221380255346946646",
+      "base_gate_failures": [
+        "certificate",
+        "certificate strict"
+      ],
+      "capacity_decimal": null,
+      "file": "H2_TAIL_T9_M55000.json",
+      "sha256": "4faae35faf7c8d1fb93bc2c22ef5ecfe1747c9dbfc21f15914a9472386446697",
+      "status": "FAIL"
+    },
+    {
+      "anchor_m0": 68133,
+      "anchor_ratio_decimal": "1.800750939158134805144576",
+      "base_gate_failures": [],
+      "capacity_decimal": "1.660681546638665507494059",
+      "file": "H2_TAIL_T9_M68133.json",
+      "sha256": "041b779765a911b3190db6de3db81dc75f4af7e2fad244734f9f8f83e1ff94e0",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "cell_count": 12392,
+  "chunks": [
+    {
+      "exact_min_comparisons": 1,
+      "r_hi": 3327,
+      "r_lo": 7
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 4350,
+      "r_lo": 3327
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 5088,
+      "r_lo": 4350
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 5687,
+      "r_lo": 5088
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 6200,
+      "r_lo": 5687
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 8484,
+      "r_lo": 6200
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 10066,
+      "r_lo": 8484
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 11328,
+      "r_lo": 10066
+    },
+    {
+      "exact_min_comparisons": 0,
+      "r_hi": 12399,
+      "r_lo": 11328
+    }
+  ],
+  "claim": "rho(r,7)>4/3 for every integer r in [7,12398]",
+  "comparison_sha256": "dbda0b6d40cc55991143c2e1d1b0040e4ec4c4af7ce80a0809ca059596e8edfe",
+  "comparison_stream_encoding": "ASCII r:<|=|> followed by newline",
+  "decrement_signs": {
+    "negative": 0,
+    "positive": 12401,
+    "zero": 0
+  },
+  "definition_crosscheck": {
+    "cells": 54,
+    "engine": "vendor/odd-cycles-square-tail-replay/verification/engine.py",
+    "failures": [],
+    "range": [
+      7,
+      60
+    ]
+  },
+  "finite_minimum": {
+    "decimal_truncated_50": "3.78086067385687815991392450709488041565317680875168",
+    "denominator_digits": 171001,
+    "margin_over_four_thirds_24": "2.447527340523544826580591",
+    "numerator_digits": 171002,
+    "sha256": "809742af1383eac95ce367e1210fbe0092e8b9c82ba74e2ea67ff46442570562"
+  },
+  "finite_minimum_r": 12398,
+  "m0": 12398,
+  "minimum_at_right_endpoint": true,
+  "overlap_row": {
+    "comparison": ">",
+    "decimal_truncated_50": "3.78081272155289415147745065809298754008404079240199",
+    "denominator_digits": 171021,
+    "margin_over_four_thirds_24": "2.447479388219560818144117",
+    "numerator_digits": 171022,
+    "r": 12399,
+    "raw_sha256": "3c9c089aa000f23c33885df0a37b9e5ed457833efb41757066fe9db9d6c87a6e",
+    "sha256": "f970416e6a5f057d24910a2ac81131dadca4f6dd54c481678bb2aaf2955e9b4a"
+  },
+  "passed": true,
+  "problems": [],
+  "range": [
+    7,
+    12398
+  ],
+  "raw_row_fingerprint_encoding": "ASCII lowercase-hex numerator/denominator",
+  "schema": "h2-fixed-column-four-thirds-prefix-v1",
+  "status": "PASS",
+  "strict_failures": [],
+  "t": 7,
+  "terminal_rows": [
+    {
+      "equals_half_r_squared": true,
+      "r": 7,
+      "value_decimal_6": "24.500000"
+    },
+    {
+      "r": 8,
+      "value_decimal_6": "28.531403"
+    }
+  ],
+  "workers_note": "one outer ProcessPoolExecutor over r-range chunks; no nested pools"
+}

@@ -1,0 +1,50 @@
+{
+  "algorithm": "square-tail-fixed-prefix-row-v2",
+  "canonical_rows_sha256": "f50f8d30e43642c400b95cb971fe1bfca368b624b20a301579682f14c7203411",
+  "cells": 26888,
+  "claim": "rho(r,t)>1 on the four proof-consumed fixed-column gaps",
+  "configuration": {
+    "row_range": [
+      504,
+      19999
+    ],
+    "workers": 1
+  },
+  "identity_replay_cells": 84,
+  "malformed_rows": [],
+  "missing_rows": [],
+  "mutation_controls": {
+    "reverse_diagonal_corruption_rejected": true
+  },
+  "passed": true,
+  "ranges": [
+    {
+      "cells": 196,
+      "r_hi": 699,
+      "r_lo": 504,
+      "t": 5
+    },
+    {
+      "cells": 1500,
+      "r_hi": 2003,
+      "r_lo": 504,
+      "t": 6
+    },
+    {
+      "cells": 5696,
+      "r_hi": 6199,
+      "r_lo": 504,
+      "t": 7
+    },
+    {
+      "cells": 19496,
+      "r_hi": 19999,
+      "r_lo": 504,
+      "t": 8
+    }
+  ],
+  "resume_policy": "every reused row is recomputed before acceptance",
+  "rows": 19496,
+  "schema": "square-tail-fixed-prefix-v1",
+  "unexpected_rows": []
+}

@@ -1,0 +1,143 @@
+{
+  "a1_pi_interval_repair": {
+    "corrected_interval_contains_pi_bracket": true,
+    "corrected_reference_tripwire_passed": true,
+    "corrected_width_ulps": 1,
+    "defective_reference_tripwire_rejected": true,
+    "inherited_upper_misses_certified_pi_lower_bound": true,
+    "original_width_ulps": 0,
+    "reference_decimal_places": 100,
+    "upper_endpoint_delta_ulps": 1
+  },
+  "algorithm": "exact-prefix-plus-corrected-a1-envelope-v1",
+  "barrier": "4/3",
+  "c_star": {
+    "barrier_gap_decimal_truncated": "0.005824176376652733470130",
+    "decimal_truncated": "1.327509156956680599863203087838",
+    "denominator_digits": 6732,
+    "exactly_below_barrier": true,
+    "numerator_digits": 6733,
+    "sha256": "2fc6689fd42dd6eaa29088aeb0077e1120878fd2f6b54cf2e8dbd50e823a5691"
+  },
+  "claim": "Omega_3(r)>4/3>Omega_2(1350) for every integer r>=3",
+  "claim_boundary": "This certificate closes the t=3 bridge stripe above 4/3. It does not find the sharp t=3 minimum, compare t>=4, or assert pointwise monotonicity in t.",
+  "claim_domain": "integers r>=3 at reverse index t=3",
+  "common_verifier_sha256": "341caf50c74058246dbe22c3b35fb09cea7367df4d8d5173f15fef97b04bb65d",
+  "definition_checks": {
+    "c_star_below_four_thirds_exact": true,
+    "c_star_rebuilt": {
+      "denominator_digits": 6732,
+      "numerator_digits": 6733,
+      "sha256": "2fc6689fd42dd6eaa29088aeb0077e1120878fd2f6b54cf2e8dbd50e823a5691"
+    },
+    "forward_reverse_cells": 58,
+    "ladder_reverse_cells": 58,
+    "undersized_top_window_rejected": true
+  },
+  "execution": {
+    "arithmetic": "exact integers and fractions",
+    "parallelism": "one process, no pool",
+    "prefix_resume": "not applicable; 2999 cells"
+  },
+  "gates": {
+    "corrected_pi_interval": true,
+    "definition_checks_passed": true,
+    "negative_controls_passed": true,
+    "prefix_strictly_above_four_thirds": true,
+    "source_hashes_pinned": true,
+    "tail_denominator_positive": true,
+    "tail_source_certificate_passed": true,
+    "tail_strict_polynomial": true,
+    "wallis_factor_strict": true
+  },
+  "normalization": "Omega_t(r)=(2r)^2 L((1+z)M_(2r-2))_(r-t)/(2 L(M_(2r-1))_(r-t))",
+  "passed": true,
+  "prefix": {
+    "cell_count": 2999,
+    "comparison_sha256": "3d38ad91d746b02ff761d823ed72a1456bcb86843ea9d2010bb774aabf51f5af",
+    "comparison_stream_encoding": "ASCII r:<|=|> followed by newline",
+    "denominator_positive_count": 2999,
+    "finite_minimum": {
+      "decimal_truncated": "1.679284415149655947530591",
+      "denominator_digits": 16748,
+      "numerator_digits": 16748,
+      "sha256": "fece2e66ac7cdf95c7f3e19471cc6f09524b2479a6f736e6b5a45d95e4d3def8"
+    },
+    "finite_minimum_r": 3001,
+    "minimum_margin_over_four_thirds_decimal_truncated": "0.345951081816322614197257",
+    "non_strict_rows": [],
+    "range": [
+      3,
+      3001
+    ]
+  },
+  "producer_sha256": "e56764dabd8e6b3f9c927275dca0ab1fc76f4982329a18eb7f7268e4071ac789",
+  "proof_join": {
+    "conclusion": "Omega_3(r)>4/3 for every integer r>=3",
+    "overlap_r": 3001,
+    "prefix": "strict on 3<=r<=3001",
+    "tail": "strict on r>=3001"
+  },
+  "schema": "shift-wall-omega-t3-four-thirds-v1",
+  "source_hashes": {
+    "OPEN.md": "e4537f1fa12de71931e66929ad0eef8e138e42941c83ccf6e0b4496e9030b6da",
+    "paper/PANEL3_odd_cycles_sech_square_tail.tex": "e60836828ba688bc8601837d829c1e7becd0454209f2200524d12622f25c49bc",
+    "verification/A1_verify_tail.py": "7cc90454d04a71b2eecc6123eee98c82896f2809ff1514d0262125732bb50958",
+    "verification/A36_bw_bridge.py": "2bf61ca5f20f47b91d9a0ab94804ac64cc81ea158447a08faade940ae7de2581",
+    "verification/A38_targeted_core.py": "4655e738438b9c9671eeefb8f0d4275e628fb3d86de615e405ec4d8b1acd6cef",
+    "verification/engine.py": "7f90e47d835d0737819a8631781a502dc8e70d9af95e12aab5774cef45783825"
+  },
+  "source_repo": "vendor/odd-cycles-square-tail-replay",
+  "status": "PASS",
+  "tail": {
+    "anchor_m0": 3000,
+    "capacity_limiting_indices": [
+      4
+    ],
+    "claim_start_r": 3001,
+    "coefficient_capacity": {
+      "denominator_digits": 18186,
+      "numerator_digits": 18186,
+      "sha256": "0e0ceda0d3cabf7837e9c72cf5c881849b809e1b1bcdd0ff808a2b048c780945"
+    },
+    "coefficient_capacity_decimal_truncated": "1.445834493086568735416893",
+    "coefficient_fingerprint_encoding": "ASCII index:numerator/denominator followed by newline",
+    "inj_x2000_negative_h_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "inj_x2000_negative_lower_count": 3,
+    "inj_x2000_source_rejected": true,
+    "p_lower_degree": 14,
+    "p_lower_nonnegative_coefficients": 15,
+    "q_lower_degree": 12,
+    "q_lower_nonnegative_coefficients": 13,
+    "q_lower_positive_constant": true,
+    "q_lower_sha256": "a1fa8edef32e9dc33b1bcdfd06b17d435b72c9d7bcb8fab35d54f1b4f66a0eb7",
+    "q_upper_degree": 12,
+    "q_upper_nonnegative_coefficients": 13,
+    "retargeted_degree": 14,
+    "retargeted_positive_coefficients": 15,
+    "retargeted_sha256": "5832976deb2acc02cc1d2b43aabb09a5d97e9d672b1a35d59c4d3535fd934bd9",
+    "three_halves_mutation_negative_indices": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "variable": "x=tau_m-tau_M0_lower >= 0",
+    "wallis_factor_gate": {
+      "algebraic_difference": "(m+1)(4m+1)-(2m+1)^2=m>0",
+      "passed": true,
+      "statement": "k_m=8(m+1)^2 v_m^2/pi^2 > 1/2 for m>=1"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "algorithm": "square-tail-finite-core-block-v2",
+  "blocks": 20,
+  "canonical_blocks_sha256": "1b6b8fb5926f972cc710bebd8040e1f31c36bbccd51a3c163bf7c5d1ab0008ad",
+  "cells": 125250,
+  "claim": "rho(r,t)>1 for 4<=r<=503 and 2<=t<=r-2",
+  "configuration": {
+    "block_size": 25,
+    "row_range": [
+      4,
+      503
+    ],
+    "worker_policy": "one outer ProcessPoolExecutor; default workers=os.cpu_count()"
+  },
+  "finite_box_witness": {
+    "cell": [
+      129,
+      2
+    ],
+    "denominator_hex": "3305feee6b6599be05be5a525860e4ce7d7ee7a9403a5a8017c9e88064011a82e728edb8304db1bb414f517869d5eda67c642dcdd074d1a6001cd06dc7bdcf45998db2edd0d919ea9578b05adf6dc05e02b883a379fcfc6446d85b94be49863a8f08f9a0cae6b952bdcbfcc7be5053f831d6f4d0ca111c3329d169e51721a257afe54f644c45b77e1bb12c93068b32a1df8bcb1dbd9c67fe092720efefa98e2c2a585307f5508e601c381cd39be5dbc75cc99bb9a32bd653cb63ad5b068d38c2f08ae6339fe8874c701f8790357ba4993bfabb0f1ed6f9a0fe7833a8a9945aa139439dfd9b1af6a1dd4df52bedff6f5d9a38faf143c32a382a62c1a0241754df813f6d5d84b8d9a85628214c16e6883f24405c3f51289150bab9d78a968525343a70fae36f59caa1c58b7633d085f6b5e9f8d36a130952ec095677252bbef3c371ae0dc11ecf46c0708391b4bda25e0b39a23531551d0fc1e8331f5ee5da0945aebb415fc0be2bec18adeecf583fe58f55cbcedf0bbab3752642f17044e42b42b7f3a97f3f1fa0668e51dfb76f768535c71db1f46bee3bb3c5fa8657a9a33c780b3fb51c133aa04cc19c3e18ddd4520a0a96898241d133208c6b6ab81c81fb6da16c1e9936a5cec9fd8c63357819469ba0ac4947576c78844edf7cf9b4c4bbeb558fcb6754639c9985b4581019b6a90cc6a704f49591c1acd27d3ac53a77fd4e",
+    "exact_fraction_sha256": "63929d5845e7dfff87de264d7945ddb50c2e58f0d9ba73cb3484b46fd1e7b744",
+    "numerator_hex": "33c463be8ac4d61d4598cc13da8133d6865a62c2eb6df46e0de1c42bc755525b0c26c9693bd9f601655172886893474e29d4ad9b4e36c974d358fe24acf9293e6910683243cf85adb7cd274a981cda356ba088796af6e08f237747f52e4a033f4dc79526315674ba2fa53295ad954c950506bbb09a8e26ce2c526c3d9f8bb3e5253e016889923fd513c3c04d82f60384803da7608fbe5da36e630f7d39db690a5214c61bf2579d973105c92c3bf94c1a1c72540eefc5c302df45a1e1e5277098af5da9a9849297c0538fde5420e8764f8f3d1a2d22ee867abe88898cee223355f2289ef9597f5ae1d6efdc4ff80eb22f7ad50438fb5a9de5b540b09b33fcd5f809171fec75e7c59eb6aa47a75b694c99725bb8975b6bd1f136e3b77ea772b5f2b604929b6fba51b38b2103a21b842acb27609cb02fe408023a69efed73f73efbb1106bbb00ac064eee6a8a1877f0638aef994129b6e846843a96b3c7419545a0a2ac023b9fea51e36b05b1b901d95a3751bc8701e33d5f9fa8ff8462ed16e84585386da942987307b8c576ef8f0c0d47261b78d13fb8abe4f4239ad524406893715a1a04062154e4aaf82b561e2c12d3004f593e9124edd0de67f4f05d9c6ff50381aa36d5ba9ec37107c4b71e0cbcb209dc84866544a3d9c20859ec889128eccfa5bea37d1fcebfa6416f58d9f4bca71e95730d0f71a0e97fa544f0f88af9f9",
+    "reporting_decimal_truncated": "1.014576164564870742",
+    "role": "minimum among these replayed cells, not a global infimum"
+  },
+  "identity_replay_cells": 120,
+  "malformed_blocks": [],
+  "mutation_controls": {
+    "reverse_diagonal_corruption_rejected": true
+  },
+  "passed": true,
+  "resume_policy": "structurally checked local recovery cache; authoritative release replay uses --require-fresh",
+  "schema": "square-tail-finite-core-v1",
+  "unexpected_blocks": []
+}

@@ -1,0 +1,33 @@
+{
+ "schema": "dlaw-leg2-single-anchor-v2",
+ "status": "CONTROL_REJECTED",
+ "gate_constant": 96,
+ "law": "(k-1)(X_{k-1}-X_k) <= (6/5) sqrt(a_{m+1}), k=5..11, deposited A12 indexing",
+ "window": "tau(262144) through a > 768",
+ "x_end": 19.95,
+ "m_lo": 262144,
+ "h_step": "7/20",
+ "window_count": 1,
+ "windows": [
+  {
+   "window": 0,
+   "x": [
+    0.0,
+    0.35
+   ],
+   "a_lo_start": 59.183906860054236,
+   "envelope_positivity": true,
+   "gates": {
+    "5": true,
+    "6": false,
+    "7": false,
+    "8": false,
+    "9": false,
+    "10": false,
+    "11": false
+   },
+   "min_rel_margin": -12.875339005315272
+  }
+ ],
+ "soundness_note": "single-anchor envelopes cite the deposited INJ/ENV algebra with the Leg-1 anchor; injection budgets are the deposited tail_sum with the (3.4) global constant c0 = pi/2 + log(4/3)/2 + 3/(8 m_lo) (infinite-tail moments from m_lo soundly cover the full range).  Gamma-from-beta-derivative review DONE: coefficientwise brackets survive differentiation and d/dx E^beta_k = E^gamma_k + d_* (E^gamma_k)' >= E^gamma_k since error polys have nonnegative coefficients.  Lower-envelope nonnegativity certified per window (env_pos gate) so squared lower envelopes are valid lower bounds."
+}
