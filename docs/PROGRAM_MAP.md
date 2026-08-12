@@ -33,7 +33,7 @@ load-bearing mathematical input.
 | [Sharp Delannoy TP2](https://doi.org/10.5281/zenodo.21778524) | continued Delannoy multiplication table | identifies the shift-wall bridge as a boundary leaf | motivation and application |
 | [Grounded-path DPP algorithms](https://doi.org/10.5281/zenodo.21778518) | exact rational Green-kernel algorithms | none required for the proof | structural sibling |
 | [Odd cycles and square tails](https://doi.org/10.5281/zenodo.21853982) | odd-cycle polynomials, Jacobi structure, square-tail quotient | positivity, terminal formulas, top and corridor machinery, original bridge | direct premise |
-| Sharp shift-wall constant | bridge ratio `Omega_t(r)` and decrement shell | closes the exact global infimum and proves D-LAW on its stated window | present paper |
+| [Sharp shift-wall constant](https://doi.org/10.5281/zenodo.21866366) | bridge ratio `Omega_t(r)` and decrement shell | closes the exact global infimum and proves D-LAW on its stated window | present paper |
 
 ## The public narrative
 
@@ -65,3 +65,22 @@ the limiting profile behind that shell, not the displayed `6/5` inequality.
 
 The certificate map in `docs/SOURCE_MAP.md` is for auditing, not a prerequisite
 for reading the proof.
+
+## Post-release structural branch
+
+The four releases above are closed. Follow-up work now splits into two scoped
+surfaces:
+
+- [green-path-dpp PR #1](https://github.com/toxic2040/green-path-dpp/pull/1)
+  develops the two-boundary Green identity into exact checkpoint-design
+  algorithms for Paper 2's next version;
+- [odd-cycles-square-tail-replay issue #1](https://github.com/toxic2040/odd-cycles-square-tail-replay/issues/1)
+  tracks a structural sequel around the Gram dictionary, reflected zero mode,
+  Hermite entry-cell boundary, and the open all-order terminal-positivity
+  transport.
+
+The sequel begins from Paper 3's Jacobi and Gram carrier. Paper 2 supplies a
+direct algorithmic offshoot, not a proof of the nonlinear sign theorem. It
+does not revise Paper 1's sharp TP2 threshold or Paper 4's sharp bridge
+constant. Finite-dimensional projector identities, spectral interpretation,
+and the open positivity-transport theorem remain separate claim classes.
