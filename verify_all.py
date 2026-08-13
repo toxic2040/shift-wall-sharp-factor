@@ -39,6 +39,7 @@ BRIDGE_OUTPUTS = (
     BRIDGE_REL / "BRIDGE_T3_BARRIER.json",
     BRIDGE_REL / "SQ_T4_BRIDGE_TRANSFER.json",
     BRIDGE_REL / "A1_PI_ENDPOINT_AUDIT.json",
+    BRIDGE_REL / "MONOTONICITY_WITNESS.json",
 )
 CORE_OUTPUTS = (
     H3_REL / "A_core_sweep.jsonl",
@@ -649,6 +650,11 @@ def execute_replay(tree: Path, work_dir: Path, state: dict, state_path: Path) ->
         ("bridge_t3_barrier", "verify_bridge_t3_barrier.py", BRIDGE_OUTPUTS[1]),
         ("bridge_t4_transfer", "verify_sq_t4_transfer.py", BRIDGE_OUTPUTS[2]),
         ("a1_pi_endpoint_audit", "audit_a1_pi_endpoint.py", BRIDGE_OUTPUTS[3]),
+        (
+            "monotonicity_witness",
+            "verify_monotonicity_witness.py",
+            BRIDGE_OUTPUTS[4],
+        ),
     )
     for name, script, output in bridge_stages:
         run_stage(
@@ -808,7 +814,7 @@ def execute_replay(tree: Path, work_dir: Path, state: dict, state_path: Path) ->
 
     compared = compare_banked_outputs(tree)
     run_stage(
-        name="release_anchors_40",
+        name="release_anchors_43",
         command=command_for(tree / "verify_release_anchors.py"),
         cwd=tree,
         tree=tree,
@@ -857,7 +863,7 @@ def main() -> int:
             "tail_expected_failures_reproduced": 4,
             "tail_expected_passes_reproduced": 7,
             "master_join_gates": 22,
-            "release_anchor_gates": 40,
+            "release_anchor_gates": 43,
             "elapsed_seconds": round(time.monotonic() - started, 3),
         })
         atomic_json(report_path, report)

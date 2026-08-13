@@ -614,7 +614,7 @@ the theorem; they locate where the chosen envelope becomes strong enough.
 The top estimate already proved in~\cite{squaretail} has more room than its
 original global anchor shows.  On
 \[
- j\ge4,\qquad \level_j\le(t-2)^2,
+ j\ge4,\qquad 2\le t\le j-2,\qquad \level_j\le(t-2)^2,
 \]
 its proof gives
 \begin{equation}\label{eq:topchain}
@@ -817,9 +817,11 @@ its big-endian byte encoding is
 \begin{center}
 \texttt{0aed686f60e5eaf6056db6cb8e1f59aa99610dc26293b7f9f57fb53d2f8ed47e}.
 \end{center}
-Only the top few coefficients of each wall row are consumed, so the producer
-carries a fixed-width top window of the recurrence and reaches $r=45082$ in
-well under a minute.
+Only the top few coefficients of each wall row are consumed, so the companion
+producer carries a fixed-width top window of the recurrence and reaches
+$r=45082$ in well under a minute.  It checks that window against the full
+definition on $5\le r\le40$ and rejects a recurrence mutation before
+rebuilding the displayed witness.
 This does not threaten Theorem~\ref{thm:main}; it only rules out a shortcut.
 The transfer lemma and the $4/3$ barrier compare each stripe with a common
 rational floor instead.

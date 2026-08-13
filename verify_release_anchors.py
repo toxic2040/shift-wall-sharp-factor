@@ -22,6 +22,8 @@ A1 = (RELEASE_ROOT / "vendor" / "odd-cycles-square-tail-replay" /
       "verification" / "A1_verify_tail_independent.py")
 A1_NOTE = RELEASE_ROOT / "docs" / "FIXED_COLUMN_TAIL_T2.md"
 TEX = RELEASE_ROOT / "paper" / "shift_wall_sharp_factor.tex"
+MONOTONICITY_SCRIPT = BRIDGE / "verify_monotonicity_witness.py"
+MONOTONICITY_RECORD = BRIDGE / "MONOTONICITY_WITNESS.json"
 
 EXPECTED_FILE_HASHES = {
     BRIDGE / "BRIDGE_T2_MINIMUM.json":
@@ -60,6 +62,10 @@ EXPECTED_FILE_HASHES = {
         "ad7afc6ac798c7c2db565b2358325fcf9a68de3926b1596d24a16f358a1a6ec6",
     A1_NOTE:
         "8153e46b963def0943897071a1daaeefe4b4fc2d9f72d2d29890431a5c1d8f20",
+    MONOTONICITY_SCRIPT:
+        "1117b01c9e82fd53fee0b2e7d4c85127392fe0acd5c72d07a889bbc195922555",
+    MONOTONICITY_RECORD:
+        "5ef630ed42cd889c8c64372cebe4787a1bdaae27aadbb2b51e7898a9ddeb1c7e",
 }
 
 EXPECTED_COLUMNS = {
@@ -132,6 +138,25 @@ def main() -> int:
          t4["status"] == "PASS" and t4["passed"] is True
          and t4["sq_prefix"]["cell_count"] == 997
          and t4["sq_tail"]["retargeted_positive_coefficients"] == 39)
+
+    monotonicity = load(MONOTONICITY_RECORD)
+    gate("row-45082 exact monotonicity counterexample",
+         monotonicity["schema"] == "shift-wall-monotonicity-witness-v1"
+         and monotonicity["status"] == "PASS"
+         and monotonicity["passed"] is True
+         and monotonicity["r"] == 45082
+         and monotonicity["sign_D"] == -1
+         and monotonicity["strict_inequality_holds"] is True
+         and all(monotonicity["denominator_minors_positive"].values())
+         and monotonicity["definition_checks"]
+             ["top_window_matches_full_definition"] is True
+         and monotonicity["definition_checks"]
+             ["recurrence_mutation_rejected"] is True
+         and monotonicity["witness_bit_length"] == 5416154
+         and monotonicity["witness_decimal_digits"] == 1630425
+         and monotonicity["witness_bytes_length"] == 677020
+         and monotonicity["witness_sha256"]
+         == "0aed686f60e5eaf6056db6cb8e1f59aa99610dc26293b7f9f57fb53d2f8ed47e")
 
     core = load(ALLT / "core" / "A_CORE_SWEEP_SUMMARY.json")
     gate("finite core count, sign, and digest",
@@ -251,6 +276,7 @@ def main() -> int:
         "Fifty-seven contiguous windows",
         "certified decrement shell",
         "$22$-gate exact join",
+        "2\\le t\\le j-2",
         "10.5281/zenodo.21866366",
         "9726005502a811c97584bc22b98eeced6577d4b18a5c3c45df3eb178239c69b4",
     ]

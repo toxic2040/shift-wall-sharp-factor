@@ -58,6 +58,9 @@ sample.
 - Exact Wallis-level crossing and anchor gates for `t=9,10`.
 - The D-LAW finite ladder on `60000 <= m <= 262144`, all seven indices,
   with a complete outward interval anchor at the final row.
+- The exact pointwise-monotonicity counterexample at row `45082`, using a
+  fixed-width integer recurrence checked against the full definition on
+  `5<=r<=40` and protected by a recurrence-mutation control.
 
 Each claim is limited to its displayed range. The unbounded complement is
 handled separately.
@@ -82,7 +85,8 @@ is never the gate.
 - No higher fixed stripe is claimed to have sharp minimum `4/3`.
 - The reported numerical locations of possible higher-stripe minima are not
   theorems.
-- Pointwise monotonicity in `t` is false, with an exact witness at row 45082.
+- Pointwise monotonicity in `t` is false, with the banked exact witness at
+  row 45082. No claim about the other rows follows from that one witness.
 - D-LAW is proved only on its stated index and level window. The limiting
   profile, saturation constant, and uniform-in-`t` transfer remain open.
 - The theorem is not described as Lean-verified or kernel-checked.

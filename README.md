@@ -89,13 +89,14 @@ the network.
 Success requires all of the following:
 
 - the complete vendored Paper 3 replay passes;
-- all four lower-stripe producers pass;
+- all four lower-stripe theorem producers and the exact row-45082
+  monotonicity-witness producer pass;
 - all 123,753 finite-core cells and four fixed-column prefixes replay;
 - the seven passing and four failing tail attempts match their contracts;
 - the two D-LAW legs, 57 windows, and negative control match;
 - the master join reports 22/22 PASS;
-- 34 deterministic records reproduce byte-for-byte, the 497 core rows
-  reproduce modulo reporting-only elapsed time, and all 40 release-anchor
+- 35 deterministic records reproduce byte-for-byte, the 497 core rows
+  reproduce modulo reporting-only elapsed time, and all 43 release-anchor
   gates pass.
 
 The run is resumable from the same `--work-dir`. See

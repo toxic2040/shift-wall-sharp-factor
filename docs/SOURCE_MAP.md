@@ -15,6 +15,7 @@ decrement law, and the master assembly.
 | `Omega_3(r)>4/3` | `verification/lower_stripes/verify_bridge_t3_barrier.py` | `BRIDGE_T3_BARRIER.json` |
 | `rho(r,4)>4/3` and lossless transfer | `verification/lower_stripes/verify_sq_t4_transfer.py` | `SQ_T4_BRIDGE_TRANSFER.json` |
 | Fixed-point endpoint audit | `verification/lower_stripes/audit_a1_pi_endpoint.py` | `A1_PI_ENDPOINT_AUDIT.json` |
+| Exact pointwise-monotonicity counterexample at row 45082 | `verification/lower_stripes/verify_monotonicity_witness.py` | `MONOTONICITY_WITNESS.json` |
 | 123,753-cell finite core | `verification/all_stripes/core/A_core_sweep.py` | `A_core_sweep.jsonl`, `A_CORE_SWEEP_SUMMARY.json` |
 | Independent finite-core spot check | `verification/all_stripes/core/A_crosscheck.py` | transcript gate in full replay |
 | Exact prefixes `t=5,...,8` | `verification/all_stripes/columns/h2_prefix.py` | `H2_PREFIX_T5.json`, ..., `H2_PREFIX_T8.json` |
@@ -27,7 +28,7 @@ decrement law, and the master assembly.
 | D-LAW half-line envelope and control | `verification/all_stripes/join/dlaw_leg2_bootstrap.py` | `DLAW_LEG2.json`, `DLAW_LEG2_CONTROL.json` |
 | Sharpened corridor second chain | `verification/all_stripes/join/verify_joint_core_sharp.py` | `verify_joint_core_sharp.json` |
 | Complete theorem assembly | `verification/all_stripes/join/verify_allt_join.py` | `ALLT_JOIN.json` |
-| Manuscript and release literals | `verify_release_anchors.py` | 40 fail-closed transcript gates |
+| Manuscript and release literals | `verify_release_anchors.py` | 43 fail-closed transcript gates |
 
 The `t=2` fixed-column tail behind the shared envelope algebra is written up
 in `docs/FIXED_COLUMN_TAIL_T2.md`; both of its verifiers ship under

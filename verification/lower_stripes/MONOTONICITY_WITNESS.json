@@ -1,0 +1,48 @@
+{
+  "claim": "Omega_3(45082) < Omega_2(45082)",
+  "claim_boundary": "This is one exact counterexample to pointwise monotonicity in t; it is not a theorem about any other row or stripe.",
+  "component_signs": {
+    "L_C_r_minus_2": 1,
+    "L_C_r_minus_3": 1,
+    "L_G_r_minus_2": 1,
+    "L_G_r_minus_3": 1
+  },
+  "definition_checks": {
+    "full_definition_cells": 36,
+    "full_definition_range": [
+      5,
+      40
+    ],
+    "recurrence_mutation": "add 1 at n=14, top-window position 2",
+    "recurrence_mutation_rejected": true,
+    "top_window_matches_full_definition": true
+  },
+  "denominator_minors_positive": {
+    "L_C_r_minus_2": true,
+    "L_C_r_minus_3": true
+  },
+  "digest_convention": "SHA-256 of the minimal-length big-endian byte encoding of |D|",
+  "execution": {
+    "arithmetic": "exact integers",
+    "parallelism": "one process, no pool",
+    "resume": "not applicable; one fixed-width recurrence"
+  },
+  "expected_values_match": {
+    "bit_length": true,
+    "byte_length": true,
+    "decimal_digits": true,
+    "sha256": true
+  },
+  "passed": true,
+  "r": 45082,
+  "schema": "shift-wall-monotonicity-witness-v1",
+  "sign_D": -1,
+  "status": "PASS",
+  "strict_inequality_holds": true,
+  "window_width": 8,
+  "witness_bit_length": 5416154,
+  "witness_bytes_length": 677020,
+  "witness_decimal_digits": 1630425,
+  "witness_definition": "D=L(G)_(r-3)L(C)_(r-2)-L(G)_(r-2)L(C)_(r-3), G=(1+z)M_(2r-2), C=M_(2r-1), L(f)_q=f_q^2-f_(q-1)f_(q+1)",
+  "witness_sha256": "0aed686f60e5eaf6056db6cb8e1f59aa99610dc26293b7f9f57fb53d2f8ed47e"
+}

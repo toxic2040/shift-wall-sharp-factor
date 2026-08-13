@@ -71,11 +71,11 @@ The runner accepts only if:
 1. the release manifest and inventory are exact and portable;
 2. the complete vendored Paper 3 replay passes;
 3. every Paper 4 producer completes under its stated contract;
-4. all 34 deterministic Paper 4 outputs reproduce byte-for-byte;
+4. all 35 deterministic Paper 4 outputs reproduce byte-for-byte;
 5. each of the 497 finite-core row records matches after removing only its
    reporting-only `secs` field;
 6. the master theorem join reports 22/22 PASS with no conditional leg;
-7. the release-anchor verifier reports 40/40 PASS.
+7. the release-anchor verifier reports 43/43 PASS.
 
 The final work record is `WORK/REPLAY_REPORT.json`. A failed or interrupted run
 does not modify the release checkout and does not authorize publication.
