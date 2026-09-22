@@ -33,7 +33,7 @@ load-bearing mathematical input.
 | [Sharp Delannoy TP2](https://doi.org/10.5281/zenodo.21778524) | continued Delannoy multiplication table | identifies the shift-wall bridge as a boundary leaf | motivation and application |
 | [Grounded-path DPP algorithms](https://doi.org/10.5281/zenodo.21778518) | exact rational Green-kernel algorithms | none required for the proof | structural sibling |
 | [Odd cycles and square tails](https://doi.org/10.5281/zenodo.21853982) | odd-cycle polynomials, Jacobi structure, square-tail quotient | positivity, terminal formulas, top and corridor machinery, original bridge | direct premise |
-| Sharp shift-wall constant | bridge ratio `Omega_t(r)` and decrement shell | closes the exact global infimum and proves D-LAW on its stated window | present paper |
+| [Sharp shift-wall constant](https://doi.org/10.5281/zenodo.21866366) | bridge ratio `Omega_t(r)` and decrement shell | closes the exact global infimum and proves D-LAW on its stated window | present paper |
 
 ## The public narrative
 
